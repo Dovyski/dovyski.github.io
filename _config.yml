@@ -7,15 +7,15 @@ permalink:        pretty
 #relative_permalinks: true
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
-url:              http://hyde.getpoole.com
+title:            Fernando Bevilacqua
+tagline:          ''
+description:      'Professor of Computer Science and indie game developer.'
+url:              https://fernandobevilacqua.com
 baseurl:          /
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'Fernando Bevilacqua'
+  url:            https://twitter.com/as3gamegears
 
 paginate:         5
 paginate_path:    "page:num"

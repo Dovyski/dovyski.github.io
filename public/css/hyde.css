@@ -55,7 +55,7 @@ html {
 
 .sidebar {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 5px 0 5px 5px;
   color: rgba(255,255,255,.5);
   background-color: #202020;
 }
@@ -65,22 +65,32 @@ html {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 18rem;
+    width: 17rem;
     text-align: left;
+    min-height: 20em;
   }
 }
 
 /* Sidebar links */
 .sidebar a {
+  margin-top: 10px;
   color: #fff;
 }
 
 /* About section */
+.sidebar-about {
+    padding-bottom: 70px;
+}
+
 .sidebar-about h1 {
   color: #fff;
-  margin-top: 0;
-  font-family: "Abril Fatface", serif;
-  font-size: 3.25rem;
+  font-size: 1.4em;
+}
+
+.sidebar-about img.profile {
+    width: 230px;
+    height: auto;
+    border: 2px solid #626262;
 }
 
 /* Sidebar nav */
@@ -97,6 +107,21 @@ a.sidebar-nav-item:focus {
 }
 .sidebar-nav-item.active {
   font-weight: bold;
+}
+
+.social-badges {
+    width: 100%;
+    clear: both;
+    background: red;
+}
+
+.social-badges a {
+    float: left;
+    margin-right: 5px;
+}
+
+.social-badges img {
+    opacity: 0.5;
 }
 
 /* Sticky sidebar
