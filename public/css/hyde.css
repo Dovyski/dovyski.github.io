@@ -71,6 +71,10 @@ html {
   }
 }
 
+.sidebar .container {
+    margin-top: 0.5rem;
+}
+
 /* Sidebar links */
 .sidebar a {
   margin-top: 10px;
@@ -79,22 +83,23 @@ html {
 
 /* About section */
 .sidebar-about {
-    padding-bottom: 70px;
+    padding-bottom: 50px;
 }
 
 .sidebar-about h1 {
   color: #fff;
-  font-size: 1.4em;
+  font-size: 1.3em;
 }
 
 .sidebar-about img.profile {
     width: 260px;
     height: auto;
-    border: 2px solid #626262;
+    border: 1px solid #323232;
 }
 
 /* Sidebar nav */
 .sidebar-nav {
+  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 .sidebar-nav-item {
@@ -147,7 +152,7 @@ a.sidebar-nav-item:focus {
  */
 
 .content {
-  padding-top:    4rem;
+  padding-top:    2rem;
   padding-bottom: 4rem;
 }
 
