@@ -278,3 +278,14 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
+
+.game img {
+    margin-top: 8px;
+    float: left;
+    margin-right: 20px;
+}
+
+.game {
+    margin-bottom: 40px;
+    clear: both;
+}
