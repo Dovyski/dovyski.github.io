@@ -2,7 +2,7 @@
 highlighter:      rouge
 
 # Permalinks
-permalink:        pretty
+permalink:        /:categories/:year/:month/:title/
 #relative_permalinks: true
 
 # Setup
