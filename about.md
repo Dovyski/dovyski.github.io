@@ -3,28 +3,10 @@ layout: page
 title: About
 ---
 
-<p class="message">
-  Hey there! This page is included as an example. Feel free to customize it for your own use upon downloading. Carry on!
-</p>
+My name is Fernando Bevilacqua, I am a professor of Computer Science, [indie game developer](../games/) and [passionate open-source contributor](https://github.com/Dovyski). In 2007 I obtained a BSc degree in Computer Science at [Federal University of Santa Maria (UFSM)](http://www.ufsm.br), Brazil. In 2009 I finished my masters in Computer Graphics, also at UFSM. Now I am a PhD student at the [University of Skövde](http://his.se), working with serious games at the [InGame Lab](http://www.his.se/en/Research/informatics/Interaction-Lab/InGaMe-Lab/).
 
-In the novel, *The Strange Case of Dr. Jeykll and Mr. Hyde*, Mr. Poole is Dr. Jekyll's virtuous and loyal butler. Similarly, Poole is an upstanding and effective butler that helps you build Jekyll themes. It's made by [@mdo](https://twitter.com/mdo).
+I work with games since 2004. From 2004 to 2011 I was one of the co-founders of Decadium, a game developer company. During those 7 years I worked as a professional game developer, acting as senior programmer and/or project manager in a wide variety of entertainment applications. I worked in game related projects for companies like [Bigpoint](http://bigpoint.com/), [Playfirst](http://playfirst.com/), [Bigfish Games](http://www.bigfishgames.com/), [UOL](http://uol.com.br) and [SevenGames](http://sevengamesnetwork.de/). Since 2012 I use my free time as an indie game developer. I have experience developing games from conception to development, deployment and maintenance, including single-player and multiplayer (local or over the network) projects. I worked as a team member (developer) and as a team leader, managing other developers, artists and musicians.
 
-There are currently two themes built on Poole:
+At the present moment I am a Computer Science professor at [Federal University of Fronteira Sul (UFFS)](http://www.uffs.edu.br), a Brazilian university. I mainly work with algorithms, computer graphics and games.
 
-* [Hyde](http://hyde.getpoole.com)
-* [Lanyon](http://lanyon.getpoole.com)
-
-Learn more and contribute on [GitHub](https://github.com/poole).
-
-## Setup
-
-Some fun facts about the setup of this project include:
-
-* Built for [Jekyll](http://jekyllrb.com)
-* Developed on GitHub and hosted for free on [GitHub Pages](https://pages.github.com)
-* Coded with [Sublime Text 2](http://sublimetext.com), an amazing code editor
-* Designed and developed while listening to music like [Blood Bros Trilogy](https://soundcloud.com/maddecent/sets/blood-bros-series)
-
-Have questions or suggestions? Feel free to [open an issue on GitHub](https://github.com/poole/issues/new) or [ask me on Twitter](https://twitter.com/mdo).
-
-Thanks for reading!
+I like to code and create new things, specially when they can help me or anyone somehow (check my [portfolio](../portfolio/) for a list of my projects). I spend a lot of my free time coding, for my own and for other open-source projects. I am fluent in C/C++, PHP, Flash/AS3, Java and Javascript. To contact me, please send an e-mail to dovyski@gmail.com.
