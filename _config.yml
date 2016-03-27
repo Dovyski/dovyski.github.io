@@ -9,7 +9,7 @@ permalink:        /:categories/:year/:month/:title/
 title:            Fernando Bevilacqua
 tagline:          ''
 description:      'Professor of Computer Science and indie game developer.'
-url:              http://fernandobevilacqua.com
+url:              http://www.fernandobevilacqua.com
 baseurl:          /
 
 author:
