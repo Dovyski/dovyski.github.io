@@ -118,6 +118,7 @@ a.sidebar-nav-item:focus {
     width: 100%;
     clear: both;
     background: red;
+    text-align: center;
 }
 
 .social-badges a {

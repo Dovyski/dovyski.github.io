@@ -10,6 +10,8 @@ I have already placed my hands in a variety of different projects, including (bu
 ### [Codebot](https://github.com/Dovyski/Codebot)
 Free and open source (MIT license) IDE focused on game development.
 
+![Codebot](/public/img/codebot.png)
+
 ### [Jarena](https://github.com/Dovyski/Jarena)
 A game approach to teaching OPP and Java.
 
