@@ -1,11 +1,13 @@
 ---
 layout: page
-title: Publications
+title: Research
 ---
 
-This is a list with my most relevant research publications. For a complete list of all my academic activities, please check my [Lattes curriculum](http://lattes.cnpq.br/7744662926303212) or my [Google Scholar profile](https://scholar.google.se/citations?user=GOWYhzwAAAAJ&hl=en&oi=ao).
+This is a list of my most relevant research publications and projects. For a complete list of all my academic activities, check my [Lattes CV](http://lattes.cnpq.br/7744662926303212) or my [Google Scholar profile](https://scholar.google.se/citations?user=GOWYhzwAAAAJ&hl=en&oi=ao).
 
-## Papers in conferences
+## Publications
+
+### Papers in conferences
 
 - VENSON, J. E.; BEVILACQUA, F.; MAIA, C. E. S.; DORNELLAS, M. C.. Dynamic Optimization for Fast Image Transfer and Visualization for Mobile and Stationary Devices: A Performance Evaluation Using Animati Viewer. In: XV Workshop de Informática Médica, 2015, Recife. Anais do XV Workshop de Informática Médica, 2015.
 
@@ -15,7 +17,7 @@ This is a list with my most relevant research publications. For a complete list 
 
 - BEVILACQUA, F.; POZZER, C. T.; D'ORNELLAS, M. C.. Charack: Tool for Real-Time Generation of Pseudo-Infinite Virtual Worlds for 3D Games. In: , 2009, Rio de Janeiro. p. 111. [[DOI]](http://dx.doi.org/10.1109/SBGAMES.2009.21)
 
-## Short papers in conferences
+### Short papers in conferences
 
 - BEVILACQUA, F.; BACKLUND, P.; ENGSTROM, H.. Proposal for Non-Contact Analysis of Multimodal Inputs to Measure Stress Level in Serious Games. In: 2015 7th International Conference on Games and Virtual Worlds for Serious Applications (VSGames), 2015, Skövde. 2015 7th International Conference on Games and Virtual Worlds for Serious Applications (VS-Games). p. 1. [[DOI]](http://dx.doi.org/10.1109/VS-GAMES.2015.7295783)
 
@@ -23,8 +25,14 @@ This is a list with my most relevant research publications. For a complete list 
 
 - BEVILACQUA, F.; POZZER, C. . Proposal of a tool for pseudo-infinite 3D virtual world genaration. In: SBGAMES 2007, 2007, São Leopoldo - RS. SBGAMES 2007, 2007.
 
-## Book chapters or complete books
+### Book chapters or complete books
 
 - BRANCHER, J. D. ; BEVILACQUA, F. ; FERREIRA, N. B. ; IOP, R. D. ; MINUZZI, L. ; FERREIRA, T. K. . Um Portal de Jogos Casuais Educativos. Jogos Eletrônicos: Mapeando Novas Perspectivas. 1ed.Florianópolis, SC: VISUAL BOOKS, 2009, v. 1, p. 197-210.
 
 - My master's dissertation: BEVILACQUA, F.. Ferramenta para Geração de Mundos Virtuais Pseudo-Infinitos para Jogos 3D MMO. 2009. [[PDF], in Brazilian portuguese](http://charack.googlecode.com/svn-history/r54/master-thesis/dissertacao.pdf).
+
+___
+
+## Research projects
+
+More information will be added soon.
