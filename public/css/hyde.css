@@ -290,3 +290,9 @@ a.sidebar-nav-item:focus {
     margin-bottom: 40px;
     clear: both;
 }
+
+h3 em {
+    font-size: 0.8em;
+    color: #cfcfcf;
+    margin-left: 10px;
+}

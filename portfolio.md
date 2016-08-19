@@ -37,7 +37,7 @@ A website dedicated to provide Flash game developers with tools, libs and engine
 ### [Charack](https://github.com/Dovyski/charack)
 A tool to procedurally generate pseudo-infinite worlds for 3D games.    
 
-### Decadium Studios, 2004 to 2011
+### Decadium Studios <em>2004 to 2011</em>
 
 Decadium Studios was a game developer company that my friends and I funded in 2003/2004. During my time at the company, I worked on several games directly (as a developer, manager, etc) or indirectly (participating in meetings, creating supporting tools, etc).
 

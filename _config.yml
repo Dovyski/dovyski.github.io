@@ -7,7 +7,7 @@ permalink:        /:categories/:year/:month/:title/
 
 # Setup
 title:            Fernando Bevilacqua
-tagline:          ''
+tagline:          'Professor of Computer Science and indie game developer'
 description:      'Professor of Computer Science and indie game developer.'
 url:              http://www.fernandobevilacqua.com
 baseurl:          /
