@@ -9,6 +9,8 @@ This is a list of my most relevant research publications and projects. For a com
 
 ### Papers in conferences
 
+- BEVILACQUA, F.; BACKLUND, P.; ENGSTROM, H.. Variations of Facial Actions While Playing Games with Inducing Boredom and Stress. In: VS-Games 2016, 2016, Barcelona. 8th International Conference on Games and Virtual Worlds for Serious Applications (VS-Games), 2016.
+
 - VENSON, J. E.; BEVILACQUA, F.; MAIA, C. E. S.; DORNELLAS, M. C.. Dynamic Optimization for Fast Image Transfer and Visualization for Mobile and Stationary Devices: A Performance Evaluation Using Animati Viewer. In: XV Workshop de Informática Médica, 2015, Recife. Anais do XV Workshop de Informática Médica, 2015.
 
 - CARLI, D. M.; POZZER, C. T.; BEVILACQUA, F.; SCHETINGER, V.. Procedural Generation of 3D Canyons. In: 2014 27th SIBGRAPI Conference on Graphics, Patterns and Images (SIBGRAPI), 2014, Brazil. 2014 27th SIBGRAPI Conference on Graphics, Patterns and Images. v. 27. p. 103. [[DOI]](http://dx.doi.org/10.1109/SIBGRAPI.2014.41)
