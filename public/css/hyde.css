@@ -296,3 +296,31 @@ h3 em {
     color: #cfcfcf;
     margin-left: 10px;
 }
+
+.social-badges img:hover {
+	background: #888;
+}
+
+.sidebar-contact {
+    margin-top: 5em;
+    font-size: 0.7em;
+}
+
+.sidebar-contact,
+.sidebar-contact a:link,
+.sidebar-contact a:visited,
+.sidebar-contact a:hover,
+.sidebar-contact a:active,
+.sidebar-contact strong {
+    color: #afafaf
+}
+
+.sidebar-contact h2 {
+    font-size: 1.1em;
+    color: #cfcfcf
+}
+
+.sidebar-contact ul {
+    list-style-type: none;
+    padding: 2px;
+}
