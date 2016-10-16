@@ -324,3 +324,8 @@ h3 em {
     list-style-type: none;
     padding: 2px;
 }
+
+small.highlight {
+    color: #b70000;
+    font-style: italic;
+}

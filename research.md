@@ -9,15 +9,25 @@ This is a list of my most relevant research publications and projects. For a com
 
 ### Papers in conferences
 
-- BEVILACQUA, F.; BACKLUND, P.; ENGSTROM, H.. Variations of Facial Actions While Playing Games with Inducing Boredom and Stress. In: VS-Games 2016, 2016, Barcelona. 8th International Conference on Games and Virtual Worlds for Serious Applications (VS-Games), 2016.
+![Variations of Facial Actions While Playing Games with Inducing Boredom and Stress](/public/img/paper-variations.jpg)
+
+- BEVILACQUA, F.; BACKLUND, P.; ENGSTROM, H.. Variations of Facial Actions While Playing Games with Inducing Boredom and Stress. In: VS-Games 2016, 2016, Barcelona. 8th International Conference on Games and Virtual Worlds for Serious Applications (VS-Games), 2016. <small class="highlight">NOTE: Awarded best student paper of the conference.</small>
+
+![Dynamic Optimization for Fast Image Transfer and Visualization for Mobile and Stationary Devices: A Performance Evaluation Using Animati Viewer](/public/img/paper-mobile-medicine.jpg)
 
 - VENSON, J. E.; BEVILACQUA, F.; MAIA, C. E. S.; DORNELLAS, M. C.. Dynamic Optimization for Fast Image Transfer and Visualization for Mobile and Stationary Devices: A Performance Evaluation Using Animati Viewer. In: XV Workshop de Informática Médica, 2015, Recife. Anais do XV Workshop de Informática Médica, 2015.
 
+![Procedural Generation of 3D Canyons](/public/img/paper-canyons.jpg)
+
 - CARLI, D. M.; POZZER, C. T.; BEVILACQUA, F.; SCHETINGER, V.. Procedural Generation of 3D Canyons. In: 2014 27th SIBGRAPI Conference on Graphics, Patterns and Images (SIBGRAPI), 2014, Brazil. 2014 27th SIBGRAPI Conference on Graphics, Patterns and Images. v. 27. p. 103. [[DOI]](http://dx.doi.org/10.1109/SIBGRAPI.2014.41)
+
+![A Survey of Procedural Content Generation Techniques Suitable to Game Development](/public/img/paper-survey.jpg)
 
 - CARLI, D. M.; BEVILACQUA, F. ; POZZER, C. T.; DORNELLAS, M. C.. A Survey of Procedural Content Generation Techniques Suitable to Game Development. In: 2011 Brazilian Symposium on Games and Digital Entertainment (SBGAMES), 2011, Salvador. 2011 Brazilian Symposium on Games and Digital Entertainment. v. X. p. 26. [[DOI]](http://dx.doi.org/10.1109/SBGAMES.2011.15)
 
-- BEVILACQUA, F.; POZZER, C. T.; D'ORNELLAS, M. C.. Charack: Tool for Real-Time Generation of Pseudo-Infinite Virtual Worlds for 3D Games. In: , 2009, Rio de Janeiro. p. 111. [[DOI]](http://dx.doi.org/10.1109/SBGAMES.2009.21)
+![Charack: Tool for Real-Time Generation of Pseudo-Infinite Virtual Worlds for 3D Games](/public/img/paper-charack.png)
+
+- BEVILACQUA, F.; POZZER, C. T.; D'ORNELLAS, M. C.. Charack: Tool for Real-Time Generation of Pseudo-Infinite Virtual Worlds for 3D Games. In: VIII Brazilian Symposium on Games and Digital Entertainment (SBGAMES), 2009, Rio de Janeiro. p. 111. [[DOI]](http://dx.doi.org/10.1109/SBGAMES.2009.21)
 
 ### Short papers in conferences
 
@@ -37,4 +47,11 @@ ___
 
 ## Research projects
 
-More information will be added soon.
+### READMINDS: REmote Analysis and Detection of Multifactorial INputs for Discovery of Stress
+**Date:** 2015 - present
+
+**Sponsorship:** CNPq, Conselho Nacional de Desenvolvimento Científico e Tecnológico - Brasil; University of Skövde; EU Interreg ÖKS project Game Hub Scandinavia; UFFS, Federal University of Fronteira Sul.
+
+**Abstract:** Improve the research in games by creating a model/software that is able to tell if a player is stressed/bored while playing a game. The process involves the analysis of information from the player (e.g. heart rate, respiratory rate, facial expressions) which are obtained by processing a video of the player. The procedure is completely remote, so the user does not wear physical sensors nor is interrupted during the game play.
+
+![Readminds](/public/img/readmind-fernando.jpg)
