@@ -11,7 +11,7 @@ This is a list of my most relevant research publications and projects. For a com
 
 ![Variations of Facial Actions While Playing Games with Inducing Boredom and Stress](/public/img/paper-variations.jpg)
 
-- BEVILACQUA, F.; BACKLUND, P.; ENGSTROM, H.. Variations of Facial Actions While Playing Games with Inducing Boredom and Stress. In: VS-Games 2016, 2016, Barcelona. 8th International Conference on Games and Virtual Worlds for Serious Applications (VS-Games), 2016. <small class="highlight">NOTE: Awarded best student paper of the conference.</small>
+- BEVILACQUA, F.; BACKLUND, P.; ENGSTROM, H.. Variations of Facial Actions While Playing Games with Inducing Boredom and Stress. In: VS-Games 2016, 2016, Barcelona. 8th International Conference on Games and Virtual Worlds for Serious Applications (VS-Games), 2016. [[DOI]](http://dx.doi.org/10.1109/VS-GAMES.2016.7590374) <small class="highlight">NOTE: Awarded best student paper of the conference.</small>
 
 ![Dynamic Optimization for Fast Image Transfer and Visualization for Mobile and Stationary Devices: A Performance Evaluation Using Animati Viewer](/public/img/paper-mobile-medicine.jpg)
 
