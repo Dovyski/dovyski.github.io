@@ -15,6 +15,7 @@ Since I started my PhD in September, 2015, I have been writing a [lot of code](h
 A percentage of my coding was indeed targeted at creating original software that could do something related to my research. Another significant part, however, was about automation:
 
 ![Obligatory xkcd strip about automation](https://imgs.xkcd.com/comics/automation.png)
+*[Source: xkcd: Automation](https://xkcd.com/1319/)*
 
 In my case, doing applied science means I need to iterate, test and evaluate a lot of things on a daily basis. I could do the analysis by hand, or by copying-and-pasting numbers back and forth in Excel. In the short term that works perfectly well, but things start to grow and become more and more error prone in the long run.
 
