@@ -302,7 +302,7 @@ h3 em {
 }
 
 .sidebar-contact {
-    margin-top: 5em;
+    margin-top: 1em;
     font-size: 0.7em;
 }
 
@@ -312,17 +312,20 @@ h3 em {
 .sidebar-contact a:hover,
 .sidebar-contact a:active,
 .sidebar-contact strong {
-    color: #afafaf
+    color: #7f7f7f
 }
 
 .sidebar-contact h2 {
-    font-size: 1.1em;
-    color: #cfcfcf
+    font-weight: normal;
+    font-size: 1.0em;
+    color: #7f7f7f
 }
 
 .sidebar-contact ul {
+    font-weight: normal;
     list-style-type: none;
     padding: 2px;
+    font-size: 0.8em;
 }
 
 small.highlight {

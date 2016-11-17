@@ -6,6 +6,14 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
+  <meta content="{{ site.title }}" property="og:title" />
+  <meta content="{{ site.title }}" property="og:site_name" />
+  <meta content="{{ site.description }}" name="description" property="og:description" />
+  <meta content="{{ site.description }}" name="description" />
+  <meta content="profile" property="og:type" />
+  <meta content="{{ site.url }}" property="og:url" />
+  <meta content="{{ site.url }}/public/img/fernando-bevilacqua.png" property="og:image" />
+
   <title>
     {% if page.title == "Home" %}
       {{ site.title }} &middot; {{ site.tagline }}
@@ -17,7 +25,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="{{ site.baseurl }}public/css/poole.css">
   <link rel="stylesheet" href="{{ site.baseurl }}public/css/syntax.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}public/css/hyde.css?20161016">
+  <link rel="stylesheet" href="{{ site.baseurl }}public/css/hyde.css?20161117">
   <link rel="stylesheet" href="//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
 
   <!-- Icons -->
