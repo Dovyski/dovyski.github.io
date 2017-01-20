@@ -4,7 +4,7 @@ title: cvui - A very simple UI lib for OpenCV
 author: Fernando Bevilacqua
 layout: post
 categories:
-  - Code
+  - blog
 tags:
   - opencv
   - ui

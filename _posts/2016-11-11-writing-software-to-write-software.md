@@ -3,7 +3,7 @@ title: Writing software to write software
 author: Fernando Bevilacqua
 layout: post
 categories:
-  - Code
+  - blog
 tags:
   - research
   - code

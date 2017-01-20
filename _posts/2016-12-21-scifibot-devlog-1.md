@@ -3,7 +3,7 @@ title: Scifibot - Devlog 1
 author: Fernando Bevilacqua
 layout: post
 categories:
-  - Code
+  - blog
 tags:
   - mobile
   - framework7

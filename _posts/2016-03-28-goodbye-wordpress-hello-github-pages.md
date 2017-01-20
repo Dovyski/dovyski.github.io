@@ -4,7 +4,7 @@ title: Goodbye Wordpress, hello Github Pages!
 author: Fernando Bevilacqua
 layout: post
 categories:
-  - Thoughts
+  - blog
 tags:
   - github
   - jekyll
