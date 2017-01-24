@@ -7,27 +7,38 @@ This is a list of my most relevant research publications and projects. For a com
 
 ## Publications
 
+### Papers in journals
+
+![Efficient medical image access in diagnostic environments with limited resources](/public/img/paper-rbe.jpg)
+
+VENSON, J. E.; BEVILACQUA, F.; ONUKI, F.; D’ORNELLAS, M. C.; MACIEL, A.. Efficient medical image access in diagnostic environments with limited resources. Research on Biomedical Engineering, Epub January 12, 2017.
+[[DOI]](https://dx.doi.org/10.1590/2446-4740.05915)
+
+___
+
 ### Papers in conferences
 
 ![Variations of Facial Actions While Playing Games with Inducing Boredom and Stress](/public/img/paper-variations.jpg)
 
-- BEVILACQUA, F.; BACKLUND, P.; ENGSTROM, H.. Variations of Facial Actions While Playing Games with Inducing Boredom and Stress. In: VS-Games 2016, 2016, Barcelona. 8th International Conference on Games and Virtual Worlds for Serious Applications (VS-Games), 2016. [[DOI]](http://dx.doi.org/10.1109/VS-GAMES.2016.7590374) <small class="highlight">NOTE: Awarded best student paper of the conference.</small>
+BEVILACQUA, F.; BACKLUND, P.; ENGSTROM, H.. Variations of Facial Actions While Playing Games with Inducing Boredom and Stress. In: VS-Games 2016, 2016, Barcelona. 8th International Conference on Games and Virtual Worlds for Serious Applications (VS-Games), 2016. [[DOI]](http://dx.doi.org/10.1109/VS-GAMES.2016.7590374) <small class="highlight">NOTE: Awarded best student paper of the conference.</small>
 
 ![Dynamic Optimization for Fast Image Transfer and Visualization for Mobile and Stationary Devices: A Performance Evaluation Using Animati Viewer](/public/img/paper-mobile-medicine.jpg)
 
-- VENSON, J. E.; BEVILACQUA, F.; MAIA, C. E. S.; DORNELLAS, M. C.. Dynamic Optimization for Fast Image Transfer and Visualization for Mobile and Stationary Devices: A Performance Evaluation Using Animati Viewer. In: XV Workshop de Informática Médica, 2015, Recife. Anais do XV Workshop de Informática Médica, 2015.
+VENSON, J. E.; BEVILACQUA, F.; MAIA, C. E. S.; DORNELLAS, M. C.. Dynamic Optimization for Fast Image Transfer and Visualization for Mobile and Stationary Devices: A Performance Evaluation Using Animati Viewer. In: XV Workshop de Informática Médica, 2015, Recife. Anais do XV Workshop de Informática Médica, 2015.
 
 ![Procedural Generation of 3D Canyons](/public/img/paper-canyons.jpg)
 
-- CARLI, D. M.; POZZER, C. T.; BEVILACQUA, F.; SCHETINGER, V.. Procedural Generation of 3D Canyons. In: 2014 27th SIBGRAPI Conference on Graphics, Patterns and Images (SIBGRAPI), 2014, Brazil. 2014 27th SIBGRAPI Conference on Graphics, Patterns and Images. v. 27. p. 103. [[DOI]](http://dx.doi.org/10.1109/SIBGRAPI.2014.41)
+CARLI, D. M.; POZZER, C. T.; BEVILACQUA, F.; SCHETINGER, V.. Procedural Generation of 3D Canyons. In: 2014 27th SIBGRAPI Conference on Graphics, Patterns and Images (SIBGRAPI), 2014, Brazil. 2014 27th SIBGRAPI Conference on Graphics, Patterns and Images. v. 27. p. 103. [[DOI]](http://dx.doi.org/10.1109/SIBGRAPI.2014.41)
 
 ![A Survey of Procedural Content Generation Techniques Suitable to Game Development](/public/img/paper-survey.jpg)
 
-- CARLI, D. M.; BEVILACQUA, F. ; POZZER, C. T.; DORNELLAS, M. C.. A Survey of Procedural Content Generation Techniques Suitable to Game Development. In: 2011 Brazilian Symposium on Games and Digital Entertainment (SBGAMES), 2011, Salvador. 2011 Brazilian Symposium on Games and Digital Entertainment. v. X. p. 26. [[DOI]](http://dx.doi.org/10.1109/SBGAMES.2011.15)
+CARLI, D. M.; BEVILACQUA, F. ; POZZER, C. T.; DORNELLAS, M. C.. A Survey of Procedural Content Generation Techniques Suitable to Game Development. In: 2011 Brazilian Symposium on Games and Digital Entertainment (SBGAMES), 2011, Salvador. 2011 Brazilian Symposium on Games and Digital Entertainment. v. X. p. 26. [[DOI]](http://dx.doi.org/10.1109/SBGAMES.2011.15)
 
 ![Charack: Tool for Real-Time Generation of Pseudo-Infinite Virtual Worlds for 3D Games](/public/img/paper-charack.png)
 
-- BEVILACQUA, F.; POZZER, C. T.; D'ORNELLAS, M. C.. Charack: Tool for Real-Time Generation of Pseudo-Infinite Virtual Worlds for 3D Games. In: VIII Brazilian Symposium on Games and Digital Entertainment (SBGAMES), 2009, Rio de Janeiro. p. 111. [[DOI]](http://dx.doi.org/10.1109/SBGAMES.2009.21)
+BEVILACQUA, F.; POZZER, C. T.; D'ORNELLAS, M. C.. Charack: Tool for Real-Time Generation of Pseudo-Infinite Virtual Worlds for 3D Games. In: VIII Brazilian Symposium on Games and Digital Entertainment (SBGAMES), 2009, Rio de Janeiro. p. 111. [[DOI]](http://dx.doi.org/10.1109/SBGAMES.2009.21)
+
+___
 
 ### Short papers in conferences
 
@@ -37,17 +48,19 @@ This is a list of my most relevant research publications and projects. For a com
 
 - BEVILACQUA, F.; POZZER, C. . Proposal of a tool for pseudo-infinite 3D virtual world genaration. In: SBGAMES 2007, 2007, São Leopoldo - RS. SBGAMES 2007, 2007.
 
+___
+
 ### Book chapters or complete books
 
 - BRANCHER, J. D. ; BEVILACQUA, F. ; FERREIRA, N. B. ; IOP, R. D. ; MINUZZI, L. ; FERREIRA, T. K. . Um Portal de Jogos Casuais Educativos. Jogos Eletrônicos: Mapeando Novas Perspectivas. 1ed.Florianópolis, SC: VISUAL BOOKS, 2009, v. 1, p. 197-210.
 
-- My master's dissertation: BEVILACQUA, F.. Ferramenta para Geração de Mundos Virtuais Pseudo-Infinitos para Jogos 3D MMO. 2009. [[PDF], in Brazilian portuguese](http://charack.googlecode.com/svn-history/r54/master-thesis/dissertacao.pdf).
+- My master's dissertation: BEVILACQUA, F.. Ferramenta para Geração de Mundos Virtuais Pseudo-Infinitos para Jogos 3D MMO. 2009. [[PDF, in Brazilian portuguese]](http://charack.googlecode.com/svn-history/r54/master-thesis/dissertacao.pdf).
 
 ___
 
 ## Research projects
 
-### READMINDS: REmote Analysis and Detection of Multifactorial INputs for Discovery of Stress
+#### READMINDS: REmote Analysis and Detection of Multifactorial INputs for Discovery of Stress
 **Date:** 2015 - present
 
 **Sponsorship:** CNPq, Conselho Nacional de Desenvolvimento Científico e Tecnológico - Brasil; University of Skövde; EU Interreg ÖKS project Game Hub Scandinavia; UFFS, Federal University of Fronteira Sul.
