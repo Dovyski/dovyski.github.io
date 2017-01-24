@@ -16,7 +16,7 @@ tags:
 
 <img src="/public/img/posts/scifibot-devlog2-title-info.gif" title="Scifibot - improved title screen" style="float: right; margin: 7px 7px 7px 20px; width: 40%; height: auto;"/>
 
-This is the second update on Scifibot, my companion app for sci-fi fans. Things are finally starting to take shape, which is great and bad at the same time. It's great because the app is coming together and I can actually see it working. The bad part is that I reached the 90% development mark, which means I have only 10% of work to go. Right?
+This is the second update on <a href="{{ site.baseurl }}{% post_url 2016-12-21-scifibot-devlog-1 %}">Scifibot</a>, my companion app for sci-fi fans. Things are finally starting to take shape, which is great and bad at the same time. It's great because the app is coming together and I can actually see it working. The bad part is that I reached the 90% development mark, which means I have only 10% of work to go. Right?
 
 If you have experience shipping any software that targets real users, you know the last 10% of the development actually represents 90% of the project. That's the amazing development math, but it is true if you want to deliver a product with decent UX instead of a clunky pile of non-functional buttons. My last tasks regarding Scifibot have been almost exclusively focused on UX, like tweaking menus, adjusting buttons, creating visual feedbacks for actions, etc. It's a boring task to me, but it needs to be done.
 
@@ -32,6 +32,6 @@ Things got a bit complex after the sync system was in place, so I needed a way t
 
 Last but not least, I worked on the notification system. It will be responsible for informing the user about new content, especially info regarding titles the user is tracking/following. The gif on the side has a demonstration of the notification system showing two new titles that were added to the catalog recently.
 
-At the moment my focus has been on fixing bugs. There is a very nasty one regarding dynamic screens and navigation. I thought I was using Framework7 in the wrong way, but it seems it is not my fault. It looks more and more like a bug on their side, but I will work around it. After this bug is fixed, I think the app reaches alpha status and I can start packaging and deploying it on real mobile devices. I'm looking forward to doing it!
+At the moment my focus has been on fixing bugs. There is a very nasty one regarding dynamic screens and navigation. I thought I was using [Framework7](https://framework7.io) in the wrong way, but it seems it is not my fault. It looks more and more like a bug on their side, but I will work around it. After this bug is fixed, I think the app reaches alpha status and I can start packaging and deploying it on real mobile devices. I'm looking forward to doing it!
 
 <hr style="clear: both;"/>
