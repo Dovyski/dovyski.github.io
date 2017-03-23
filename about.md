@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+menu: true
 ---
 
 My name is Fernando Bevilacqua, I am a professor of Computer Science, [indie game developer](../games/) and [passionate open-source contributor](https://github.com/Dovyski). In 2007 I obtained a BSc degree in Computer Science at [Federal University of Santa Maria (UFSM)](http://www.ufsm.br), Brazil. In 2009 I finished my masters in Computer Graphics, also at UFSM. Now I am a PhD student at the [University of Skövde](http://his.se), working with serious games at the [InGame Lab](http://www.his.se/en/Research/informatics/Interaction-Lab/InGaMe-Lab/).

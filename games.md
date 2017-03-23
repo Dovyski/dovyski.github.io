@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Games
+menu: true
 ---
 
 Those are the games I made as an indie game developer.

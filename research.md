@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Research
+menu: true
 ---
 
 This is a list of my most relevant research publications and projects. For a complete list of all my academic activities, check my [Lattes CV](http://lattes.cnpq.br/7744662926303212) or my [Google Scholar profile](https://scholar.google.se/citations?user=GOWYhzwAAAAJ&hl=en&oi=ao).
@@ -62,6 +63,8 @@ ___
 
 #### READMINDS: REmote Analysis and Detection of Multifactorial INputs for Discovery of Stress
 **Date:** 2015 - present
+
+**Website:** [click here to visit the projects website.](./readmind/)
 
 **Sponsorship:** CNPq, Conselho Nacional de Desenvolvimento Científico e Tecnológico - Brasil; University of Skövde; EU Interreg ÖKS project Game Hub Scandinavia; UFFS, Federal University of Fronteira Sul.
 
