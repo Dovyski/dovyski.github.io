@@ -20,12 +20,5 @@ The research is being conducted at the [University of Skövde](https://www.his.s
 
 ---
 
-### Videos
-<iframe style="width: 100%; height: 400px;" src="https://www.youtube.com/embed/jk6kC0vvNAY" frameborder="0" allowfullscreen></iframe>
-<iframe style="width: 100%; height: 400px;" src="https://www.youtube.com/embed/AX4onVayin4" frameborder="0" allowfullscreen></iframe>
-<iframe style="width: 100%; height: 400px;" src="https://www.youtube.com/embed/Xq9u63g65O4" frameborder="0" allowfullscreen></iframe>
-
----
-
 ### Images
 ![Readminds](/public/img/readmind-fernando.jpg)
