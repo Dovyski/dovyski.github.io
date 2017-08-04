@@ -18,6 +18,7 @@ mv $BASE_SITE_FOLDER/dovyski.github.io.git/_layouts/default.nogithub.html $BASE_
 echo 'Deploying jekyll website...'
 jekyll build --source $BASE_SITE_FOLDER/dovyski.github.io.git/ --destination $BASE_SITE_FOLDER/site/
 echo 'All good!'
+date +%Y-%m-%d:%H:%M:%S
 ```
 
 Still in the parent folder of `DocumentRoot`, clone the website repository:
