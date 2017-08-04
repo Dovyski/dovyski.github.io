@@ -9,7 +9,7 @@ permalink:        /:categories/:year/:month/:title/
 title:            Fernando Bevilacqua
 tagline:          'Professor of Computer Science and indie game developer'
 description:      'Fernando Bevilacqua is a Professor of Computer Science and indie game developer.'
-url:              http://www.fernandobevilacqua.com
+url:              https://www.fernandobevilacqua.com
 baseurl:          /
 redirect:         true
 
@@ -20,7 +20,7 @@ author:
 paginate:         5
 paginate_path:    "page:num"
 
-gems:             [jekyll-paginate]
+plugins:             [jekyll-paginate]
 
 # Custom vars
 version:          2.1.0
