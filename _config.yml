@@ -11,6 +11,7 @@ tagline:          'Professor of Computer Science and indie game developer'
 description:      'Fernando Bevilacqua is a Professor of Computer Science and indie game developer.'
 url:              http://www.fernandobevilacqua.com
 baseurl:          /
+redirect:         true
 
 author:
   name:           'Fernando Bevilacqua'
