@@ -8,37 +8,65 @@ This is a list of my most relevant research publications and projects. For a com
 
 ## Publications
 
-### Papers in journals
-
-![Efficient medical image access in diagnostic environments with limited resources](/public/img/paper-rbe.jpg)
-
-VENSON, J. E.; BEVILACQUA, F.; ONUKI, F.; D’ORNELLAS, M. C.; MACIEL, A.. Efficient medical image access in diagnostic environments with limited resources. Research on Biomedical Engineering, Epub January 12, 2017.
-[[DOI]](https://dx.doi.org/10.1590/2446-4740.05915)
-
+<div class="paper">
+<h2>Efficient medical image access in diagnostic environments with limited resources <span class="type journal">journal</span> <span class="type misc"><a href="https://dx.doi.org/10.1590/2446-4740.05915" target="_blank">DOI: 10.1590/2446-4740.05915</a></span></h2>
+<p class="authors">VENSON, J. E.; BEVILACQUA, F.; ONUKI, F.; D’ORNELLAS, M. C.; MACIEL, A.. Research on Biomedical Engineering, Epub January 12, 2017.</p>
+<img src="/public/img/paper-rbe.jpg" title="Efficient medical image access in diagnostic environments with limited resources" />
+<p class="abstract">
+Introduction: A medical application running outside the workstation environment has to deal with several constraints, such as reduced available memory and low network bandwidth. The aim of this paper is to present an approach to optimize the data flow for fast image transfer and visualization on mobile devices and remote stationary devices. Methods: We use a combination of client- and server-side procedures to reduce the amount of information transferred by the application. Our approach was implemented on top of a commercial PACS and evaluated through user experiments with specialists in typical diagnosis tasks. The quality of the system outcome was measured in relation to the accumulated amount of network data transference and the amount of memory used in the host device. Besides, the system's quality of use (usability) was measured through participants’ feedback. Results: Contrarily to previous approaches, ours keeps the application within the memory constraints, minimizing data transferring whenever possible, allowing the application to run on a variety of devices. Moreover, it does that without sacrificing the user experience. Experimental data point that over 90% of the users did not notice any delays or degraded image quality, and when they did, they did not impact on the clinical decisions. Conclusion: The combined activities and orchestration of our methods allow the image viewer to run on resource-constrained environments, such as those with low network bandwidth or little available memory. These results demonstrate the ability to explore the use of mobile devices as a support tool in the medical workflow.
+</p>
+</div>
 ___
 
-### Papers in conferences
+<div class="paper">
+<h2>Variations of Facial Actions While Playing Games with Inducing Boredom and Stress <span class="type conference">conference</span> <span class="type misc"><a href="http://dx.doi.org/10.1109/VS-GAMES.2016.7590374" target="_blank">DOI: 10.1109/VS-GAMES.2016.7590374</a></span></h2>
+<p class="authors">BEVILACQUA, F.; BACKLUND, P.; ENGSTROM, H.. In: VS-Games 2016, 2016, Barcelona. 8th International Conference on Games and Virtual Worlds for Serious Applications (VS-Games), 2016.</p>
+<img src="/public/img/paper-variations.jpg" title="Variations of Facial Actions While Playing Games with Inducing Boredom and Stress" />
+<p class="abstract">
+This paper presents an experiment aimed at empirically exploring the variations of facial actions (FA) during gaming sessions with induced boredom and stress. Twenty adults with different ages and gaming experiences played three games while being recorded by a video camera and monitored by a heart rate sensor. The games were carefully designed to have a linear progression from a boring to a stressful state. Self-reported answers indicate participants perceived the games as being boring at the beginning and stressful at the end. The 6 hours of recordings of all subjects were manually analyzed and FA were annotated. We annotated FA that appeared in the recordings at least twice; annotations were categorized by the period when they happened (boring/stressful part of the games) and analysed on a group and on an individual level. Group level analysis revealed that FA patterns were related to no more than 25% of the subjects. The individual level analysis revealed particular patterns for 50% of the subjects. More FA annotations were made during the stressful part of the games. We conclude that, for the context of our experiment, FA provide an unclear foundation for detection of boredom/stressful states when observed from a group level perspective, while the individual level perspective might produce more information.
+</p>
+<small class="highlight">NOTE: Awarded best student paper of the conference.</small>
+</div>
+___
 
-![Variations of Facial Actions While Playing Games with Inducing Boredom and Stress](/public/img/paper-variations.jpg)
+<div class="paper">
+<h2>Dynamic Optimization for Fast Image Transfer and Visualization for Mobile and Stationary Devices: A Performance Evaluation Using Animati Viewer <span class="type conference">conference</span></h2>
+<p class="authors">VENSON, J. E.; BEVILACQUA, F.; MAIA, C. E. S.; DORNELLAS, M. C.. In: XV Workshop de Informática Médica (WIM 2015), 2015, Recife. Anais do XV Workshop de Informática Médica, 2015.</p>
+<img src="/public/img/paper-mobile-medicine.jpg" title="Dynamic Optimization for Fast Image Transfer and Visualization for Mobile and Stationary Devices: A Performance Evaluation Using Animati Viewer" />
+<p class="abstract">
+A medical application running outside the workstation environment has to deal with several limitations, such as reduced available memory and low network bandwidth. Adaptations and novel approaches are required to make applications overcome such problems. This paper presents an approach that uses a combination of client-and server-side procedures to dynamically optimize the data flow for fast image transfer and visualization on mobile and stationary devices. The main goal of our approach is to minimize the amount of data transferred to and used in the host device without sacrificing the user experience. Our approach was implemented and validated using a real use case, the application Animati Viewer, which is a web visualizer for diagnostic images. The evaluation was measured using metrics such as the accumulated amount of network transferred data and the amount of memory used in the host device. The results show that our approach is feasible and, in one of our tests, it transferred only 7.73% of the amount of data downloaded by the OsiriX mobile.
+</p>
+</div>
+___
 
-BEVILACQUA, F.; BACKLUND, P.; ENGSTROM, H.. Variations of Facial Actions While Playing Games with Inducing Boredom and Stress. In: VS-Games 2016, 2016, Barcelona. 8th International Conference on Games and Virtual Worlds for Serious Applications (VS-Games), 2016. [[DOI]](http://dx.doi.org/10.1109/VS-GAMES.2016.7590374) <small class="highlight">NOTE: Awarded best student paper of the conference.</small>
+<div class="paper">
+<h2>Procedural Generation of 3D Canyons <span class="type conference">conference</span> <span class="type misc"><a href="http://dx.doi.org/10.1109/SIBGRAPI.2014.41" target="_blank">DOI: 10.1109/SIBGRAPI.2014.41</a></span></h2>
+<p class="authors">CARLI, D. M.; POZZER, C. T.; BEVILACQUA, F.; SCHETINGER, V.. In: 2014 27th SIBGRAPI Conference on Graphics, Patterns and Images (SIBGRAPI). v. 27. p. 103.</p>
+<img src="/public/img/paper-canyons.jpg" title="Procedural Generation of 3D Canyons" />
+<p class="abstract">
+This paper presents a non-assisted method for procedural generation of 3D canyon scenes. Our approach combines techniques of computer graphics, computer vision, image processing and graph search algorithms. Our main contribution is a generation approach that uses noise-generated height maps that are carefully transformed and manipulated by data clustering (through the Mean Shift algorithm) and image operations in order to mimic the observed geological features of real canyons. Several parameters are used to guide and constrain the generation of terrains, canyon features, course and shape of rivers, plain areas, soft slope regions, cliffs and plateaus.
+</p>
+</div>
+___
 
-![Dynamic Optimization for Fast Image Transfer and Visualization for Mobile and Stationary Devices: A Performance Evaluation Using Animati Viewer](/public/img/paper-mobile-medicine.jpg)
+<div class="paper">
+<h2>A Survey of Procedural Content Generation Techniques Suitable to Game Development <span class="type conference">conference</span> <span class="type misc"><a href="http://dx.doi.org/10.1109/SBGAMES.2011.15" target="_blank">DOI: 10.1109/SBGAMES.2011.15</a></span></h2>
+<p class="authors">CARLI, D. M.; BEVILACQUA, F. ; POZZER, C. T.; DORNELLAS, M. C.. In: 2011 Brazilian Symposium on Games and Digital Entertainment (SBGAMES), 2011, Salvador. 2011 Brazilian Symposium on Games and Digital Entertainment. v. X. p. 26.</p>
+<img src="/public/img/paper-survey.jpg" title="A Survey of Procedural Content Generation Techniques Suitable to Game Development" />
+<p class="abstract">
+The development of a complex game is a time consuming task that requires a significant amount of content generation, including terrains, objects, characters, etc that requires a lot of effort from the a designing team. The quality of such content impacts the project costs and budget. One of the biggest challenges concerning the content is how to improve its details and at the same time lower the creation costs. In this context procedural content generation techniques can help to reduce the costs associated with content creation. This paper presents a survey of classical and modern techniques focused on procedural content generation suitable for game development. They can be used to produce terrains, coastlines, rivers, roads and cities. All techniques are classified as assisted (require human intervention/guidance in order to produce results) or non-assisted (require few or no human intervention/guidance to produce the desired results).
+</p>
+</div>
+___
 
-VENSON, J. E.; BEVILACQUA, F.; MAIA, C. E. S.; DORNELLAS, M. C.. Dynamic Optimization for Fast Image Transfer and Visualization for Mobile and Stationary Devices: A Performance Evaluation Using Animati Viewer. In: XV Workshop de Informática Médica, 2015, Recife. Anais do XV Workshop de Informática Médica, 2015.
-
-![Procedural Generation of 3D Canyons](/public/img/paper-canyons.jpg)
-
-CARLI, D. M.; POZZER, C. T.; BEVILACQUA, F.; SCHETINGER, V.. Procedural Generation of 3D Canyons. In: 2014 27th SIBGRAPI Conference on Graphics, Patterns and Images (SIBGRAPI), 2014, Brazil. 2014 27th SIBGRAPI Conference on Graphics, Patterns and Images. v. 27. p. 103. [[DOI]](http://dx.doi.org/10.1109/SIBGRAPI.2014.41)
-
-![A Survey of Procedural Content Generation Techniques Suitable to Game Development](/public/img/paper-survey.jpg)
-
-CARLI, D. M.; BEVILACQUA, F. ; POZZER, C. T.; DORNELLAS, M. C.. A Survey of Procedural Content Generation Techniques Suitable to Game Development. In: 2011 Brazilian Symposium on Games and Digital Entertainment (SBGAMES), 2011, Salvador. 2011 Brazilian Symposium on Games and Digital Entertainment. v. X. p. 26. [[DOI]](http://dx.doi.org/10.1109/SBGAMES.2011.15)
-
-![Charack: Tool for Real-Time Generation of Pseudo-Infinite Virtual Worlds for 3D Games](/public/img/paper-charack.png)
-
-BEVILACQUA, F.; POZZER, C. T.; D'ORNELLAS, M. C.. Charack: Tool for Real-Time Generation of Pseudo-Infinite Virtual Worlds for 3D Games. In: VIII Brazilian Symposium on Games and Digital Entertainment (SBGAMES), 2009, Rio de Janeiro. p. 111. [[DOI]](http://dx.doi.org/10.1109/SBGAMES.2009.21)
-
+<div class="paper">
+<h2>Charack: Tool for Real-Time Generation of Pseudo-Infinite Virtual Worlds for 3D Games <span class="type conference">conference</span> <span class="type misc"><a href="http://dx.doi.org/10.1109/SBGAMES.2009.21" target="_blank">DOI: 10.1109/SBGAMES.2009.21</a></span></h2>
+<p class="authors">BEVILACQUA, F.; POZZER, C. T.; D'ORNELLAS, M. C.. In: VIII Brazilian Symposium on Games and Digital Entertainment (SBGAMES), 2009, Rio de Janeiro. p. 111.</p>
+<img src="/public/img/paper-charack.png" title="Charack: Tool for Real-Time Generation of Pseudo-Infinite Virtual Worlds for 3D Games" />
+<p class="abstract">
+In MMO games the player’s experience is mainly influenced by the size and details of the virtual world. Technically the bigger the world is, the bigger is the time the player takes to explore all the places. This work presents a tool (named Charack) able to generate pseudo-infinite virtual worlds with different types of terrains. Using a combination of algorithms and content management methods, Charack is able to create beaches, islands, bays and coastlines that imitates real world landscapes. The tool clearly distinguish the generation of each type of content. The contribution of the tool is the ability to generate arbitrarily large pieces of land (or landscape) focusing on detailed coastline generation, by means of using procedural algorithms.
+</p>
+</div>
 ___
 
 ### Short papers in conferences
