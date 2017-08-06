@@ -352,37 +352,34 @@ div.paper .abstract {
     font-size: 0.75em;
 }
 
-div.paper .type {
+.type {
     background: #ff0000;
     color: #fff;
-    padding: 3px;
+    padding: 3px 6px 3px 6px;
     font-size: 0.6em;
     text-transform: uppercase;
-    -moz-border-radius: 3px;
-    -webkit-border-radius: 3px;
-    border-radius: 3px; /* future proofing */
-    margin-right: 5px;
+    margin-right: 2px;
 }
 
-div.paper .type.journal {
+.type.journal {
     background: #e27100;
     color: #fff;
 }
 
-div.paper .type.conference {
+.type.conference {
     background: #2f9624;
     color: #fff;
 }
 
-div.paper .type.misc {
+.type.misc {
     background: #115193;
     color: #fff;
 }
 
-div.paper .type.misc a,
-div.paper .type.misc a:active,
-div.paper .type.misc a:hover,
-div.paper .type.misc a:visited {
+.type.misc a,
+.type.misc a:active,
+.type.misc a:hover,
+.type.misc a:visited {
     color: #fff;
     text-decoration: none;
 }

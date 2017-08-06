@@ -71,11 +71,11 @@ ___
 
 ### Short papers in conferences
 
-- BEVILACQUA, F.; BACKLUND, P.; ENGSTROM, H.. Proposal for Non-Contact Analysis of Multimodal Inputs to Measure Stress Level in Serious Games. In: 2015 7th International Conference on Games and Virtual Worlds for Serious Applications (VSGames), 2015, Skövde. 2015 7th International Conference on Games and Virtual Worlds for Serious Applications (VS-Games). p. 1. [[DOI]](http://dx.doi.org/10.1109/VS-GAMES.2015.7295783)
+- BEVILACQUA, F.; BACKLUND, P.; ENGSTROM, H.. Proposal for Non-Contact Analysis of Multimodal Inputs to Measure Stress Level in Serious Games. In: 2015 7th International Conference on Games and Virtual Worlds for Serious Applications (VSGames), 2015, Skövde. <span class="type misc"><a href="http://dx.doi.org/10.1109/VS-GAMES.2015.7295783" target="_blank">DOI: VS-GAMES.2015.7295783</a></span>
 
-- BEVILACQUA, F.; SEBBEN, A. ; TORCHELSEN, R. P.. Jarena: experimenting a tool for teaching object-oriented programming concepts using Java, games and software agents. In: X Simpósio Brasileiro de Games e Entretenimento Digital, 2011, Bahia. Proceedings of the Brazilian Symposium on Computer Games and Digital Entertainment, 2011. v. X.
+- BEVILACQUA, F.; SEBBEN, A. ; TORCHELSEN, R. P.. Jarena: experimenting a tool for teaching object-oriented programming concepts using Java, games and software agents. In: X Brazilian Symposium on Computer Games and Digital Entertainment (SBGames), 2011, Bahia.
 
-- BEVILACQUA, F.; POZZER, C. . Proposal of a tool for pseudo-infinite 3D virtual world genaration. In: SBGAMES 2007, 2007, São Leopoldo - RS. SBGAMES 2007, 2007.
+- BEVILACQUA, F.; POZZER, C. . Proposal of a tool for pseudo-infinite 3D virtual world generation. In: SBGAMES 2007, 2007, São Leopoldo/RS. SBGAMES 2007, 2007.
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 - BRANCHER, J. D. ; BEVILACQUA, F. ; FERREIRA, N. B. ; IOP, R. D. ; MINUZZI, L. ; FERREIRA, T. K. . Um Portal de Jogos Casuais Educativos. Jogos Eletrônicos: Mapeando Novas Perspectivas. 1ed.Florianópolis, SC: VISUAL BOOKS, 2009, v. 1, p. 197-210.
 
-- My master's dissertation: BEVILACQUA, F.. Ferramenta para Geração de Mundos Virtuais Pseudo-Infinitos para Jogos 3D MMO. 2009. [[PDF, in Brazilian portuguese]](http://charack.googlecode.com/svn-history/r54/master-thesis/dissertacao.pdf).
+- My master's dissertation: BEVILACQUA, F.. Ferramenta para Geração de Mundos Virtuais Pseudo-Infinitos para Jogos 3D MMO. 2009. [[PDF, in Brazilian portuguese]](https://github.com/Dovyski/master-thesis/blob/master/dissertacao.pdf).
 
 ___
 
