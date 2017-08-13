@@ -22,10 +22,13 @@ ___
 <h2>Variations of Facial Actions While Playing Games with Inducing Boredom and Stress <span class="type conference">conference</span> <span class="type misc"><a href="http://dx.doi.org/10.1109/VS-GAMES.2016.7590374" target="_blank">DOI: 10.1109/VS-GAMES.2016.7590374</a></span></h2>
 <p class="authors">BEVILACQUA, F.; BACKLUND, P.; ENGSTROM, H.. In: VS-Games 2016, 2016, Barcelona. 8th International Conference on Games and Virtual Worlds for Serious Applications (VS-Games), 2016.</p>
 <img src="/public/img/paper-variations.jpg" title="Variations of Facial Actions While Playing Games with Inducing Boredom and Stress" />
+<small class="highlight">NOTE: Awarded best student paper of the conference.</small>
 <p class="abstract">
 This paper presents an experiment aimed at empirically exploring the variations of facial actions (FA) during gaming sessions with induced boredom and stress. Twenty adults with different ages and gaming experiences played three games while being recorded by a video camera and monitored by a heart rate sensor. The games were carefully designed to have a linear progression from a boring to a stressful state. Self-reported answers indicate participants perceived the games as being boring at the beginning and stressful at the end. The 6 hours of recordings of all subjects were manually analyzed and FA were annotated. We annotated FA that appeared in the recordings at least twice; annotations were categorized by the period when they happened (boring/stressful part of the games) and analysed on a group and on an individual level. Group level analysis revealed that FA patterns were related to no more than 25% of the subjects. The individual level analysis revealed particular patterns for 50% of the subjects. More FA annotations were made during the stressful part of the games. We conclude that, for the context of our experiment, FA provide an unclear foundation for detection of boredom/stressful states when observed from a group level perspective, while the individual level perspective might produce more information.
 </p>
-<small class="highlight">NOTE: Awarded best student paper of the conference.</small>
+<p class="more">
+    <span class="type extra"><a href="https://github.com/Dovyski/face-tracking-games" target="_blank"><img src="/public/img/code.png" title="Source code" /> Source code</a></span>
+</p>
 </div>
 ___
 
@@ -66,17 +69,41 @@ ___
 <p class="abstract">
 In MMO games the player’s experience is mainly influenced by the size and details of the virtual world. Technically the bigger the world is, the bigger is the time the player takes to explore all the places. This work presents a tool (named Charack) able to generate pseudo-infinite virtual worlds with different types of terrains. Using a combination of algorithms and content management methods, Charack is able to create beaches, islands, bays and coastlines that imitates real world landscapes. The tool clearly distinguish the generation of each type of content. The contribution of the tool is the ability to generate arbitrarily large pieces of land (or landscape) focusing on detailed coastline generation, by means of using procedural algorithms.
 </p>
+<p class="more">
+    <span class="type extra"><a href="https://github.com/Dovyski/charack" target="_blank"><img src="/public/img/code.png" title="Source code" /> Source code</a></span>
+</p>
 </div>
 ___
 
-### Short papers in conferences
+<div class="paper">
+<h2>Proposal for Non-Contact Analysis of Multimodal Inputs to Measure Stress Level in Serious Games <span class="type conference">conference</span> <span class="type short">short paper</span> <span class="type misc"><a href="http://dx.doi.org/10.1109/VS-GAMES.2015.7295783" target="_blank">DOI: VS-GAMES.2015.7295783</a></span></h2>
+<p class="authors">BEVILACQUA, F.; BACKLUND, P.; ENGSTROM, H.. In: 2015 7th International Conference on Games and Virtual Worlds for Serious Applications (VSGames), 2015, Skövde.</p>
+<p class="abstract">
+The process of monitoring user emotions in serious games or human-computer interaction is usually obtrusive. The work-flow is typically based on sensors that are physically attached to the user. Sometimes those sensors completely disturb the user experience, such as finger sensors that prevent the use of keyboard/mouse. This short paper presents techniques used to remotely measure different signals produced by a person, e.g. heart rate, through the use of a camera and computer vision techniques. The analysis of a combination of such signals (multimodal input) can be used in a variety of applications such as emotion assessment and measurement of cognitive stress. We present a research proposal for measurement of player's stress level based on a non-contact analysis of multimodal user inputs. Our main contribution is a survey of commonly used methods to remotely measure user input signals related to stress assessment.
+</p>
+</div>
+___
 
-- BEVILACQUA, F.; BACKLUND, P.; ENGSTROM, H.. Proposal for Non-Contact Analysis of Multimodal Inputs to Measure Stress Level in Serious Games. In: 2015 7th International Conference on Games and Virtual Worlds for Serious Applications (VSGames), 2015, Skövde. <span class="type misc"><a href="http://dx.doi.org/10.1109/VS-GAMES.2015.7295783" target="_blank">DOI: VS-GAMES.2015.7295783</a></span>
+<div class="paper">
+<h2>Jarena: experimenting a tool for teaching object-oriented programming concepts using Java, games and software agents <span class="type conference">conference</span> <span class="type short">short paper</span> <span class="type misc"><a href="http://dx.doi.org/10.1109/SBGAMES.2009.21" target="_blank">DOI:&nbsp;10.1109/SBGAMES.2009.21</a></span></h2>
+<p class="authors">BEVILACQUA, F.; SEBBEN, A. ; TORCHELSEN, R. P.. In: X Brazilian Symposium on Computer Games and Digital Entertainment (SBGames), 2011, Bahia.</p>
+<img src="/public/img/paper-jarena.png" title="Jarena: experimenting a tool for teaching object-oriented programming concepts using Java, games and software agents" />
+<p class="abstract">
+An important part of the student evolution through the computer science program is when they learn the object-oriented programing paradigm. This paper presents the preparation, execution and results of a game related assignment experimentally applied to a group of students attending the objected-oriented programming course during the first half of the second year of a computer science program. The task consisted of programming a software agent (described as a Java class) and test it in a battle environment represented by an arena. The assignment implementation is based on a tool called Jarena that was developed by the authors for the experiment. The contribution of this paper is the tool itself and the documentation of the results the authors achieved with the experiment.
+</p>
+<p class="more">
+    <span class="type extra"><a href="https://github.com/Dovyski/Jarena" target="_blank"><img src="/public/img/code.png" title="Source code" /> Source code</a></span>
+</p>
+</div>
+___
 
-- BEVILACQUA, F.; SEBBEN, A. ; TORCHELSEN, R. P.. Jarena: experimenting a tool for teaching object-oriented programming concepts using Java, games and software agents. In: X Brazilian Symposium on Computer Games and Digital Entertainment (SBGames), 2011, Bahia.
-
-- BEVILACQUA, F.; POZZER, C. . Proposal of a tool for pseudo-infinite 3D virtual world generation. In: SBGAMES 2007, 2007, São Leopoldo/RS. SBGAMES 2007, 2007.
-
+<div class="paper">
+<h2>Proposal of a tool for pseudo-infinite 3D virtual world generation <span class="type conference">conference</span> <span class="type short">short paper</span></h2>
+<p class="authors">BEVILACQUA, F.; POZZER, C.. In: Brazilian Symposium on Computer Games and Digital Entertainment (SBGames), 2007, São Leopoldo.</p>
+<p class="abstract">
+We present a proposal of a tool for pseudo-infinite 3D virtual world generation. The main idea is to split up the problem of generating a virtual world in three main steps: the first one is to generate the paths, the second one is to generate the terrain and the last one is to generate the world elements, like grass over the fields, trees, rocks and plants, for example. The world is divided in cells and only the ones that are visible by the user are kept in memory. To reach this goal, many techniques will be used, like height maps, real-time cities generation, terrain texturing and path-planning.
+</p>
+</div>
 ___
 
 ### Book chapters or complete books

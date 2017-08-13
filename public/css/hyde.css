@@ -371,9 +371,24 @@ div.paper .abstract {
     color: #fff;
 }
 
+.type.short {
+    background: #ffff05;
+    color: #000;
+}
+
 .type.misc {
     background: #115193;
     color: #fff;
+}
+
+.type.extra {
+    padding: 5px 5px 8px 5px;
+    background: #d1d1d1;
+    color: #000;
+}
+
+.type.extra:hover {
+    background: #a1a1a1;
 }
 
 .type.misc a,
@@ -384,7 +399,23 @@ div.paper .abstract {
     text-decoration: none;
 }
 
-div.paper li {
-    float: left;
-    margin-right: 40px;
+div.paper p.more {
+    color: #636363;
+    font-weight: bold;
+}
+
+.type.extra a,
+.type.extra a:active,
+.type.extra a:hover,
+.type.extra a:visited {
+    color: #636363;
+    text-decoration: none;
+}
+
+div.paper p.more img {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0 3px;
+    vertical-align: middle;
 }
