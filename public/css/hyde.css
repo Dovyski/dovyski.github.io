@@ -348,8 +348,8 @@ div.item .meta {
     color: #717171;
 }
 
-div.item .description {
-    font-size: 0.75em;
+div.item .description.small {
+    font-size: 0.8em;
 }
 
 .type {
@@ -432,6 +432,8 @@ p.more img {
 }
 
 hr.section-divider {
+    clear: both;
+    margin: 0;
     border-top: 2px solid #acacac;
     padding-bottom: 20px;
 }

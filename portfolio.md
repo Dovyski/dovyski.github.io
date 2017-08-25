@@ -6,12 +6,23 @@ menu: true
 
 I have already placed my hands in a variety of different projects, including (but not limited to) games, softwares and web comics. Below you can find a list of all the things I worked on (or still do) which I consider significant.
 
-## Software development
+<h2 class="section-title"><img src="/public/img/gear.png" /> Software development</h2>
+<hr class="section-divider" />
 
-### [Codebot](https://github.com/Dovyski/Codebot)
+<div class="item">
+<h2>Codebot</h2>
+<p class="meta"></p>
+<a href="./readmind/"><img src="/public/img/codebot.png" title="Codebot" /></a>
+<p class="description">
 Free and open source (MIT license) IDE focused on game development.
+</p>
+<p class="more">
+	<span class="type extra"><a href="(https://github.com/Dovyski/Codebot"><img src="/public/img/code.png" title="Website" /> Source code</a></span>
+    <span class="type extra"><a href="(https://github.com/Dovyski/Codebot"><img src="/public/img/link.png" title="Website" /> Website</a></span>
+</p>
+</div>
 
-![Codebot](/public/img/codebot.png)
+![Codebot]()
 
 ### [Jarena](https://github.com/Dovyski/Jarena)
 A game approach to teaching OPP and Java.
