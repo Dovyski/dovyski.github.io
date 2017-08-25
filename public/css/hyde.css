@@ -333,22 +333,22 @@ small.highlight {
     font-style: italic;
 }
 
-/* Research section */
+/* Research and portifolio section */
 
-div.paper {
+div.item {
     margin-bottom: 20px;
 }
 
-div.paper h2 {
+div.item h2 {
     font-size: 1.1em;
 }
 
-div.paper .authors {
+div.item .meta {
     font-size: 0.8em;
     color: #717171;
 }
 
-div.paper .abstract {
+div.item .description {
     font-size: 0.75em;
 }
 
@@ -399,7 +399,7 @@ div.paper .abstract {
     text-decoration: none;
 }
 
-div.paper p.more {
+p.more {
     color: #636363;
     font-weight: bold;
 }
@@ -412,10 +412,26 @@ div.paper p.more {
     text-decoration: none;
 }
 
-div.paper p.more img {
+p.more img {
     width: 20px;
     height: 20px;
     display: inline-block;
     margin: 0 3px;
     vertical-align: middle;
+}
+
+.section-title {
+    padding-top: 50px;
+    margin-bottom: 0px;
+}
+
+.section-title img {
+    padding-top: 5px;
+    float: left;
+    margin-right: 10px;
+}
+
+hr.section-divider {
+    border-top: 2px solid #acacac;
+    padding-bottom: 20px;
 }
