@@ -27,6 +27,19 @@ Sponsorship: CNPq, Conselho Nacional de Desenvolvimento Científico e Tecnológi
 <hr class="section-divider" />
 
 <div class="item">
+<h2>Changes in heart rate and facial actions during a gaming session with provoked boredom and stress <span class="type journal">journal</span> <span class="type misc"><a href="https://doi.org/10.1016/j.entcom.2017.10.004" target="_blank">DOI: 10.1016/j.entcom.2017.10.004</a></span></h2>
+<p class="meta">BEVILACQUA, F.; ENGSTROM, H.; BACKLUND, P.. Entertainment Computing, October 23, 2017.</p>
+<img src="/public/img/paper-changes.jpg" title="Changes in heart rate and facial actions during a gaming session with provoked boredom and stress" />
+<p class="description small">
+This paper presents an experiment aimed at exploring the relation between facial actions (FA), heart rate (HR) and emotional states, particularly stress and boredom, during the interaction with games. Subjects played three custom-made games with a linear and constant progression from a boring to a stressful state, without pre-defined levels, modes or stopping conditions. Such configuration gives our experiment a novel approach for the exploration of FA and HR regarding their connection to emotional states, since we can categorize information according to the induced (and theoretically known) emotional states on a user level. The HR data was divided into segments, whose HR mean was calculated and compared in periods (boring/stressful part of the games). Additionally the 6 hours of recordings were manually analyzed and FA were annotated and categorized in the same periods. Findings show that variations of HR and FA on a group and on an individual level are different when comparing boring and stressful parts of the gaming sessions. This paper contributes information regarding variations of HR and FA in the context of games, which can potentially be used as input candidates to create user-tailored models for emotion detection with game-based emotion elicitation sources.
+</p>
+<p class="more">
+    <span class="type extra"><a href="https://github.com/Dovyski/face-tracking-games" target="_blank"><img src="/public/img/code.png" title="Source code" /> Source code</a></span>
+</p>
+</div>
+___
+
+<div class="item">
 <h2>Efficient medical image access in diagnostic environments with limited resources <span class="type journal">journal</span> <span class="type misc"><a href="https://dx.doi.org/10.1590/2446-4740.05915" target="_blank">DOI: 10.1590/2446-4740.05915</a></span></h2>
 <p class="meta">VENSON, J. E.; BEVILACQUA, F.; ONUKI, F.; D’ORNELLAS, M. C.; MACIEL, A.. Research on Biomedical Engineering, Epub January 12, 2017.</p>
 <img src="/public/img/paper-rbe.jpg" title="Efficient medical image access in diagnostic environments with limited resources" />
