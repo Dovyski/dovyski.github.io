@@ -1,5 +1,5 @@
 ---
-title: Don't say you can do any thing. Say you can pursue anything instead.
+title: Counting time in minutes in the industry vs in years in the academia
 author: Fernando Bevilacqua
 layout: post
 categories:
