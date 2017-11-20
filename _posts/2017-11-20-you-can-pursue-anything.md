@@ -5,6 +5,7 @@ layout: post
 categories:
   - blog
 tags:
+  - thoughts
 
 ---
 
