@@ -27,6 +27,19 @@ Sponsorship: CNPq, Conselho Nacional de Desenvolvimento Científico e Tecnológi
 <hr class="section-divider" />
 
 <div class="item">
+<h2>Accuracy Evaluation of Remote Photoplethysmography Estimations of Heart Rate in Gaming Sessions With Natural Behavior <span class="type conference">conference</span></h2>
+<p class="meta">BEVILACQUA, F.; ENGSTROM, H.; BACKLUND, P.. In: ACE 2017, London. 14th International Conference On Advances In Computer Entertainment Technology, 2017.</p>
+<img src="/public/img/paper-accuracy.png" title="Accuracy Evaluation of Remote Photoplethysmography Estimations of Heart Rate in Gaming Sessions With Natural Behavior" />
+<p class="description small">
+Remote photoplethysmography (rPPG) can be used to remotely estimate heart rate (HR) of users to infer their emotional state. However natural body movement and facial actions of users significantly impact such techniques, so their reliability within contexts involving natural behavior must be checked. We present an experiment focused on the accuracy evaluation of an established rPPG technique in a gaming context. The technique was applied to estimate the HR of subjects behaving naturally in gaming sessions whose games were carefully designed to be casual-themed, similar to off-the-shelf games and have a difficulty level that linearly progresses from a boring to a stressful state. Estimations presented mean error of 2.99 bpm and Pearson correlation r = 0.43, p < 0.001, however with significant variations among subjects. Our experiment is the first to measure the accuracy of an rPPG technique using boredom/stress-inducing casual games with subjects behaving naturally.
+</p>
+<p class="more">
+    <span class="type extra"><a href="https://github.com/Dovyski/face-tracking-games" target="_blank"><img src="/public/img/code.png" title="Source code" /> Source code</a></span>
+</p>
+</div>
+___
+
+<div class="item">
 <h2>Changes in heart rate and facial actions during a gaming session with provoked boredom and stress <span class="type journal">journal</span> <span class="type misc"><a href="https://doi.org/10.1016/j.entcom.2017.10.004" target="_blank">DOI: 10.1016/j.entcom.2017.10.004</a></span></h2>
 <p class="meta">BEVILACQUA, F.; ENGSTROM, H.; BACKLUND, P.. Entertainment Computing, Volume 24, January 2018, Pages 10-20, ISSN 1875-9521.</p>
 <img src="/public/img/paper-changes.jpg" title="Changes in heart rate and facial actions during a gaming session with provoked boredom and stress" />
