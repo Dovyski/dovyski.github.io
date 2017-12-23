@@ -855,6 +855,36 @@ p.more {
     text-decoration: none;
 }
 
+.type.php {
+    background: #2f9624;
+    color: #fff;
+}
+
+.type.js {
+    background: #e27100;
+    color: #fff;
+}
+
+.type.java {
+    background: #ee0000;
+    color: #fff;
+}
+
+.type.mysql {
+    background: #f4ee42;
+    color: #000;
+}
+
+.type.opencv {
+    background: #41d0f4;
+    color: #000;
+}
+
+.type.cpp {
+    background: #af00a6;
+    color: #fff;
+}
+
 p.more img {
     width: 20px;
     height: 20px;
