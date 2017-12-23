@@ -531,16 +531,27 @@ html {
 
 /* Sidebar nav */
 .sidebar-nav {
-  margin-top: 2rem;
+  margin-top: 0.5rem;
   margin-bottom: 1rem;
 }
 .sidebar-nav-item {
   display: block;
   line-height: 1.75;
 }
-a.sidebar-nav-item:hover,
-a.sidebar-nav-item:focus {
-  text-decoration: underline;
+.sidebar-nav-item-sub {
+  display: block-inline;
+  opacity: 0.6;
+  font-size: 0.8em;
+  line-height: 1.60;
+}
+.sidebar-nav-item::before {
+  content: "\00b7";
+  margin-right: 0.5em;
+  opacity: 0.4;
+}
+.sidebar-nav-item-sub::before {
+  content: "\00b7";
+  margin: 0.5em;
 }
 .sidebar-nav-item.active {
   font-weight: bold;

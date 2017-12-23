@@ -20,21 +20,15 @@
     </div>
 
     <nav class="sidebar-nav">
-      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
-
-      {% comment %}
-        The code below dynamically generates a sidebar nav of pages with
-        `layout: page` in the front-matter. See readme for usage.
-      {% endcomment %}
-
-      {% assign pages_list = site.pages %}
-      {% for node in pages_list %}
-        {% if node.title != null %}
-          {% if node.layout == "page" and node.menu == true %}
-            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
-          {% endif %}
-        {% endif %}
-      {% endfor %}
+        <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Blog</a>
+        <a class="sidebar-nav-item{% if page.title == 'About' %} active{% endif %}" href="{{ site.url }}/about">About</a>
+        <a class="sidebar-nav-item{% if page.title == 'Portfolio' %} active{% endif %}" href="{{ site.url }}/portfolio">Portfolio</a>
+        <a class="sidebar-nav-item-sub{% if page.title == 'Games' %} active{% endif %}" href="{{ site.url }}/portfolio/games">Games</a>
+        <a class="sidebar-nav-item-sub{% if page.title == 'Software' %} active{% endif %}" href="{{ site.url }}/portfolio/software">Software</a>
+        <a class="sidebar-nav-item-sub{% if page.title == 'Misc' %} active{% endif %}" href="{{ site.url }}/portfolio/misc">Misc</a>
+        <a class="sidebar-nav-item{% if page.title == 'Academic' %} active{% endif %}" href="{{ site.url }}/academic">Academic</a>
+        <a class="sidebar-nav-item-sub{% if page.title == 'Research' %} active{% endif %}" href="{{ site.url }}/academic/research">Research</a>
+        <a class="sidebar-nav-item-sub{% if page.title == 'Teaching' %} active{% endif %}" href="{{ site.url }}/academic/teaching">Teaching</a>
     </nav>
     <div class="sidebar-contact">
         <h2>Contact:</h2>
