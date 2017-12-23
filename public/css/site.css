@@ -885,6 +885,11 @@ p.more {
     color: #fff;
 }
 
+.type.sqlite {
+    background: #f4ce42;
+    color: #000;
+}
+
 p.more img {
     width: 20px;
     height: 20px;
