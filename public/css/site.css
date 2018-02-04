@@ -793,6 +793,7 @@ div.item .meta {
 
 div.item .description.small {
     font-size: 0.8em;
+    text-align: justify;
 }
 
 .type {
