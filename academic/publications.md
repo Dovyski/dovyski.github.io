@@ -9,6 +9,20 @@ This is a list of my most relevant research publications. For a complete list of
 ___
 
 <div class="item">
+<h2>Automated analysis of facial cues from videos as a potential method for differentiating stress and boredom of players in games <span class="type journal">journal</span></h2>
+<p class="meta">BEVILACQUA, F.; ENGSTROM, H.; BACKLUND, P.. International Journal of Computer Games Technology, 2018 (<em>In press</em>).</p>
+<img src="/public/img/paper-facial-analysis.jpg" title="Automated analysis of facial cues from videos as a potential method for differentiating stress and boredom of players in games" />
+<p class="description small">
+Facial analysis is a promising approach to detect emotions of players unobtrusively, however approaches are commonly evaluated in contexts not related to games, or facial cues are derived from models not designed for analysis of emotions during interactions with games. We present a method for automated analysis of facial cues from videos as a potential tool for detecting stress and boredom of players behaving naturally while playing games. Computer vision is used to automatically and unobtrusively extract 7 facial features aimed to detect the activity of a set of facial muscles. Features are mainly based on the Euclidean distance of facial landmarks and do not rely on pre-defined facial expressions, training of a model or the use of facial standards. An empirical evaluation was conducted on video recordings of an experiment involving games as emotion elicitation sources. Results show statistically significant differences in the values of facial features during boring and stressful periods of gameplay for 5 of the 7 features. We believe our approach is more user-tailored, convenient and better suited for contexts involving games.
+</p>
+<p class="more">
+    <span class="type extra"><a href="https://www.hindawi.com/journals/ijcgt/aip/8734540/" target="_blank"><img src="/public/img/pdf.png" title="PDF" /> Full text (open access)</a></span>
+</p>
+</div>
+___
+
+
+<div class="item">
 <h2>Changes in heart rate and facial actions during a gaming session with provoked boredom and stress <span class="type journal">journal</span> <span class="type misc"><a href="https://doi.org/10.1016/j.entcom.2017.10.004" target="_blank">DOI: 10.1016/j.entcom.2017.10.004</a></span></h2>
 <p class="meta">BEVILACQUA, F.; ENGSTROM, H.; BACKLUND, P.. Entertainment Computing, Volume 24, January 2018, Pages 10-20, ISSN 1875-9521.</p>
 <img src="/public/img/paper-changes.jpg" title="Changes in heart rate and facial actions during a gaming session with provoked boredom and stress" />
