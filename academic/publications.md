@@ -37,7 +37,7 @@ ___
 
 <div class="item">
 <h2>Accuracy Evaluation of Remote Photoplethysmography Estimations of Heart Rate in Gaming Sessions With Natural Behavior <span class="type conference">conference</span></h2>
-<p class="meta">BEVILACQUA, F.; ENGSTROM, H.; BACKLUND, P.. In: ACE 2017, London. 14th International Conference On Advances In Computer Entertainment Technology, 2017.</p>
+<p class="meta">BEVILACQUA, F.; ENGSTROM, H.; BACKLUND, P.. In: ACE 2017, London. 14th International Conference On Advances In Computer Entertainment Technology (ACE 2017), 2017, London.</p>
 <img src="/public/img/paper-accuracy.png" title="Accuracy Evaluation of Remote Photoplethysmography Estimations of Heart Rate in Gaming Sessions With Natural Behavior" />
 <p class="description small">
 Remote photoplethysmography (rPPG) can be used to remotely estimate heart rate (HR) of users to infer their emotional state. However natural body movement and facial actions of users significantly impact such techniques, so their reliability within contexts involving natural behavior must be checked. We present an experiment focused on the accuracy evaluation of an established rPPG technique in a gaming context. The technique was applied to estimate the HR of subjects behaving naturally in gaming sessions whose games were carefully designed to be casual-themed, similar to off-the-shelf games and have a difficulty level that linearly progresses from a boring to a stressful state. Estimations presented mean error of 2.99 bpm and Pearson correlation r = 0.43, p < 0.001, however with significant variations among subjects. Our experiment is the first to measure the accuracy of an rPPG technique using boredom/stress-inducing casual games with subjects behaving naturally.
@@ -60,7 +60,7 @@ ___
 
 <div class="item">
 <h2>Variations of Facial Actions While Playing Games with Inducing Boredom and Stress <span class="type conference">conference</span> <span class="type misc"><a href="http://dx.doi.org/10.1109/VS-GAMES.2016.7590374" target="_blank">DOI: 10.1109/VS-GAMES.2016.7590374</a></span></h2>
-<p class="meta">BEVILACQUA, F.; BACKLUND, P.; ENGSTROM, H.. In: VS-Games 2016, 2016, Barcelona. 8th International Conference on Games and Virtual Worlds for Serious Applications (VS-Games), 2016.</p>
+<p class="meta">BEVILACQUA, F.; BACKLUND, P.; ENGSTROM, H.. In: 8th International Conference on Games and Virtual Worlds for Serious Applications (VS-Games 2016), 2016.</p>
 <img src="/public/img/paper-variations.jpg" title="Variations of Facial Actions While Playing Games with Inducing Boredom and Stress" />
 <small class="highlight">NOTE: Awarded best student paper of the conference.</small>
 <p class="description small">
@@ -74,7 +74,7 @@ ___
 
 <div class="item">
 <h2>Dynamic Optimization for Fast Image Transfer and Visualization for Mobile and Stationary Devices: A Performance Evaluation Using Animati Viewer <span class="type conference">conference</span></h2>
-<p class="meta">VENSON, J. E.; BEVILACQUA, F.; MAIA, C. E. S.; DORNELLAS, M. C.. In: XV Workshop de Informática Médica (WIM 2015), 2015, Recife. Anais do XV Workshop de Informática Médica, 2015.</p>
+<p class="meta">VENSON, J. E.; BEVILACQUA, F.; MAIA, C. E. S.; DORNELLAS, M. C.. In: XV Workshop de Informática Médica (WIM 2015), 2015, Recife.</p>
 <img src="/public/img/paper-mobile-medicine.jpg" title="Dynamic Optimization for Fast Image Transfer and Visualization for Mobile and Stationary Devices: A Performance Evaluation Using Animati Viewer" />
 <p class="description small">
 A medical application running outside the workstation environment has to deal with several limitations, such as reduced available memory and low network bandwidth. Adaptations and novel approaches are required to make applications overcome such problems. This paper presents an approach that uses a combination of client-and server-side procedures to dynamically optimize the data flow for fast image transfer and visualization on mobile and stationary devices. The main goal of our approach is to minimize the amount of data transferred to and used in the host device without sacrificing the user experience. Our approach was implemented and validated using a real use case, the application Animati Viewer, which is a web visualizer for diagnostic images. The evaluation was measured using metrics such as the accumulated amount of network transferred data and the amount of memory used in the host device. The results show that our approach is feasible and, in one of our tests, it transferred only 7.73% of the amount of data downloaded by the OsiriX mobile.
@@ -83,8 +83,18 @@ A medical application running outside the workstation environment has to deal wi
 ___
 
 <div class="item">
+<h2>Proposal for Non-contact Analysis of Multimodal Inputs to Measure Stress Level in Serious Games <span class="type conference">conference</span> <span class="type misc"><a href="https://doi.org/10.1109/VS-GAMES.2015.7295783" target="_blank">DOI: 10.1109/VS-GAMES.2015.7295783</a></span></h2>
+<p class="meta">BEVILACQUA, F.; BACKLUND, P.; ENGSTROM, H.. In: 7th International Conference on Games and Virtual Worlds for Serious Applications (VS-Games 2015), 2015, 171-174 p.</p>
+<img src="/public/img/paper-proposal-stress.png" title="Proposal for Non-contact Analysis of Multimodal Inputs to Measure Stress Level in Serious Games" />
+<p class="description small">
+The process of monitoring user emotions in serious games or human-computer interaction is usually obtrusive. The work-flow is typically based on sensors that are physically attached to the user. Sometimes those sensors completely disturb the user experience, such as finger sensors that prevent the use of keyboard/mouse. This short paper presents techniques used to remotely measure different signals produced by a person, e.g. heart rate, through the use of a camera and computer vision techniques. The analysis of a combination of such signals (multimodal input) can be used in a variety of applications such as emotion assessment and measurement of cognitive stress. We present a research proposal for measurement of player’s stress level based on a non-contact analysis of multimodal user inputs. Our main contribution is a survey of commonly used methods to remotely measure user input signals related to stress assessment.
+</p>
+</div>
+___
+
+<div class="item">
 <h2>Procedural Generation of 3D Canyons <span class="type conference">conference</span> <span class="type misc"><a href="http://dx.doi.org/10.1109/SIBGRAPI.2014.41" target="_blank">DOI: 10.1109/SIBGRAPI.2014.41</a></span></h2>
-<p class="meta">CARLI, D. M.; POZZER, C. T.; BEVILACQUA, F.; SCHETINGER, V.. In: 2014 27th SIBGRAPI Conference on Graphics, Patterns and Images (SIBGRAPI). v. 27. p. 103.</p>
+<p class="meta">CARLI, D. M.; POZZER, C. T.; BEVILACQUA, F.; SCHETINGER, V.. In: 27th SIBGRAPI Conference on Graphics, Patterns and Images (SIBGRAPI), 2014, v. 27. p. 103.</p>
 <img src="/public/img/paper-canyons.jpg" title="Procedural Generation of 3D Canyons" />
 <p class="description small">
 This paper presents a non-assisted method for procedural generation of 3D canyon scenes. Our approach combines techniques of computer graphics, computer vision, image processing and graph search algorithms. Our main contribution is a generation approach that uses noise-generated height maps that are carefully transformed and manipulated by data clustering (through the Mean Shift algorithm) and image operations in order to mimic the observed geological features of real canyons. Several parameters are used to guide and constrain the generation of terrains, canyon features, course and shape of rivers, plain areas, soft slope regions, cliffs and plateaus.
@@ -94,32 +104,10 @@ ___
 
 <div class="item">
 <h2>A Survey of Procedural Content Generation Techniques Suitable to Game Development <span class="type conference">conference</span> <span class="type misc"><a href="http://dx.doi.org/10.1109/SBGAMES.2011.15" target="_blank">DOI: 10.1109/SBGAMES.2011.15</a></span></h2>
-<p class="meta">CARLI, D. M.; BEVILACQUA, F. ; POZZER, C. T.; DORNELLAS, M. C.. In: 2011 Brazilian Symposium on Games and Digital Entertainment (SBGAMES), 2011, Salvador. 2011 Brazilian Symposium on Games and Digital Entertainment. v. X. p. 26.</p>
+<p class="meta">CARLI, D. M.; BEVILACQUA, F. ; POZZER, C. T.; DORNELLAS, M. C.. In: Brazilian Symposium on Games and Digital Entertainment (SBGames), 2011, Salvador.</p>
 <img src="/public/img/paper-survey.jpg" title="A Survey of Procedural Content Generation Techniques Suitable to Game Development" />
 <p class="description small">
 The development of a complex game is a time consuming task that requires a significant amount of content generation, including terrains, objects, characters, etc that requires a lot of effort from the a designing team. The quality of such content impacts the project costs and budget. One of the biggest challenges concerning the content is how to improve its details and at the same time lower the creation costs. In this context procedural content generation techniques can help to reduce the costs associated with content creation. This paper presents a survey of classical and modern techniques focused on procedural content generation suitable for game development. They can be used to produce terrains, coastlines, rivers, roads and cities. All techniques are classified as assisted (require human intervention/guidance in order to produce results) or non-assisted (require few or no human intervention/guidance to produce the desired results).
-</p>
-</div>
-___
-
-<div class="item">
-<h2>Charack: Tool for Real-Time Generation of Pseudo-Infinite Virtual Worlds for 3D Games <span class="type conference">conference</span> <span class="type misc"><a href="http://dx.doi.org/10.1109/SBGAMES.2009.21" target="_blank">DOI: 10.1109/SBGAMES.2009.21</a></span></h2>
-<p class="meta">BEVILACQUA, F.; POZZER, C. T.; D'ORNELLAS, M. C.. In: VIII Brazilian Symposium on Games and Digital Entertainment (SBGAMES), 2009, Rio de Janeiro. p. 111.</p>
-<img src="/public/img/paper-charack.png" title="Charack: Tool for Real-Time Generation of Pseudo-Infinite Virtual Worlds for 3D Games" />
-<p class="description small">
-In MMO games the player’s experience is mainly influenced by the size and details of the virtual world. Technically the bigger the world is, the bigger is the time the player takes to explore all the places. This work presents a tool (named Charack) able to generate pseudo-infinite virtual worlds with different types of terrains. Using a combination of algorithms and content management methods, Charack is able to create beaches, islands, bays and coastlines that imitates real world landscapes. The tool clearly distinguish the generation of each type of content. The contribution of the tool is the ability to generate arbitrarily large pieces of land (or landscape) focusing on detailed coastline generation, by means of using procedural algorithms.
-</p>
-<p class="more">
-    <span class="type extra"><a href="https://github.com/Dovyski/charack" target="_blank"><img src="/public/img/code.png" title="Source code" /> Source code</a></span>
-</p>
-</div>
-___
-
-<div class="item">
-<h2>Proposal for Non-Contact Analysis of Multimodal Inputs to Measure Stress Level in Serious Games <span class="type conference">conference</span> <span class="type short">short paper</span> <span class="type misc"><a href="http://dx.doi.org/10.1109/VS-GAMES.2015.7295783" target="_blank">DOI: VS-GAMES.2015.7295783</a></span></h2>
-<p class="meta">BEVILACQUA, F.; BACKLUND, P.; ENGSTROM, H.. In: 2015 7th International Conference on Games and Virtual Worlds for Serious Applications (VSGames), 2015, Skövde.</p>
-<p class="description small">
-The process of monitoring user emotions in serious games or human-computer interaction is usually obtrusive. The work-flow is typically based on sensors that are physically attached to the user. Sometimes those sensors completely disturb the user experience, such as finger sensors that prevent the use of keyboard/mouse. This short paper presents techniques used to remotely measure different signals produced by a person, e.g. heart rate, through the use of a camera and computer vision techniques. The analysis of a combination of such signals (multimodal input) can be used in a variety of applications such as emotion assessment and measurement of cognitive stress. We present a research proposal for measurement of player's stress level based on a non-contact analysis of multimodal user inputs. Our main contribution is a survey of commonly used methods to remotely measure user input signals related to stress assessment.
 </p>
 </div>
 ___
@@ -138,8 +126,22 @@ An important part of the student evolution through the computer science program 
 ___
 
 <div class="item">
+<h2>Charack: Tool for Real-Time Generation of Pseudo-Infinite Virtual Worlds for 3D Games <span class="type conference">conference</span> <span class="type misc"><a href="http://dx.doi.org/10.1109/SBGAMES.2009.21" target="_blank">DOI: 10.1109/SBGAMES.2009.21</a></span></h2>
+<p class="meta">BEVILACQUA, F.; POZZER, C. T.; D'ORNELLAS, M. C.. In: VIII Brazilian Symposium on Games and Digital Entertainment (SBGames), 2009, Rio de Janeiro. p. 111.</p>
+<img src="/public/img/paper-charack.png" title="Charack: Tool for Real-Time Generation of Pseudo-Infinite Virtual Worlds for 3D Games" />
+<p class="description small">
+In MMO games the player’s experience is mainly influenced by the size and details of the virtual world. Technically the bigger the world is, the bigger is the time the player takes to explore all the places. This work presents a tool (named Charack) able to generate pseudo-infinite virtual worlds with different types of terrains. Using a combination of algorithms and content management methods, Charack is able to create beaches, islands, bays and coastlines that imitates real world landscapes. The tool clearly distinguish the generation of each type of content. The contribution of the tool is the ability to generate arbitrarily large pieces of land (or landscape) focusing on detailed coastline generation, by means of using procedural algorithms.
+</p>
+<p class="more">
+    <span class="type extra"><a href="https://github.com/Dovyski/charack" target="_blank"><img src="/public/img/code.png" title="Source code" /> Source code</a></span>
+</p>
+</div>
+___
+
+<div class="item">
 <h2>Proposal of a tool for pseudo-infinite 3D virtual world generation <span class="type conference">conference</span> <span class="type short">short paper</span></h2>
 <p class="meta">BEVILACQUA, F.; POZZER, C.. In: Brazilian Symposium on Computer Games and Digital Entertainment (SBGames), 2007, São Leopoldo.</p>
+<img src="/public/img/paper-proposal-tool.png" title="Proposal of a tool for pseudo-infinite 3D virtual world generation" />
 <p class="description small">
 We present a proposal of a tool for pseudo-infinite 3D virtual world generation. The main idea is to split up the problem of generating a virtual world in three main steps: the first one is to generate the paths, the second one is to generate the terrain and the last one is to generate the world elements, like grass over the fields, trees, rocks and plants, for example. The world is divided in cells and only the ones that are visible by the user are kept in memory. To reach this goal, many techniques will be used, like height maps, real-time cities generation, terrain texturing and path-planning.
 </p>
