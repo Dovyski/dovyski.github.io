@@ -4,6 +4,10 @@ title: Blog
 menu: true
 ---
 
+A bit of everything here. Technical posts and some food for thoughts.
+
+---
+
 <div class="posts">
   {% for post in site.posts %}
   <div class="post">
