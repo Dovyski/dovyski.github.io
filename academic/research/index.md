@@ -44,7 +44,7 @@ Visually impaired people face numerous obstacles in their process of inclusion i
 <iframe src="https://player.vimeo.com/video/176791435" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
 <p class="description small">
-This project aims to make Animati PACS available in mobile platforms. The project was developed by a multidisciplinary team with members from the Núcleo de Pesquisas em Imagens Médicas da PUC-RS (NIMED), Laboratório de Computação Aplicada (LACA) from UFSM, and Federal University of Fronteira Sul (UFFS).
+This project aims to make <a href="https://animati.com.br">Animati PACS</a> available on mobile platforms. The project was developed by a multidisciplinary team with members from the Núcleo de Pesquisas em Imagens Médicas (NIMED) from PUC-RS, Laboratório de Computação Aplicada (LACA) from UFSM, and Federal University of Fronteira Sul (UFFS).
 </p>
 
 <p class="more">
