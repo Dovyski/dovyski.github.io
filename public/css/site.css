@@ -823,6 +823,7 @@ div.item .description.small {
 .type.misc {
     background: #115193;
     color: #fff;
+    white-space: nowrap;
 }
 
 .type.extra {

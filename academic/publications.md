@@ -9,6 +9,17 @@ This is a list of my most relevant research publications. For a complete list of
 ___
 
 <div class="item">
+<h2>Diagnostic concordance between mobile interfaces and conventional workstations for emergency imaging assessment <span class="type journal">journal</span> <span class="type misc"><a href="https://doi.org/10.1016/j.ijmedinf.2018.01.019" target="_blank">DOI: 10.1016/j.ijmedinf.2018.01.019</a></span></h2>
+<p class="meta">VENSON, J. E.; BEVILACQUA, F.; BERNI, J.; ONUKI, F.; MACIEL, A.. International Journal of Medical Informatics, February 2018, ISSN 1386-5056 (<em>In press</em>)</p>
+<img src="/public/img/paper-concordance.png" title="Diagnostic concordance between mobile interfaces and conventional workstations for emergency imaging assessment" />
+<p class="description small">
+Introduction: Mobile devices and software are now available with sufficient computing power, speed and complexity to allow for real-time interpretation of radiology exams. In this paper, we perform a multivariable user study that investigates concordance of image-based diagnoses provided using mobile devices on the one hand and conventional workstations on the other hand. Methods: We performed a between-subjects task-analysis using CT, MRI and radiography datasets. Moreover, we investigated the adequacy of the screen size, image quality, usability and the availability of the tools necessary for the analysis. Radiologists, members of several teams, participated in the experiment under real work conditions. A total of 64 studies with 93 main diagnoses were analyzed. Results: Our results showed that 56 cases were classified with complete concordance (87.69%), 5 cases with almost complete concordance (7.69%) and 1 case (1.56%) with partial concordance. Only 2 studies presented discordance between the reports (3.07%). The main reason to explain the cause of those disagreements was the lack of multiplanar reconstruction tool in the mobile viewer. Screen size and image quality had no direct impact on the mobile diagnosis process. Conclusion: We concluded that for images from emergency modalities, a mobile interface provides accurate interpretation and swift response, which could benefit patients' healthcare.
+</p>
+</div>
+
+___
+
+<div class="item">
 <h2>Automated analysis of facial cues from videos as a potential method for differentiating stress and boredom of players in games <span class="type journal">journal</span></h2>
 <p class="meta">BEVILACQUA, F.; ENGSTROM, H.; BACKLUND, P.. International Journal of Computer Games Technology, 2018 (<em>In press</em>).</p>
 <img src="/public/img/paper-facial-analysis.jpg" title="Automated analysis of facial cues from videos as a potential method for differentiating stress and boredom of players in games" />
@@ -20,7 +31,6 @@ Facial analysis is a promising approach to detect emotions of players unobtrusiv
 </p>
 </div>
 ___
-
 
 <div class="item">
 <h2>Changes in heart rate and facial actions during a gaming session with provoked boredom and stress <span class="type journal">journal</span> <span class="type misc"><a href="https://doi.org/10.1016/j.entcom.2017.10.004" target="_blank">DOI: 10.1016/j.entcom.2017.10.004</a></span></h2>
