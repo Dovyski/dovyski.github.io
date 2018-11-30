@@ -7,8 +7,8 @@ permalink:        /:categories/:year/:month/:title/
 
 # Setup
 title:            Fernando Bevilacqua
-tagline:          'Professor of Computer Science and indie game developer'
-description:      'Fernando Bevilacqua is a Professor of Computer Science and indie game developer.'
+tagline:          'Lecturer of Computer Science and game developer enthusiast'
+description:      'Fernando Bevilacqua is a Lecturer of Computer Science, former game developer (now enthusiast during the free time), passionate about everything open-source (and coffee).'
 url:              https://www.fernandobevilacqua.com
 baseurl:          /
 redirect:         true
