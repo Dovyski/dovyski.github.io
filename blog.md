@@ -17,7 +17,7 @@ A bit of everything here. Technical posts and some food for thoughts.
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
 
     {{ post.excerpt }} <a href="{{ post.url }}">[read more]</a>
   </div>
