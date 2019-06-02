@@ -511,8 +511,7 @@ a.pagination-item:hover {
 
 .sidebar-about img.profile {
     width: 260px;
-    height: auto;
-    border: 1px solid #323232;
+    height: 183px;
 }
 
 /* Sidebar nav */
@@ -587,6 +586,8 @@ a.pagination-item:hover {
 }
 
 .social-badges img {
+    width: 32px;
+    height: 32px;
     opacity: 0.5;
 }
 
