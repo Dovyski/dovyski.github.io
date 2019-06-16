@@ -73,17 +73,17 @@ a:focus {
   text-decoration: underline;
 }
 
-.page a {
+.page a, .post a {
   color: #000;
   background: #f2f2f2;
   text-decoration: none;
   border-bottom: dotted 2px #000;
 }
-.page a strong {
+.page a strong, .post a strong {
   color: inherit;
 }
-.page a:hover,
-.page a:focus {
+.page a:hover, .post a:hover,
+.page a:focus, .post a:focus {
   text-decoration: none;
   background: #d2d2d2;
   border-bottom: solid 2px #000;
