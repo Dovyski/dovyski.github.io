@@ -17,7 +17,11 @@ A bit of everything here. Technical posts and some food for thoughts.
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+    <span class="post-meta">
+      <i class="fas fa-calendar-alt"></i> {{ post.date | date: "%Y-%m-%d" }}
+      <i class="fas fa-user-circle"></i> {{ post.author }}
+      <i class="fas fa-tags"></i> {{ post.tags | join: "," }}
+    </span>
 
     {{ post.excerpt }} <a href="{{ post.url }}">[read more]</a>
   </div>

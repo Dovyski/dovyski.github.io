@@ -363,12 +363,20 @@ tbody tr:nth-child(odd) th {
 }
 
 /* Meta data line below post title */
-.post-date {
+.post-meta {
   display: block;
-  margin-top: -.5rem;
+  margin-top: 1px;
   margin-bottom: 1rem;
   color: #9a9a9a;
   font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+.post-meta i {
+  color: #9a9a9a;
+  display: inline;
+  font-size: 0.8em;
+  margin-left: 5px;
+  margin-right: 2px;
 }
 
 /* Related posts */
@@ -377,11 +385,14 @@ tbody tr:nth-child(odd) th {
   padding-bottom: 2rem;
   border-top: 1px solid #eee;
 }
+.related h2 {
+  padding-bottom: 1rem;
+}
 .related-posts {
   padding-left: 0;
   list-style: none;
 }
-.related-posts h3 {
+.related-posts strong {
   margin-top: 0;
 }
 .related-posts li small {
@@ -389,7 +400,7 @@ tbody tr:nth-child(odd) th {
   color: #999;
 }
 .related-posts li a:hover {
-  color: #268bd2;
+  color: #000000;
   text-decoration: none;
 }
 .related-posts li a:hover small {
