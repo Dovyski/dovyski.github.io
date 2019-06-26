@@ -9,6 +9,17 @@ This is a list of my most relevant research publications. For a complete list of
 ___
 
 <div class="item">
+<h2>Game-calibrated and user-tailored remote detection of stress and boredom in games <span class="type journal">journal</span> </h2>
+<p class="meta">BEVILACQUA, F.; ENGSTROM, H.; BACKLUND, P.. Sensors, June 2019, Pages 1-43, ISSN 1424-8220. <br /><em>[Accepted for publication]</em></p>
+<img src="/public/img/paper-game-calibrated.jpg" title="Game-calibrated and user-tailored remote detection of stress and boredom in games" />
+<p class="description small">
+Emotion detection based on computer vision and remote extraction of user signals commonly rely on stimuli where users have a passive role with limited possibilities for interaction or emotional involvement, e.g. images and videos. Predictive models are also trained on a group level, which potentially excludes or dilutes key individualities of users. We present a non-obtrusive, multifactorial, user-tailored emotion detection method based on remotely estimated psychophysiological signals. A neural network learns the emotional profile of a user during the interaction with calibration games, a novel game-based emotion elicitation material designed to induce emotions while accounting for particularities of individuals. We evaluate our method in two experiments (N = 20 and N = 62) with mean classification accuracy of 61.6%, which is statistically significantly better than chance-level classification. Our approach and its evaluation present unique circumstances: our model is trained on one dataset (calibration games) and tested on another (evaluation game), while preserving the natural behavior of subjects and using remote acquisition of signals. Results of this study suggest our method is feasible and an initiative to move away from questionnaires and physical sensors into a non-obtrusive, remote-based solution for detecting emotions in a context involving more naturalistic user behavior and games.
+</p>
+</div>
+
+___
+
+<div class="item">
 <h2>Diagnostic concordance between mobile interfaces and conventional workstations for emergency imaging assessment <span class="type journal">journal</span> <span class="type misc"><a href="https://doi.org/10.1016/j.ijmedinf.2018.01.019" target="_blank">DOI: 10.1016/j.ijmedinf.2018.01.019</a></span></h2>
 <p class="meta">VENSON, J. E.; BEVILACQUA, F.; BERNI, J.; ONUKI, F.; MACIEL, A.. International Journal of Medical Informatics, Volume 113, May 2018, Pages 1-8, ISSN 1386-5056.</p>
 <img src="/public/img/paper-concordance.png" title="Diagnostic concordance between mobile interfaces and conventional workstations for emergency imaging assessment" />
