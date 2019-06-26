@@ -10,13 +10,17 @@ ___
 
 ### <i class="fas fa-tools fa-sm"></i> Open-source tools aimed at gamedev
 
-<i class="fas fa-arrow-alt-circle-right"></i> [Achieve](https://github.com/Dovyski/Achieve): library to manage and implement achievements in a game.
+<i class="fas fa-arrow-alt-circle-right"></i> [Achieve](https://github.com/Dovyski/Achieve)<br />
+Library to manage and implement achievements in a game.
 
-<i class="fas fa-arrow-alt-circle-right"></i> [As3GameGears](https://as3gamegears.com): website dedicated to provide Flash game developers with tools, libs and engines. All the code behind the site is available on [Github](https://github.com/Dovyski/As3GameGears).
+<i class="fas fa-arrow-alt-circle-right"></i> [As3GameGears](https://as3gamegears.com)<br />
+Website dedicated to provide Flash game developers with tools, libs and engines. All the code behind the site is available on [Github](https://github.com/Dovyski/As3GameGears).
 
-<i class="fas fa-arrow-alt-circle-right"></i> [Charack](https://github.com/Dovyski/charack): a tool to procedurally generate pseudo-infinite worlds for 3D games.   
+<i class="fas fa-arrow-alt-circle-right"></i> [Charack](https://github.com/Dovyski/charack)<br />
+Tool to procedurally generate pseudo-infinite worlds for 3D games.   
 
-<i class="fas fa-arrow-alt-circle-right"></i> [Flixel Studio](https://github.com/Dovyski/flixel-studio): embeddable, in-game editor for [HaxeFlixel](https://haxeflixel.com). Turn the existing Flixel debugger into a full-featured editor.
+<i class="fas fa-arrow-alt-circle-right"></i> [Flixel Studio](https://github.com/Dovyski/flixel-studio)<br />
+Embeddable, in-game editor for [HaxeFlixel](https://haxeflixel.com). Turn the existing Flixel debugger into a full-featured editor.
 
 ![Flixel Studio](/public/img/flixel-studio.gif)
 
