@@ -8,17 +8,21 @@ Games are a significant part of my professional experience. Below is a break dow
 
 ___
 
-### Open-source tools aimed at gamedev
+### <i class="fas fa-tools fa-sm"></i> Open-source tools aimed at gamedev
 
-* [Achieve](https://github.com/Dovyski/Achieve): library to manage and implement achievements in a game.
+<i class="fas fa-arrow-alt-circle-right"></i> [Achieve](https://github.com/Dovyski/Achieve): library to manage and implement achievements in a game.
 
-* [As3GameGears](https://as3gamegears.com): website dedicated to provide Flash game developers with tools, libs and engines. All the code behind the site is available on [Github](https://github.com/Dovyski/As3GameGears).
+<i class="fas fa-arrow-alt-circle-right"></i> [As3GameGears](https://as3gamegears.com): website dedicated to provide Flash game developers with tools, libs and engines. All the code behind the site is available on [Github](https://github.com/Dovyski/As3GameGears).
 
-* [Charack](https://github.com/Dovyski/charack): a tool to procedurally generate pseudo-infinite worlds for 3D games.    
+<i class="fas fa-arrow-alt-circle-right"></i> [Charack](https://github.com/Dovyski/charack): a tool to procedurally generate pseudo-infinite worlds for 3D games.   
+
+<i class="fas fa-arrow-alt-circle-right"></i> [Flixel Studio](https://github.com/Dovyski/flixel-studio): embeddable, in-game editor for [HaxeFlixel](https://haxeflixel.com). Turn the existing Flixel debugger into a full-featured editor.
+
+![Flixel Studio](/public/img/flixel-studio.gif)
 
 ___
 
-### My work at Decadium Studios <em>2004 to 2011</em>
+### <i class="fas fa-building fa-sm"></i> My work at Decadium Studios <em>2004 to 2011</em>
 
 Decadium Studios was a game developer company that my friends and I funded in 2003/2004. During my time at the company, I worked on several games directly (as a developer, manager, etc) or indirectly (participating in meetings, creating supporting tools, etc).
 
@@ -34,7 +38,7 @@ Below is a list of all games I worked directly or indirectly (all copyrights and
 
 ___
 
-### My games as an indie game developer
+### <i class="fas fa-gamepad fa-sm"></i> My games as an indie game developer
 
 Those are the games I made as an indie game developer.
 
@@ -73,3 +77,21 @@ Those are the games I made as an indie game developer.
   <a href="http://www.kongregate.com/games/Dovyski/madly-angry-cat" target="_blank"><strong>Madly Angry Cat</strong></a><br />
   You are the last cat remaining in a post apocalypse zombie world. Use weapons and Kung Fu skills to fight the enemies and survive!
 </div>
+
+___
+
+### <i class="fas fa-pastafarianism fa-sm"></i> Games made during game jams
+
+Those are mostly single-level games I made alone or with a team during game jams (usually 48 hours of development).
+
+<i class="fas fa-arrow-alt-circle-right"></i> <a href="https://github.com/Dovyski/zombie-avoider" target="_blank"><strong>Zombie Avoider</strong></a><br />A game played with two buttons where the player needs to trace a path to save a team from the zombies. Game implented by myself using [Phaser.js](https://phaser.io/) during [Ludum Dare](https://ldjam.com/) 34.
+
+![Zombie Avoider](/public/img/zombie-avoider.jpg)
+
+<i class="fas fa-arrow-alt-circle-right"></i> <a href="https://github.com/Dovyski/ferjamdo" target="_blank"><strong>Where is my hat?</strong></a><br />A two-player game where the first player must hide a hat, which has to be found by the second player. Game implemented by a team of 6 using [Godot 3.0.2](https://godotengine.org/) and [Asset Forge 1.3](https://assetforge.io/) at Fernando's back-to-Brazil game jam held in Skultorp, Sweden.
+
+![Where is my hat?](/public/img/ferjamdo.webp)
+
+<i class="fas fa-arrow-alt-circle-right"></i> <a href="https://github.com/Dovyski/game-planet-pyxel" target="_blank"><strong>Planet pyxel</strong></a><br />A two-player co-op game where one of the players fetches supplies for a planet whose defense weapons are controlled by the other player. Game implemented by Björn Berg Marklund and myself using [Pyxel](https://github.com/kitao/pyxel), a retro game engine for Python, during a random Saturday. Maybe 8 hours of dev time?
+
+<img src="/public/img/planet-pyxel.webp" style="margin: 0 auto;" title="Planet pyxel" />

@@ -21,6 +21,37 @@ A (very) simple UI lib built on top of OpenCV drawing primitives. Other UI libs,
 </p>
 </div>
 
+___
+
+<div class="item">
+<h2>Codebot <span class="type php">PHP</span> <span class="type mysql">MySQL</span> <span class="type js">Javascript</span></h2>
+<p class="meta">The back-end is PHP with no frameworks, serving REST APIs (speaking JSON). Front-end was built using HTML/CSS enhanced with jQuery, Bootstrap and some UI libs.</p>
+<a href="https://github.com/Dovyski/Codebot"><img src="/public/img/codebot.png" title="Codebot" /></a>
+<p class="description">
+Codebot is a code editing program equipped with built-in tools to help you make your game faster (read full thoughts here). Developing a game is much more than just coding, you have to tweak art, build levels, convert files, find assets/extensions, read docs about building and publishing, and so on. The IDE should help us do that, or do it all by itself. Imagine you are working on your Ludum Dare/1GAM game and you need an 8-bit SFX. You click a button, a panel slides, you type in a few keywords, select what you want and done!
+</p>
+<p class="more">
+	<span class="type extra"><a href="https://github.com/Dovyski/Codebot"><img src="/public/img/code.png" title="Website" /> Source code</a></span>
+    <span class="type extra"><a href="https://codebot.cc"><img src="/public/img/link.png" title="Website" /> Website</a></span>
+</p>
+</div>
+
+___
+
+
+<div class="item">
+<h2>Reslide <span class="type php">PHP</span> <span class="type js">Javascript</span></h2>
+<p class="meta">A javascript front-end shows a PDF presentation using PDF.js. Current slide of the presentation is controled by the back-end (PHP using files) via AJAX requests.</p>
+<a href="https://github.com/Dovyski/reslide"><img src="/public/img/reslide.png" title="Reslide" /></a>
+<p class="description">
+Share and remotely control your PDF-based presentations, all in the browser, without plugins or network restrictions. The process is simple: first you upload a PDF file to the website (no login required). When the upload is complete you receive two URLs: one for the presenter (can change the slides) and another for the viewers (can't change the slides). That's all!
+</p>
+<p class="more">
+	<span class="type extra"><a href="https://github.com/Dovyski/reslide"><img src="/public/img/code.png" title="Website" /> Source code</a></span>
+	<span class="type extra"><a href="https://reslide.fernandobevilacqua.com"><img src="/public/img/link.png" title="Website" /> Website</a></span>
+</p>
+</div>
+
 ___  
 
 <div class="item">
@@ -38,15 +69,14 @@ Besearcher (bot researcher) is a cross-platform tool to help researchers automat
 ___  
 
 <div class="item">
-<h2>Codebot <span class="type php">PHP</span> <span class="type mysql">MySQL</span> <span class="type js">Javascript</span></h2>
-<p class="meta">The back-end is PHP with no frameworks, serving REST APIs (speaking JSON). Front-end was built using HTML/CSS enhanced with jQuery, Bootstrap and some UI libs.</p>
-<a href="https://github.com/Dovyski/Codebot"><img src="/public/img/codebot.png" title="Codebot" /></a>
+<h2>Pigeon <span class="type php">PHP</span></h2>
+<p class="meta">PHP microservice that communicates using a REST API exposes system capabilities regarding e-mail sending.</p>
+<a href="https://github.com/Dovyski/Pigeon"><img src="/public/img/pigeon.png" title="Pigeon" style="margin: 10px auto;"/></a>
 <p class="description">
-Codebot is a code editing program equipped with built-in tools to help you make your game faster (read full thoughts here). Developing a game is much more than just coding, you have to tweak art, build levels, convert files, find assets/extensions, read docs about building and publishing, and so on. The IDE should help us do that, or do it all by itself. Imagine you are working on your Ludum Dare/1GAM game and you need an 8-bit SFX. You click a button, a panel slides, you type in a few keywords, select what you want and done!
+Pigeon is an easy to use, hassle-free PHP microservice for sending e-mails via HTTP requests. It values simplicity above all, i.e. no database required, extremely easy and quick installation. It is intended for small, in-house projects that require e-mail sending capabilities.
 </p>
 <p class="more">
-	<span class="type extra"><a href="https://github.com/Dovyski/Codebot"><img src="/public/img/code.png" title="Website" /> Source code</a></span>
-    <span class="type extra"><a href="https://codebot.cc"><img src="/public/img/link.png" title="Website" /> Website</a></span>
+	<span class="type extra"><a href="https://github.com/Dovyski/Pigeon"><img src="/public/img/code.png" title="Website" /> Source code</a></span>
 </p>
 </div>
 
