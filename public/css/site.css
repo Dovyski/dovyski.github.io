@@ -933,6 +933,63 @@ p.more img {
     vertical-align: middle;
 }
 
+a.publication-btn,
+a.publication-btn:active,
+a.publication-btn:hover,
+a.publication-btn:visited {
+    color: #3a3a3a;
+    text-decoration: none;
+    border: none;
+    background: #fffb26;
+    padding: 8px;
+    border: solid 2px #ffe600;
+    border-radius: 3%;
+    font-weight: 600;
+    font-size: 0.8em;
+    margin-right: 5px;
+    text-transform: capitalize;
+}
+
+a.publication-btn i {
+  padding: 3px;
+  font-size: 1.1em;
+  opacity: 0.8;
+}
+
+a.publication-btn i.subtle {
+  font-size: 0.5em;
+  opacity: 0.5;
+}
+
+.publications-nav {
+  display: none;
+  margin-top: 15px;
+  text-align: right;
+}
+
+.publications-nav-divider {
+  margin-top: 0;
+}
+
+.publications-nav a,
+.publications-nav a:link,
+.publications-nav a:active,
+.publications-nav a:hover,
+.publications-nav a:visited {
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-size: 0.7em;
+  margin-right: 10px;
+  color: #808080;
+  text-transform: uppercase;
+}
+
+.publications-nav i {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
 .section-title {
     padding-top: 50px;
     margin-bottom: 0px;
