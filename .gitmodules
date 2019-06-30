@@ -1,0 +1,3 @@
+[submodule "public/js/showhide"]
+	path = public/js/showhide
+	url = https://github.com/Dovyski/showhide.git

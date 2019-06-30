@@ -962,9 +962,10 @@ a.publication-btn i.subtle {
 }
 
 .publications-nav {
-  display: none;
   margin-top: 15px;
   text-align: right;
+  color: #808080;
+  font-size: 0.7em;
 }
 
 .publications-nav-divider {
@@ -979,10 +980,13 @@ a.publication-btn i.subtle {
   text-decoration: none;
   background: none;
   border: none;
-  font-size: 0.7em;
   margin-right: 10px;
-  color: #808080;
   text-transform: uppercase;
+  color: #808080;
+}
+
+.publications-nav select {
+  
 }
 
 .publications-nav i {
