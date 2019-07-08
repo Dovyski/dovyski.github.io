@@ -54,7 +54,7 @@ Visually impaired people face numerous obstacles in their process of inclusion i
 
 <div class="item">
 <h2><i class="fa fa-arrow-alt-circle-right"></i> Appification of Medical Reports</h2>
-<p class="project-meta"><em><i class="fa fa-calendar-alt" title="Date"></i> 2013 to 2015 <i class="fa fa-money-check-alt" title="Sponsorship"></i> <a href="" title="Conselho Nacional de Desenvolvimento Científico e Tecnológico">CNPq</a> &middot; <a href="https://animati.com.br/" title="Animati Computação Aplicada à Saúde">Animati</a></em></p>
+<p class="project-meta"><i class="fa fa-calendar-alt" title="Date"></i> 2013 to 2015 <i class="fa fa-money-check-alt" title="Sponsorship"></i> <a href="" title="Conselho Nacional de Desenvolvimento Científico e Tecnológico">CNPq</a> &middot; <a href="https://animati.com.br/" title="Animati Computação Aplicada à Saúde">Animati</a></p>
 <iframe src="https://player.vimeo.com/video/176791435" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="illustration"></iframe>
 
 <p class="description small">
