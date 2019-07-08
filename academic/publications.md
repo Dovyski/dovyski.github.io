@@ -200,4 +200,4 @@ We present a proposal of a tool for pseudo-infinite 3D virtual world generation.
 
 - My master's dissertation: BEVILACQUA, F.. Ferramenta para Geração de Mundos Virtuais Pseudo-Infinitos para Jogos 3D MMO. 2009. [[PDF, in Brazilian portuguese]](https://github.com/Dovyski/master-thesis/blob/master/dissertacao.pdf).
 
-{% include publications-js.html %}
+{% include showhide-js.html %}

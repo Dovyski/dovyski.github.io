@@ -66,4 +66,4 @@ This project aims to make <a href="https://animati.com.br">Animati PACS</a> avai
 </p>
 </div>
 
-{% include publications-js.html %}
+{% include showhide-js.html %}
