@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Readmind
+title: Readminds
 ---
 
-REmote Analysis and Detection of Multifactorial INputs for Discovery of Stress (READMIND) is a research project whose aim is to improve the research in games by creating a model/software that is able to tell if a player is stressed/bored while playing a game. The process involves the analysis of information from the player (e.g. heart rate, respiratory rate, facial expressions) which are obtained by processing a video of the player. The procedure is completely remote, so the user does not wear physical sensors nor is interrupted during the game play.
+REmote Analysis and Detection of Multifactorial INputs for Discovery of Stress (READMINDS) is a research project whose aim is to improve the research in games by creating a model/software that is able to tell if a player is stressed/bored while playing a game. The process involves the analysis of information from the player (e.g. heart rate, respiratory rate, facial expressions) which are obtained by processing a video of the player. The procedure is completely remote, so the user does not wear physical sensors nor is interrupted during the game play.
 
 The research is being conducted at the [University of Skövde](https://www.his.se), in Sweden, and it is part of my PhD within Information Technology.
 
