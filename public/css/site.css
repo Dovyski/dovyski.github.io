@@ -807,6 +807,24 @@ small.highlight {
 
 /* Research and portifolio section */
 
+div.item .project-meta {
+  font-size: 0.8em;
+  color: #717171;
+}
+
+div.item .project-meta.no-bottom {
+  margin-bottom: 5px;
+}
+
+div.item .project-meta i {
+  margin-right: 0.2em;
+  margin-left: 0.3em;
+}
+
+div.item .project-meta i:first-child {
+  margin-left: 0;
+}
+
 div.item {
     margin-bottom: 20px;
 }
@@ -933,10 +951,10 @@ p.more img {
     vertical-align: middle;
 }
 
-a.publication-btn,
-a.publication-btn:active,
-a.publication-btn:hover,
-a.publication-btn:visited {
+a.btn,
+a.btn:active,
+a.btn:hover,
+a.btn:visited {
     color: #3a3a3a;
     text-decoration: none;
     border: none;
@@ -950,13 +968,13 @@ a.publication-btn:visited {
     text-transform: capitalize;
 }
 
-a.publication-btn i {
+a.btn i {
   padding: 3px;
   font-size: 1.1em;
   opacity: 0.8;
 }
 
-a.publication-btn i.subtle {
+a.btn i.subtle {
   font-size: 0.5em;
   opacity: 0.5;
 }

@@ -39,8 +39,8 @@ This is a list of my most relevant research publications. For a complete list of
 Emotion detection based on computer vision and remote extraction of user signals commonly rely on stimuli where users have a passive role with limited possibilities for interaction or emotional involvement, e.g. images and videos. Predictive models are also trained on a group level, which potentially excludes or dilutes key individualities of users. We present a non-obtrusive, multifactorial, user-tailored emotion detection method based on remotely estimated psychophysiological signals. A neural network learns the emotional profile of a user during the interaction with calibration games, a novel game-based emotion elicitation material designed to induce emotions while accounting for particularities of individuals. We evaluate our method in two experiments (N = 20 and N = 62) with mean classification accuracy of 61.6%, which is statistically significantly better than chance-level classification. Our approach and its evaluation present unique circumstances: our model is trained on one dataset (calibration games) and tested on another (evaluation game), while preserving the natural behavior of subjects and using remote acquisition of signals. Results of this study suggest our method is feasible and an initiative to move away from questionnaires and physical sensors into a non-obtrusive, remote-based solution for detecting emotions in a context involving more naturalistic user behavior and games.
 </p>
 <p class="more">
-    <a href="https://www.mdpi.com/1424-8220/19/13/2877" target="_blank" class="publication-btn"><i class="fa fa-file-pdf"></i><i class="fa fa-lock-open" title="Open Access"></i> Full text</a>
-    <a href="https://github.com/Dovyski/phd-experiment2" target="_blank" class="publication-btn"><i class="fa fa-code"></i> Source code</a>
+    <a href="https://www.mdpi.com/1424-8220/19/13/2877" target="_blank" class="btn"><i class="fa fa-file-pdf"></i><i class="fa fa-lock-open" title="Open Access"></i> Full text</a>
+    <a href="https://github.com/Dovyski/phd-experiment2" target="_blank" class="btn"><i class="fa fa-code"></i> Source code</a>
 </p>
 <hr />
 </div>
@@ -63,7 +63,7 @@ Introduction: Mobile devices and software are now available with sufficient comp
 Facial analysis is a promising approach to detect emotions of players unobtrusively, however approaches are commonly evaluated in contexts not related to games, or facial cues are derived from models not designed for analysis of emotions during interactions with games. We present a method for automated analysis of facial cues from videos as a potential tool for detecting stress and boredom of players behaving naturally while playing games. Computer vision is used to automatically and unobtrusively extract 7 facial features aimed to detect the activity of a set of facial muscles. Features are mainly based on the Euclidean distance of facial landmarks and do not rely on pre-defined facial expressions, training of a model or the use of facial standards. An empirical evaluation was conducted on video recordings of an experiment involving games as emotion elicitation sources. Results show statistically significant differences in the values of facial features during boring and stressful periods of gameplay for 5 of the 7 features. We believe our approach is more user-tailored, convenient and better suited for contexts involving games.
 </p>
 <p class="more">
-    <a href="https://www.hindawi.com/journals/ijcgt/aip/8734540/" target="_blank" class="publication-btn"><i class="fa fa-file-pdf"></i><i class="fa fa-lock-open" title="Open Access"></i> Full text</a>
+    <a href="https://www.hindawi.com/journals/ijcgt/aip/8734540/" target="_blank" class="btn"><i class="fa fa-file-pdf"></i><i class="fa fa-lock-open" title="Open Access"></i> Full text</a>
 </p>
 <hr />
 </div>
@@ -76,7 +76,7 @@ Facial analysis is a promising approach to detect emotions of players unobtrusiv
 This paper presents an experiment aimed at exploring the relation between facial actions (FA), heart rate (HR) and emotional states, particularly stress and boredom, during the interaction with games. Subjects played three custom-made games with a linear and constant progression from a boring to a stressful state, without pre-defined levels, modes or stopping conditions. Such configuration gives our experiment a novel approach for the exploration of FA and HR regarding their connection to emotional states, since we can categorize information according to the induced (and theoretically known) emotional states on a user level. The HR data was divided into segments, whose HR mean was calculated and compared in periods (boring/stressful part of the games). Additionally the 6 hours of recordings were manually analyzed and FA were annotated and categorized in the same periods. Findings show that variations of HR and FA on a group and on an individual level are different when comparing boring and stressful parts of the gaming sessions. This paper contributes information regarding variations of HR and FA in the context of games, which can potentially be used as input candidates to create user-tailored models for emotion detection with game-based emotion elicitation sources.
 </p>
 <p class="more">
-    <a href="https://github.com/Dovyski/face-tracking-games" target="_blank" class="publication-btn"><i class="fa fa-code"></i> Source code</a>
+    <a href="https://github.com/Dovyski/face-tracking-games" target="_blank" class="btn"><i class="fa fa-code"></i> Source code</a>
 </p>
 <hr />
 </div>
@@ -89,7 +89,7 @@ This paper presents an experiment aimed at exploring the relation between facial
 Remote photoplethysmography (rPPG) can be used to remotely estimate heart rate (HR) of users to infer their emotional state. However natural body movement and facial actions of users significantly impact such techniques, so their reliability within contexts involving natural behavior must be checked. We present an experiment focused on the accuracy evaluation of an established rPPG technique in a gaming context. The technique was applied to estimate the HR of subjects behaving naturally in gaming sessions whose games were carefully designed to be casual-themed, similar to off-the-shelf games and have a difficulty level that linearly progresses from a boring to a stressful state. Estimations presented mean error of 2.99 bpm and Pearson correlation r = 0.43, p < 0.001, however with significant variations among subjects. Our experiment is the first to measure the accuracy of an rPPG technique using boredom/stress-inducing casual games with subjects behaving naturally.
 </p>
 <p class="more">
-    <a href="https://github.com/Dovyski/face-tracking-games" target="_blank" class="publication-btn"><i class="fa fa-code"></i> Source code</a>
+    <a href="https://github.com/Dovyski/face-tracking-games" target="_blank" class="btn"><i class="fa fa-code"></i> Source code</a>
 </p>
 <hr />
 </div>
@@ -113,7 +113,7 @@ Introduction: A medical application running outside the workstation environment 
 This paper presents an experiment aimed at empirically exploring the variations of facial actions (FA) during gaming sessions with induced boredom and stress. Twenty adults with different ages and gaming experiences played three games while being recorded by a video camera and monitored by a heart rate sensor. The games were carefully designed to have a linear progression from a boring to a stressful state. Self-reported answers indicate participants perceived the games as being boring at the beginning and stressful at the end. The 6 hours of recordings of all subjects were manually analyzed and FA were annotated. We annotated FA that appeared in the recordings at least twice; annotations were categorized by the period when they happened (boring/stressful part of the games) and analysed on a group and on an individual level. Group level analysis revealed that FA patterns were related to no more than 25% of the subjects. The individual level analysis revealed particular patterns for 50% of the subjects. More FA annotations were made during the stressful part of the games. We conclude that, for the context of our experiment, FA provide an unclear foundation for detection of boredom/stressful states when observed from a group level perspective, while the individual level perspective might produce more information.
 </p>
 <p class="more">
-    <a href="https://github.com/Dovyski/face-tracking-games" target="_blank" class="publication-btn"><i class="fa fa-code"></i> Source code</a>
+    <a href="https://github.com/Dovyski/face-tracking-games" target="_blank" class="btn"><i class="fa fa-code"></i> Source code</a>
 </p>
 <hr />
 </div>
@@ -166,7 +166,7 @@ The development of a complex game is a time consuming task that requires a signi
 An important part of the student evolution through the computer science program is when they learn the object-oriented programing paradigm. This paper presents the preparation, execution and results of a game related assignment experimentally applied to a group of students attending the objected-oriented programming course during the first half of the second year of a computer science program. The task consisted of programming a software agent (described as a Java class) and test it in a battle environment represented by an arena. The assignment implementation is based on a tool called Jarena that was developed by the authors for the experiment. The contribution of this paper is the tool itself and the documentation of the results the authors achieved with the experiment.
 </p>
 <p class="more">
-    <a href="https://github.com/Dovyski/Jarena" target="_blank" class="publication-btn"><i class="fa fa-code"></i> Source code</a>
+    <a href="https://github.com/Dovyski/Jarena" target="_blank" class="btn"><i class="fa fa-code"></i> Source code</a>
 </p>
 <hr />
 </div>
@@ -179,7 +179,7 @@ An important part of the student evolution through the computer science program 
 In MMO games the player’s experience is mainly influenced by the size and details of the virtual world. Technically the bigger the world is, the bigger is the time the player takes to explore all the places. This work presents a tool (named Charack) able to generate pseudo-infinite virtual worlds with different types of terrains. Using a combination of algorithms and content management methods, Charack is able to create beaches, islands, bays and coastlines that imitates real world landscapes. The tool clearly distinguish the generation of each type of content. The contribution of the tool is the ability to generate arbitrarily large pieces of land (or landscape) focusing on detailed coastline generation, by means of using procedural algorithms.
 </p>
 <p class="more">
-    <a href="https://github.com/Dovyski/charack" target="_blank" class="publication-btn"><i class="fa fa-code"></i> Source code</a>
+    <a href="https://github.com/Dovyski/charack" target="_blank" class="btn"><i class="fa fa-code"></i> Source code</a>
 </p>
 <hr />
 </div>
