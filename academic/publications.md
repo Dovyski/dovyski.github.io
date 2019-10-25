@@ -32,13 +32,14 @@ This is a list of my most relevant research publications. For a complete list of
 <hr class="publications-nav-divider" />
 
 <div class="item publication year-2019">
-<h2>INSIDe: Image recognition tool aimed at helping visually impaired people contextualize indoor environments <span class="type journal">journal</span> <span class="type misc"><em>in press</em></span></h2>
-<p class="meta">FANK, E.; BEVILACQUA, F.; DUARTE, D.; SCAPINELLO, A.. Revista Brasileira de Computação Aplicada (RBCA), November, 2019, ISSN 2176-6649. <br /></p>
+<h2>INSIDe: Image recognition tool aimed at helping visually impaired people contextualize indoor environments <span class="type journal">journal</span> <span class="type misc"><a href="https://doi.org/10.5335/rbca.v11i3.9455" target="_blank">DOI: 10.5335/rbca.v11i3.9455</a></span></h2>
+<p class="meta">FANK, E.; BEVILACQUA, F.; DUARTE, D.; SCAPINELLO, A.. Revista Brasileira de Computação Aplicada. 11, 3 (set. 2019), 59-71, ISSN 2176-6649. <br /></p>
 <img src="/public/img/paper-inside.png" title="INSIDe: Image recognition tool aimed at helping visually impaired people contextualize indoor environments" class="illustration" />
 <p class="description small">
 Visually impaired (VI) people face a set of challenges when trying to orient and contextualize themselves. Computer vision and mobile devices can be valuable tools to help them improve their quality of life. This work presents a tool based on computer vision and image recognition to assist VI people to better contextualize themselves indoors. The tool works as follows: user takes a picture <em>p</em> using a mobile application; <em>p</em> is sent to the server; <em>p</em> is compared to a database of previously taken pictures; server returns metadata of the database image that is most similar to <em>p</em>; finally the mobile application gives an audio feedback based on the received metadata. Similarity test among database images and <em>p</em> is based on the search of nearest neighbors in key points extracted from the images by SIFT descriptors. Three experiments are presented to support the feasibility of the tool. We believe our solution is a low cost, convenient approach that can leverage existing IT infrastructure, e.g. wireless networks, and does not require any physical adaptation in the environment where it will be used.
 </p>
 <p class="more">
+    <a href="http://seer.upf.br/index.php/rbca/article/view/9455/114114829" target="_blank" class="btn"><i class="fa fa-file-pdf"></i><i class="fa fa-lock-open" title="Open Access"></i> Full text</a>
     <a href="https://inside-project.github.io" target="_blank" class="btn"><i class="fa fa-link"></i> Website</a>
     <a href="https://github.com/inside-project" target="_blank" class="btn"><i class="fa fa-code"></i> Source code</a>
 </p>
