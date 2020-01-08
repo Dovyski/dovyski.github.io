@@ -42,7 +42,7 @@ OCD is a heavy burden. It is always there, in an ever-growing vortex of anxiety.
 
 I started taking medicine for OCD. Slowly, things improved over time. However, I had signed up for the coordination of our CS program. Hence my stress and anxiety levels were always on the roof. I was constantly thinking I was not doing enough or well enough. I was being unpolite (to say the least) with people to ensure things would move the way I thought were right.
 
-Having studied human emotions in my PhD, I should know better than human beings are complicated animals. Anything that has people in it is complex by nature. We have different dreams, fears and goals. It is tough to align all thoughts under the same light.
+Having studied human emotions in my PhD, I should know better that human beings are complicated animals. Anything that has people in it is complex by nature. We have different dreams, fears and goals. It is tough to align all thoughts under the same light.
 
 I had managed teams before. I had worked with lots of different people in the past. But this time I had too much energy and too little patience. And above all, I was not willing to tolerate any academic behaviour that I once allowed.
 
