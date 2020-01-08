@@ -52,7 +52,7 @@ The result? Friction all over the place, anxiety crisis, and so on. A colleague 
 
 I want to add that my contributions to open-source projects, including my own, e.g. [Flixel Studio](https://github.com/Dovyski/flixel-studio) and [cvui](https://github.com/Dovyski/cvuis), have reached their lowest rate ever. I literally had no time or will to work on them. My everyday routine was draining all my energy.
 
-Differently from 2017 and 2018, where I significantly contributed to open-source, 2019 has been quite slow. Even after receiving a donation from the awesome Haxeflixel community to work on Flixel Studio (thank you very much!), I was not able to focus. That made me feel incredibly guilty and not worth the investment. Luckily the Flixel community and the human being behind the project are great to lift others.
+Differently from 2017 and 2018, where I significantly contributed to open-source, 2019 has been quite slow. Even after receiving a donation from the awesome [Haxeflixel](http://haxeflixel.com/) community to work on Flixel Studio (thank you very much!), I was not able to focus. That made me feel incredibly guilty and not worth the investment. Luckily the Flixel community and the people behind the project are great to lift contributors.
 
 ## Anything good?
 
