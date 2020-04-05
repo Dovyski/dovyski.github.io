@@ -512,7 +512,8 @@ a.pagination-item:hover {
 
 /* About section */
 .sidebar-about {
-    padding-bottom: 50px;
+    padding-bottom: 5px;
+    text-align: center;
 }
 
 .sidebar-about h1 {
@@ -523,6 +524,7 @@ a.pagination-item:hover {
 .sidebar-about img.profile {
     width: 260px;
     height: 183px;
+    margin: 0 auto;
 }
 
 /* Sidebar nav */
@@ -587,12 +589,11 @@ a.pagination-item:hover {
 .social-badges {
     width: 100%;
     clear: both;
-    background: red;
     text-align: center;
 }
 
 .social-badges a {
-    float: left;
+    display: inline-block;
     margin-right: 5px;
 }
 
