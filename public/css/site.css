@@ -36,6 +36,26 @@ html {
   font-size: 16px;
   line-height: 1.5;
 }
+
+html {
+    scrollbar-face-color: #646464;
+    scrollbar-base-color: #646464;
+    scrollbar-3dlight-color: #646464;
+    scrollbar-highlight-color: #646464;
+    scrollbar-track-color: #202020;
+    scrollbar-arrow-color: #202020;
+    scrollbar-shadow-color: #646464;
+    scrollbar-dark-shadow-color: #646464;
+}
+
+::-webkit-scrollbar { width: 8px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #666; }
+::-webkit-scrollbar-track {  background-color: #646464;}
+::-webkit-scrollbar-track-piece { background-color: #202020;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #666; border-radius: 3px;}
+::-webkit-scrollbar-corner { background-color: #646464;}  
+::-webkit-resizer { background-color: #666;}
+
 @media (min-width: 38em) {
   html {
     font-size: 20px;
@@ -588,7 +608,7 @@ a.pagination-item:hover {
 }
 
 .social-badges {
-    width: 85%;
+    width: 100%;
     text-align: center;
     line-height: 1em;
     margin: 0 auto;
@@ -602,9 +622,9 @@ a.pagination-item:hover {
 }
 
 .social-badges img {
-    width: 32px;
-    height: 32px;
-    opacity: 0.5;
+    width: 30px;
+    height: 30px;
+    opacity: 0.4;
     filter: invert(1);
 }
 
