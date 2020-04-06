@@ -487,6 +487,7 @@ a.pagination-item:hover {
   padding: 5px 0 5px 5px;
   color: rgba(255,255,255,.5);
   background-color: #202020;
+  overflow: auto;
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -587,20 +588,32 @@ a.pagination-item:hover {
 }
 
 .social-badges {
-    width: 100%;
-    clear: both;
+    width: 85%;
     text-align: center;
+    line-height: 1em;
+    margin: 0 auto;
 }
 
 .social-badges a {
     display: inline-block;
     margin-right: 5px;
+    margin-bottom: 2px;
+    height: 32px;
 }
 
 .social-badges img {
     width: 32px;
     height: 32px;
     opacity: 0.5;
+    filter: invert(1);
+}
+
+img.bw {
+    filter: grayscale(1);
+}
+
+.social-badges img:hover {
+    opacity: .9;
 }
 
 /* Sticky sidebar
@@ -770,10 +783,6 @@ h3 em {
     margin-left: 10px;
 }
 
-.social-badges img:hover {
-	background: #888;
-}
-
 .sidebar-contact {
     margin-top: 1em;
     font-size: 0.7em;
@@ -789,16 +798,29 @@ h3 em {
 }
 
 .sidebar-contact h2 {
-    font-weight: normal;
-    font-size: 1.0em;
+    font-weight: bold;
+    font-size: 1.1em;
     color: #7f7f7f
 }
 
 .sidebar-contact ul {
-    font-weight: normal;
     list-style-type: none;
     padding: 2px;
     font-size: 0.8em;
+}
+
+.sidebar-contact ul strong {
+    color: #a5a5a5;
+    font-size: 1.1em;
+}
+
+.sidebar-contact span {
+    opacity: 0.5;
+    font-weight: normal;
+}
+
+.sidebar-contact li {
+    margin-bottom: 0.8em;
 }
 
 small.highlight {
