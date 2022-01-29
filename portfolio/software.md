@@ -38,6 +38,22 @@ Codebot is a code editing program equipped with built-in tools to help you make 
 
 ___
 
+<div class="item">
+<h2>Live Broadcast Kit <span class="type js">Javascript</span> <span class="type html">HTML</span> <span class="type css">CSS</span></h2>
+<p class="meta">A javascript app that authors digital content loaded as iframes. Loaded content is dynamically arranged according to user settings.</p>
+<a href="https://github.com/ccuffs/live-broadcast-kit"><img src="/public/img/lbk_screen01.png" title="Live Broadcast Kit" /></a>
+<a href="https://github.com/ccuffs/live-broadcast-kit"><img class="w-1/2" src="/public/img/lbk-bottom-left.gif" title="Overlay at bottom left corner." align="left"></a>
+<a href="https://github.com/ccuffs/live-broadcast-kit"><img class="w-1/2" src="/public/img/lbk-top-corner.gif" title="Overlay at the upper right corner."></a>
+<p class="description">
+Live Broadcast Kit (LBK) is a web app to easily and effortlessly create overlays for video content. It has been originally designed to work in conjunction with OBS to add and control overlays on live feeds, however it can be used as a standalone app as well. LBK has been developed to help with broadcast and video content creation within the Computer Science program at Federal University of Fronteira Sul, Chapecó, Brazil.
+</p>
+<p class="more">
+	<span class="type extra"><a href="https://github.com/ccuffs/live-broadcast-kit"><img src="/public/img/code.png" title="Website" /> Source code</a></span>
+	<span class="type extra"><a href="https://livebk.app.uffs.cc"><img src="/public/img/link.png" title="Website" /> Website</a></span>
+</p>
+</div>
+
+___  
 
 <div class="item">
 <h2>Reslide <span class="type php">PHP</span> <span class="type js">Javascript</span></h2>

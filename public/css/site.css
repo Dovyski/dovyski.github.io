@@ -479,6 +479,10 @@ a.pagination-item:hover {
   }
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
 
 /*
  *  __                  __
@@ -984,6 +988,16 @@ p.more {
 .type.sqlite {
     background: #f4ce42;
     color: #000;
+}
+
+.type.html {
+    background: #ff0f87;
+    color: #fff;
+}
+
+.type.css {
+    background: #bd6cff;
+    color: #fff;
 }
 
 p.more img {
