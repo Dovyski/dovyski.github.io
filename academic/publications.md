@@ -211,8 +211,12 @@ We present a proposal of a tool for pseudo-infinite 3D virtual world generation.
 
 ### Book chapters or complete books
 
-- BRANCHER, J. D. ; BEVILACQUA, F. ; FERREIRA, N. B. ; IOP, R. D. ; MINUZZI, L. ; FERREIRA, T. K. . Um Portal de Jogos Casuais Educativos. Jogos Eletrônicos: Mapeando Novas Perspectivas. 1ed.Florianópolis, SC: VISUAL BOOKS, 2009, v. 1, p. 197-210.
+- My PhD thesis: **Game-calibrated and user-tailored remote detection of emotions: a non-intrusive, multifactorial camera-based approach for detecting stress and boredom of players in games**. 2018. [[PDF, in English]](http://his.diva-portal.org/smash/get/diva2:1259426/FULLTEXT01.pdf) [[Bibliographic details]](http://urn.kb.se/resolve?urn=urn:nbn:se:his:diva-16347).
 
-- My master's dissertation: BEVILACQUA, F.. Ferramenta para Geração de Mundos Virtuais Pseudo-Infinitos para Jogos 3D MMO. 2009. [[PDF, in Brazilian portuguese]](https://github.com/Dovyski/master-thesis/blob/master/dissertacao.pdf).
+> NOTICE: you can read a more condensed version of this research by reading the [final manuscript of the thesis](https://doi.org/10.3390/s19132877). It is open access.
+
+- My master's dissertation: **Ferramenta para Geração de Mundos Virtuais Pseudo-Infinitos para Jogos 3D MMO**. 2009. [[PDF, in Brazilian portuguese]](https://github.com/Dovyski/master-thesis/blob/master/dissertacao.pdf).
+
+- BRANCHER, J. D. ; BEVILACQUA, F. ; FERREIRA, N. B. ; IOP, R. D. ; MINUZZI, L. ; FERREIRA, T. K. . **Um Portal de Jogos Casuais Educativos**. Jogos Eletrônicos: Mapeando Novas Perspectivas. 1ed.Florianópolis, SC: VISUAL BOOKS, 2009, v. 1, p. 197-210.
 
 {% include showhide-js.html %}
