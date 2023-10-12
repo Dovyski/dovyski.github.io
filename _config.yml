@@ -11,7 +11,7 @@ tagline:          'Lecturer of Computer Science and game developer enthusiast'
 description:      'Fernando Bevilacqua is a Lecturer of Computer Science, former game developer (now enthusiast during the free time), passionate about everything open-source.'
 url:              https://www.fernandobevilacqua.com
 baseurl:          /
-redirect:         true
+redirect:         false
 
 author:
   name:           'Fernando Bevilacqua'
