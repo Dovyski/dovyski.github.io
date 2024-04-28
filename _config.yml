@@ -10,7 +10,7 @@ title:            Fernando Bevilacqua
 tagline:          'Senior software engineer and open-source contributor'
 description:      'Fernando Bevilacqua is a senior software engineer, former game developer (now enthusiast during the free time), passionate about everything open-source.'
 url:              https://www.fernandobevilacqua.com
-baseurl:          /
+baseurl:          https://www.fernandobevilacqua.com/
 redirect:         false
 
 author:
