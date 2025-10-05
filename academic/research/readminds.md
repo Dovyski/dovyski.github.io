@@ -9,7 +9,7 @@ The research is being conducted at the [University of Skövde](https://www.his.s
 
 **Sponsorship:** CNPq, Conselho Nacional de Desenvolvimento Científico e Tecnológico - Brasil; University of Skövde; EU Interreg ÖKS project Game Hub Scandinavia; UFFS, Federal University of Fronteira Sul.
 
-<iframe src="https://google.com" style="width: 800px; height: 600px">
+<iframe src="https://preview--lovables-call-insights.lovable.app" style="width: 800px; height: 600px">
 
 ---
 
