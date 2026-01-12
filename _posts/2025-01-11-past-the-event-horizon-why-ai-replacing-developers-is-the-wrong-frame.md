@@ -116,7 +116,7 @@ This explains a startling statistic from [GitHub's *Octoverse 2025*](https://git
 Why? Because Types are the **automated payment of the Verification Tax**.
 In a world where AI generates millions of lines of code, humans can no longer verify it all by reading. We need automated guardrails. TypeScript's static type system rejects invalid code before it ever runs, preventing the AI from "hallucinating" variables that don't exist. It turns the "Vibe" into a contract.
 
-Additionally, types and interfaces ground theory of any system. A seasoned software engineer can plan and architect a module or system using type-defined contracts that the AI will follow. This was good practice before AI-driven development, now it is almost mandatory. 
+Additionally, types and interfaces ground theory of any system. A seasoned software engineer can plan and architect a module or system using type-defined contracts that the AI will follow. This was good practice before AI-driven development, now it is a requirement. 
 
 ---
 
@@ -173,7 +173,7 @@ It becomes **more dependent on the people who can design, integrate, and operate
 
 # What leaders should do
 
-Finally some never-asked ideas for the future.
+Finally some not-requested ideas for the future.
 
 1. **Treat GenAI as a system, not a feature.** Budget for evaluation, monitoring, and workflow redesign.
 2. **Engineer for the verification tax.** Make uncertainty explicit; build feedback loops ("accuracy flywheel").
@@ -192,4 +192,4 @@ Finally some never-asked ideas for the future.
 
 ### Note
 
-This text has been edited by me and mostly written by AI models. I provided the ideas, the links to fetch information (which I have consumed myself previously) and the narravite I wanted. I iterated on the process for quite a while. I also wrote parts of the text myself.
+This text has been edited by me and mostly written by AI models. I provided the ideas, my notes, the links to fetch information (which I have consumed myself previously) and the narravite I wanted. I iterated on the final text for quite some time. I also wrote parts of the text myself.
