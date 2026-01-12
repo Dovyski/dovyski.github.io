@@ -6,6 +6,7 @@ categories:
   - blog
 tags:
   - thoughts
+  - ai
 ---
 
 In June 2025, Sam Altman published a blog post titled [*"The Gentle Singularity,"*](https://blog.samaltman.com/the-gentle-singularity) in which he made a declaration that would have sounded insane just three years prior: *"We are past the event horizon; the takeoff has started"*. To the uninitiated, this summons images of science fiction—robots walking the streets or a sudden, dramatic rupture in reality. Yet, as Altman noted, the world looks largely the same. Commuters still sit in traffic; we still use Jira; and the physical constraints of the universe remain stubbornly in place.
