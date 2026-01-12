@@ -25,9 +25,9 @@ This post is an attempt to do that, grounded in the latest labor signals, develo
 
 ## 1) Abstraction doesn't erase developers — it changes what "developer work" means
 
-A useful historical analogy is the compiler. Before its usage in scale, software was handcrafted on the binary level (or very close to it). As the abstraction improved, developers stopped caring (or paying attention) to the generated, low-level code. The higher the abstraction the provides (programing languange, paradigm, etc), the less we look down in the chain.
+A useful historical analogy is the compiler. Before its usage in scale, software was handcrafted on the binary level (or very close to it). As the abstraction improved, developers stopped caring about (or paying attention to) the generated, low-level code. The higher the abstraction (programing languange, paradigm, etc), the less we look down in the chain.
 
-We don't spend much time today arguing "compiled vs interpreted", or about the "perfect assembly" in the way people did decades ago. That's because most teams now operate at a higher layer of abstraction. Following the analogy mentioned before, today's Java code is the abstraction, not its bytecodes. Same for C, for instance: most of the time (not always, but very significantly) you don't look at the generated assembly code. It's simply too low level.
+We don't spend much time today arguing "compiled vs interpreted", or about the "perfect assembly" in the way people did decades ago. That's because most teams now operate at a higher layer of abstraction. Following that analogy, today's Java code is the abstraction, not its bytecodes. Same for C, for instance: most of the time (not always, but very significantly) you don't look at the generated assembly code. It's simply too low level.
 
 In that sense, compilers or interpreters didn't eliminate developers; they made it cheaper to create software. That dynamic tends to increase demand. You can see this in how the developer population grew alongside each major abstraction wave.
 
@@ -105,7 +105,7 @@ In a [recent Forbes piece covering MIT research](https://www.forbes.com/sites/ja
 
 Why? Because of the **Verification Tax**.
 
-Generative AI is confidently wrong. If a model is 95% accurate, you still have to check 100% of its work to find the 5% of errors. The economic formula for AI adoption isn't just about speed; it's:
+Generative AI is confidently wrong. If a model is 95% accurate, you still have to check 100% of its work to find the 5% of errors. The economic formula for AI adoption isn't just about speed.
 
 When systems are confidently wrong, people accumulate **"Trust Debt."** They spend more time forensic-checking the AI's output than they would have spent writing it themselves.
 
@@ -115,6 +115,8 @@ This explains a startling statistic from [GitHub's *Octoverse 2025*](https://git
 
 Why? Because Types are the **automated payment of the Verification Tax**.
 In a world where AI generates millions of lines of code, humans can no longer verify it all by reading. We need automated guardrails. TypeScript's static type system rejects invalid code before it ever runs, preventing the AI from "hallucinating" variables that don't exist. It turns the "Vibe" into a contract.
+
+Additionally, types and interfaces ground theory of any system. A seasoned software engineer can plan and architect a module or system using type-defined contracts that the AI will follow. This was good practice before AI-driven development, now it is almost mandatory. 
 
 ---
 
@@ -134,15 +136,17 @@ On the [Stack Overflow podcast](https://stackoverflow.blog/2026/01/07/you-need-q
 2. **Keep experts responsible** for correctness and system-level coherence (verification).
 3. **Reinvest the productivity gains** into more software and better operations (Jevons Paradox).
 
-Every serious, corporate-grade line of software needs caring beyond text. For instance, systems still need customer feedback loops, support, investiment, decisions. It's naive to belive that when you replace all developers with AI equivalents, you can just say *"Oh, that's wrong because of my AI. I am sorry, it will fix it"*__* when your software causes financial (or human) losses.
+Every serious, corporate-grade line of code needs caring beyond text. For instance, systems still need customer feedback loops, support, investiment, decisions. It's naive to belive that when you replace all developers with AI equivalents, you can just say:
 
-Someone has to "sign" and respond for it. Are C-class executives ready to fire all developers then take the fall for anything wrong that happens? I doubt it. 
+> "Oh, that's wrong because of my AI. I am sorry, it will fix it"
+
+You can't say that specially when your software causes financial (or human) losses. Someone still has to "sign" and respond for it. Are C-class executives ready to fire all developers then take the fall for absolutely everything? I doubt it. 
 
 ---
 
 ## 6) The JetBrains lens: some categories shrink, others expand
 
-JetBrains' Developer Ecosystem data reframes the workforce as a portfolio of activities, not just "dev count." With **~20.8M professional developers in 2025**, the work is redistributing.
+[JetBrains' Developer Ecosystem data](https://devecosystem-2025.jetbrains.com/) reframes the workforce as a portfolio of activities, not just "dev count." With **~20.8M professional developers in 2025**, the work is redistributing.
 
 My read of the likely shift:
 
@@ -163,7 +167,7 @@ Software development is coordination across stakeholders (execs, product, suppor
 
 It becomes **more dependent on the people who can design, integrate, and operate AI-enabled systems end-to-end**, with accountability.
 
-The engineers of the future will not be those who can prompt the fastest, but those who can verify the deepest.
+> The engineers of the future will not be those who can prompt the fastest, but those who can verify and plan the deepest.
 
 ---
 
@@ -186,6 +190,6 @@ Finally some never-asked ideas for the future.
 - [HackerRank Blog, *The Productivity Paradox of AI*, 2025](https://www.hackerrank.com/blog/the-productivity-paradox-of-ai/)
 - [Microsoft Research, *The Impact of AI on Developer Productivity*, 2024](https://www.microsoft.com/en-us/research/publication/the-impact-of-ai-on-developer-productivity-evidence-from-github-copilot/)
 
-### Additional Notes
+### Note
 
-This text has been edited by me and mostly written by AI models. I provided the ideas, the links to fetch information (which I have consumed myself previously) and the narravite I wanted. I iterated on the processed for quite a while. I also wrote parts of the text myself.
+This text has been edited by me and mostly written by AI models. I provided the ideas, the links to fetch information (which I have consumed myself previously) and the narravite I wanted. I iterated on the process for quite a while. I also wrote parts of the text myself.
