@@ -73,7 +73,9 @@ If the quantitative shift is about numbers, the qualitative shift is about *meth
 
 Popularized by Andrej Karpathy, Vibe Coding describes a workflow where the human acts as a director rather than a mason. You don't write loops; you "vibe" with the LLM. You paste a screenshot and say, *"Make it look like this but pop more."* You describe intent, and the machine generates syntax.
 
-This was made possible by the rapid commoditization of AI models. Using Claude Opus 4.5 today, for instance, is something impossible to think of (or explain) 10 years ago. It is important to stress that this way of working is in the hands of those who can affort tokens. Also they are gatekept by the FANGS of the world. However, open-source models are improving at neck-breaking speed. As shown below, models like [**Vicuna-13B** quickly reached **92%** of ChatGPT's quality](https://lmsys.org/blog/2023-03-30-vicuna/), collapsing the moat between proprietary and open tools.
+This was made possible by the rapid commoditization of AI models. Using Claude Opus 4.5 today, for instance, is something impossible to think of (or explain) 10 years ago. It is important to stress that this way of working is in the hands of those who can affort tokens. Also they are gatekept by the FANGS of the world.
+
+Open-source models, however, are improving at neck-breaking speed. As shown below, models like [**Vicuna-13B** quickly reached **92%** of ChatGPT's quality](https://lmsys.org/blog/2023-03-30-vicuna/), collapsing the moat between proprietary and open tools.
 
 ![Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality](/public/img/posts/open-source-ai-models-evolution.webp)
 *[Source: Vicuna](https://lmsys.org/blog/2023-03-30-vicuna/)*
@@ -132,7 +134,7 @@ On the [Stack Overflow podcast](https://stackoverflow.blog/2026/01/07/you-need-q
 2. **Keep experts responsible** for correctness and system-level coherence (verification).
 3. **Reinvest the productivity gains** into more software and better operations (Jevons Paradox).
 
-Every serious, corporate-grade line of software needs caring beyond text. For instance, systems still need customer feedback loops, support, investiment, decisions. It's naive to belive that when you replace all developers with AI equivalents, you can just say __"Oh, that's wrong because of my AI. I am sorry, it will fix it"__ when your software causes financial (or human) losses.
+Every serious, corporate-grade line of software needs caring beyond text. For instance, systems still need customer feedback loops, support, investiment, decisions. It's naive to belive that when you replace all developers with AI equivalents, you can just say *"Oh, that's wrong because of my AI. I am sorry, it will fix it"*__* when your software causes financial (or human) losses.
 
 Someone has to "sign" and respond for it. Are C-class executives ready to fire all developers then take the fall for anything wrong that happens? I doubt it. 
 
@@ -183,3 +185,7 @@ Finally some never-asked ideas for the future.
 - [MIT Media Lab (Project NANDA), *The GenAI Divide: State of AI in Business 2025*](https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf)
 - [HackerRank Blog, *The Productivity Paradox of AI*, 2025](https://www.hackerrank.com/blog/the-productivity-paradox-of-ai/)
 - [Microsoft Research, *The Impact of AI on Developer Productivity*, 2024](https://www.microsoft.com/en-us/research/publication/the-impact-of-ai-on-developer-productivity-evidence-from-github-copilot/)
+
+### Additional Notes
+
+This text has been edited by me and mostly written by AI models. I provided the ideas, the links to fetch information (which I have consumed myself previously) and the narravite I wanted. I iterated on the processed for quite a while. I also wrote parts of the text myself.
