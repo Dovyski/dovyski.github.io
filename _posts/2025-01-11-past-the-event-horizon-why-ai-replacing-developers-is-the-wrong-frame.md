@@ -25,7 +25,7 @@ This post is an attempt to do that, grounded in the latest labor signals, develo
 
 ## 1) Abstraction doesn't erase developers — it changes what "developer work" means
 
-A useful historical analogy is the compiler. Before its usage in scale, software was handcrafted on the binary level (or very close to it). As the abstraction improved, developers stopped caring about (or paying attention to) the generated, low-level code. The higher the abstraction (programing languange, paradigm, etc), the less we look down in the chain.
+A useful historical analogy is the compiler. Before its usage in scale, software was handcrafted on the binary level (or very close to it). As the abstraction improved, developers stopped caring about (or paying attention to) the generated, low-level code. The higher the abstraction (programing languange, paradigm, etc), the less we look down the chain.
 
 We don't spend much time today arguing "compiled vs interpreted", or about the "perfect assembly" in the way people did decades ago. That's because most teams now operate at a higher layer of abstraction. Following that analogy, today's Java code is the abstraction, not its bytecodes. Same for C, for instance: most of the time (not always, but very significantly) you don't look at the generated assembly code. It's simply too low level.
 
@@ -84,6 +84,8 @@ If we bring the chinese massive progress regarding AI, specially in the open-sou
 
 > DeepSeek-V3 stands as the best-performing open-source model, and also exhibits competitive performance against frontier closed-source models.
 
+The power of open-source is already stablished in software development. It is paving the same way regarding AI. The famous [Google's Leaked "No Moat" Memo](https://www.supervised.news/p/revisiting-that-old-google-ai-memo) warned the company about that. The memo noted that open-source models were achieving results comparable to Google's with significantly less time and capital investment. *"Open-source models are faster, more customizable, more private, and pound-for-pound more capable"*.
+
 Regardless of the model, be it a paid or an open-source one, its usage has very low friction now. It clearly helps the development and production of software, so it becomes an inflection point. It is simply too slow to create something without AI from now on.
 
 ### The Danger: Theory Loss
@@ -114,9 +116,9 @@ When systems are confidently wrong, people accumulate **"Trust Debt."** They spe
 This explains a startling statistic from [GitHub's *Octoverse 2025*](https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/): In August 2025, **TypeScript overtook Python** to become the #1 language on GitHub.
 
 Why? Because Types are the **automated payment of the Verification Tax**.
-In a world where AI generates millions of lines of code, humans can no longer verify it all by reading. We need automated guardrails. TypeScript's static type system rejects invalid code before it ever runs, preventing the AI from "hallucinating" variables that don't exist. It turns the "Vibe" into a contract.
+In a world where AI generates millions of lines of code, humans can no longer verify it all by reading. We need automated guardrails. TypeScript's static type system rejects invalid code before it ever runs, preventing the AI from "hallucinating" artifacts that don't exist. It turns the "Vibe" into a contract.
 
-Additionally, types and interfaces ground theory of any system. A seasoned software engineer can plan and architect a module or system using type-defined contracts that the AI will follow. This was good practice before AI-driven development, now it is a requirement. 
+Additionally, types and interfaces are ground theory for any system. A seasoned software engineer can plan and architect using type-defined contracts that the AI will follow. This was good practice before AI-driven development, now it is a requirement. 
 
 ---
 
