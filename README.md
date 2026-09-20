@@ -1,6 +1,16 @@
 # dovyski.github.io
 The source and content of my personal website/blog.
 
+## Preview locally
+
+With Jekyll and `jekyll-paginate` installed, run from the repository root:
+
+```sh
+jekyll serve --config _config.yml,_config.preview.yml --drafts --force_polling
+```
+
+Open http://localhost:4000/blog/how-i-use-ai-for-development/ to preview the AI development series introduction. Edit `_drafts/how-i-use-ai-for-development.md` and refresh to see changes. Drafts are excluded from normal production builds.
+
 ## Deploy outside Github
 The website was designed to be served in a custom domain outside Github Pages. For that reason, it will not work under the `github.io` domain. In order to make it work in another web server, you need a special folder structure.
 
