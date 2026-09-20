@@ -5,11 +5,13 @@
 
   <body>
 
-    {% include sidebar.html %}
+    {% include header.html %}
 
-    <div class="content container">
+    <main id="main" class="content container" tabindex="-1">
       {{ content }}
-    </div>
+    </main>
+
+    {% include footer.html %}
 
     {% include ga.html %}
     {% include fontawesome.html %}

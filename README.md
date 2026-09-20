@@ -3,6 +3,16 @@ The source and content of my personal website/blog.
 
 ## Preview locally
 
+### Design versions
+
+The charcoal sidebar and Source Sans 3 design is saved on `master`, at the
+`charcoal-source-sans-checkpoint` tag (`08ec2aa`). The editorial redesign lives
+on `design/editorial-refresh`.
+
+With a clean working tree, switch between designs using `git switch master`
+and `git switch design/editorial-refresh`. Restart the preview server after
+switching branches so the generated pages are rebuilt together.
+
 With Jekyll and `jekyll-paginate` installed, run from the repository root:
 
 ```sh
