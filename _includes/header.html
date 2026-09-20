@@ -11,8 +11,3 @@
     <a href="/academic/"{% if page.url contains '/academic/' %} aria-current="page"{% endif %}>Research</a>
   </nav>
 </header>
-{% if page.url contains '/portfolio/' %}
-<nav class="section-nav" aria-label="Project categories"><a href="/portfolio/games/">Games</a><a href="/portfolio/software/">Software</a><a href="/portfolio/misc/">Other projects</a></nav>
-{% elsif page.url contains '/academic/' %}
-<nav class="section-nav" aria-label="Academic sections"><a href="/academic/research/">Research projects</a><a href="/academic/publications/">Publications</a><a href="/academic/teaching/">Teaching</a></nav>
-{% endif %}

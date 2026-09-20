@@ -7,11 +7,19 @@
 
     {% include header.html %}
 
+    {% if page.title == 'About' %}
+      {% include home-hero.html %}
+    {% elsif page.layout == 'page' or page.layout == 'post' %}
+      {% include section-hero.html %}
+      {% include section-nav.html %}
+    {% endif %}
+
     <main id="main" class="content container" tabindex="-1">
       {{ content }}
     </main>
 
     {% include footer.html %}
+    <script src="/public/js/hero-motion.js" defer></script>
 
     {% include ga.html %}
     {% include fontawesome.html %}

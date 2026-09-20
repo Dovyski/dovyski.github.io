@@ -1,0 +1,17 @@
+{% assign film = 'mission-control' %}
+{% assign film_title = 'Apollo 11 / Mission control / 1969' %}
+{% assign film_source = 'https://images.nasa.gov/details/KSC-19690716-MH-NAS01-0001-Apollo_11_Mission_Control_Center_Film_Rolls1' %}
+{% if page.url contains '/portfolio' %}
+  {% assign film = 'apollo-launch' %}
+  {% assign film_title = 'Apollo 11 / Launch / 1969' %}
+  {% assign film_source = 'https://science.nasa.gov/resource/apollo-11-launch/' %}
+{% endif %}
+<header class="film-hero" aria-labelledby="section-title">
+  <video class="hero-film" muted loop playsinline preload="none" poster="/public/video/{{ film }}.jpg" data-video-src="/public/video/{{ film }}.mp4" aria-hidden="true" tabindex="-1"></video>
+  <div class="film-inner">
+    <span class="eyebrow">Fernando Bevilacqua / {% if page.title == 'Blog' %}Field notes{% else %}{{ page.title }}{% endif %}</span>
+    <h1 id="section-title">{% if page.title == 'Blog' %}The logbook.{% elsif page.title == 'Portfolio' %}Built to explore.{% else %}{{ page.title }}{% endif %}</h1>
+    {% unless page.layout == 'post' %}<p>{% if page.title == 'Blog' %}Ideas, experiments, and dispatches from a life in software.{% elsif page.url contains '/portfolio' %}Side projects, open-source contributions, and things sent into the world.{% elsif page.url contains '/academic' %}Asking questions. Testing ideas. Sharing what we discover.{% else %}Notes and discoveries from the journey.{% endif %}</p>{% endunless %}
+    <div class="film-caption"><a href="{{ film_source }}">Film archive: NASA / {{ film_title }} ↗</a><button class="motion-toggle" type="button" data-motion-toggle hidden>Play footage</button></div>
+  </div>
+</header>

@@ -1,0 +1,17 @@
+{% if page.url contains '/portfolio' %}
+<nav class="section-nav panel-tabs" aria-label="Project categories">
+  <a href="/portfolio/"{% if page.title == 'Portfolio' %} aria-current="page"{% endif %}><span>00</span> Overview</a>
+  <a href="/portfolio/games/"{% if page.title == 'Games' %} aria-current="page"{% endif %}><span>01</span> Games</a>
+  <a href="/portfolio/software/"{% if page.title == 'Software' %} aria-current="page"{% endif %}><span>02</span> Software</a>
+  <a href="/portfolio/misc/"{% if page.title == 'Misc' %} aria-current="page"{% endif %}><span>03</span> Other projects</a>
+</nav>
+{% elsif page.url contains '/academic' %}
+<nav class="section-nav panel-tabs" aria-label="Academic sections">
+  <a href="/academic/"{% if page.title == 'Academic' %} aria-current="page"{% endif %}><span>00</span> Overview</a>
+  <a href="/academic/research/"{% if page.url contains '/academic/research' %} aria-current="page"{% endif %}><span>01</span> Research</a>
+  <a href="/academic/publications/"{% if page.title == 'Publications' %} aria-current="page"{% endif %}><span>02</span> Publications</a>
+  <a href="/academic/teaching/"{% if page.title == 'Teaching' %} aria-current="page"{% endif %}><span>03</span> Teaching</a>
+</nav>
+{% elsif page.title == 'Blog' %}
+<div class="archive-band"><span>Field notes / Open archive</span><b>{{ site.posts | size }} entries</b><span>Essays · Experiments · Observations</span></div>
+{% endif %}
