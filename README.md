@@ -9,6 +9,11 @@ The charcoal sidebar and Source Sans 3 design is saved on `master`, at the
 `charcoal-source-sans-checkpoint` tag (`08ec2aa`). The editorial redesign lives
 on `design/editorial-refresh`.
 
+The 1960s spaceflight direction is on `design/spaceflight`. Its homepage portrait
+was created with the built-in image generation tool using the existing profile
+photo as the identity reference; the prompt is saved in
+`_design/spaceflight-image-prompt.md`.
+
 With a clean working tree, switch between designs using `git switch master`
 and `git switch design/editorial-refresh`. Restart the preview server after
 switching branches so the generated pages are rebuilt together.

@@ -4,12 +4,14 @@ layout: default
 
 <div class="page">
   {% if page.title == 'About' %}
-  <header class="home-intro">
-    <div><span class="eyebrow">Developer · Researcher · Open-source contributor</span><h1 class="page-title">A curious mind.<br />A builder at heart.</h1><p class="intro-deck">I'm Fernando. I build software, explore ideas, and share what I learn along the way.</p><a class="intro-link" href="/blog/">Read my writing <span aria-hidden="true">↗</span></a></div>
-    <figure class="intro-portrait"><img src="/public/img/fernando-bevilacqua.webp" alt="Fernando Bevilacqua" /><figcaption>Fernando Bevilacqua / Brazil</figcaption></figure>
+  <header class="home-intro mission-hero">
+    <div class="mission-copy"><span class="eyebrow">Independent exploration / Personal log</span><h1 class="page-title">Stay curious.<br />Keep exploring.</h1><p class="intro-deck">I'm Fernando. Software engineer, researcher, and builder of things. This is my little outpost on the web.</p><a class="intro-link" href="/blog/">Explore the logbook <span aria-hidden="true">↗</span></a></div>
+    <figure class="mission-portrait"><img src="/public/img/fernando-spacewalk.png" width="1536" height="1024" fetchpriority="high" alt="An imagined portrait of Fernando floating above Earth in a 1960s-style spacesuit." /><figcaption>Fig. 01 / A little imagination, a wider perspective.</figcaption></figure>
   </header>
+  <div class="mission-strip"><span><b>01</b> Software engineering</span><span><b>02</b> Open-source exploration</span><span><b>03</b> Notes from the journey</span></div>
+  <div class="dossier-heading"><span class="eyebrow">Personnel file / 001</span><h2>The person behind the helmet.</h2></div>
   {% elsif page.title == 'Blog' %}
-  <header class="archive-intro"><span class="eyebrow">The notebook</span><h1 class="page-title">Thinking out loud.</h1><p class="intro-deck">Notes on building software, following curiosity,<br class="desktop-break" /> and figuring things out along the way.</p><span class="archive-label">Essays, experiments & observations <span>↓</span></span></header>
+  <header class="archive-intro"><span class="eyebrow">Field notes / Open transmission</span><h1 class="page-title">The logbook.</h1><p class="intro-deck">Notes on building software, following curiosity,<br class="desktop-break" /> and figuring things out along the way.</p><span class="archive-label">Essays, experiments & observations <span>↓</span></span></header>
   {% else %}
   <header class="section-intro"><span class="eyebrow">Fernando Bevilacqua / {{ page.title }}</span><h1 class="page-title">{{ page.title }}</h1></header>
   {% endif %}

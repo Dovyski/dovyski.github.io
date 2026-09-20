@@ -1,0 +1,109 @@
+/* Spaceflight: the optimism and precision of mid-century mission documents. */
+:root {
+  --ink: #252522;
+  --muted: #6c6b63;
+  --paper: #f1f0e8;
+  --line: #cecec3;
+  --accent: #a63724;
+  --technical: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+body { border-top: 7px solid var(--accent); }
+html { font-size: 19px; }
+::selection { color: #fff; background: #a63724; }
+h1, h2, h3 { font-family: "Source Sans 3", sans-serif; font-weight: 700; letter-spacing: -.035em; }
+.site-header { padding: 1.3rem 0; border-bottom: 2px solid var(--ink); }
+.identity { font-size: 1rem; }
+.identity img { border: 1px solid var(--ink); padding: 3px; width: 48px; height: 48px; }
+.identity-caption { font-size: .6rem; font-family: var(--technical); }
+.primary-nav a { font-family: var(--technical); font-size: .65rem; text-transform: uppercase; letter-spacing: .04em; }
+.primary-nav a[aria-current] { border-bottom-width: 3px; }
+.eyebrow, .archive-label, .archive-date, .section-nav, .footer-bottom, .back-to-writing {
+  font-family: var(--technical);
+}
+.eyebrow { font-size: .57rem; font-weight: 400; letter-spacing: .08em; }
+.section-nav { font-size: .65rem; text-transform: uppercase; }
+.home-intro.mission-hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: clamp(580px, 58vw, 720px);
+  isolation: isolate;
+  overflow: hidden;
+  padding: 3rem 2.5rem;
+  margin: 1.5rem 0 0;
+  border: 0;
+  background: #101112;
+  color: #f6f4ed;
+}
+.mission-portrait { position: absolute; inset: 0; margin: 0; z-index: -2; }
+.mission-portrait img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top; border-radius: 0; margin: 0; }
+.mission-hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(10,11,12,.88), rgba(10,11,12,.6) 30%, transparent 62%); z-index: -1; }
+.mission-copy { width: 45%; max-width: 450px; padding-bottom: 2rem; }
+.mission-copy .eyebrow { color: #d2b8a3; font-size: .55rem; }
+.mission-hero .page-title { color: #f6f4ed; font-size: clamp(2.7rem, 4.8vw, 3.7rem); font-weight: 750; line-height: .98; letter-spacing: -.045em; text-transform: uppercase; margin: 1.4rem 0; }
+.mission-hero .intro-deck { max-width: 18rem; color: #d2d0c8; font-size: .95rem; line-height: 1.6; }
+.mission-hero a.intro-link { display: inline-flex; color: #f6f4ed; border: 1px solid #b1b0a8; padding: .7rem 1rem; font-family: var(--technical); font-size: .59rem; font-weight: 400; text-transform: uppercase; letter-spacing: .02em; }
+.mission-hero a.intro-link:hover, .mission-hero a.intro-link:focus { background: #f6f4ed; color: #242424; border: 1px solid #f6f4ed; text-decoration: none; }
+.mission-portrait figcaption { position: absolute; bottom: 1rem; right: 1rem; left: 1rem; text-align: right; color: #d2d0c8; font: .48rem var(--technical); letter-spacing: .03em; text-transform: uppercase; }
+.mission-strip { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid var(--line); border-top: 3px solid var(--accent); margin-bottom: 3rem; }
+.mission-strip span { display: flex; gap: .75rem; padding: .9rem 1rem; font: .55rem var(--technical); text-transform: uppercase; line-height: 1.5; }
+.mission-strip span + span { border-left: 1px solid var(--line); }
+.mission-strip b { color: var(--accent); font-weight: 400; }
+.dossier-heading { margin: 0 0 1.5rem; }
+.dossier-heading h2 { margin: .6rem 0 1rem; font-size: 2rem; }
+.page > h3 { font-family: "Source Sans 3", sans-serif; font-size: 1.35rem; }
+.archive-intro, .section-intro { padding-top: 3rem; }
+.archive-intro .page-title, .section-intro .page-title { font-size: clamp(2.8rem, 6vw, 4.7rem); font-weight: 750; text-transform: uppercase; line-height: .98; }
+.intro-deck { color: var(--muted); }
+.posts { border-top: 3px solid var(--ink); }
+.archive-date { font-size: .6rem; }
+.archive-date span { font-size: .52rem; }
+.posts .post-title { font-family: "Source Sans 3", sans-serif; font-weight: 650; font-size: clamp(1.5rem, 2.6vw, 1.95rem); letter-spacing: -.025em; }
+.page a.read-story { font-family: var(--technical); font-size: .6rem; text-transform: uppercase; font-weight: 400; }
+.content > .post { font-family: "Source Sans 3", sans-serif; font-size: 1.05rem; line-height: 1.75; }
+.content > .post .post-title { font-family: "Source Sans 3", sans-serif; font-weight: 700; line-height: 1.05; }
+.content > .post .post-meta { font-family: var(--technical); font-size: .6rem; line-height: 1.9; }
+.related-posts strong { font-family: "Source Sans 3", sans-serif; font-weight: 600; font-size: 1.15rem; }
+.page a, .post a { text-decoration-color: #b4a296; }
+blockquote { background: #e8e7de; color: #46463f; border-color: var(--accent); border-radius: 0; }
+code { background: #e6e5dc; color: #723526; }
+pre { background: #e6e5dc; border-radius: 0; }
+th { background: #e6e5dc; }
+.content img { border-radius: 0; }
+.page a.btn, .post a.btn { border-radius: 0; font-family: var(--technical); font-size: .65rem; }
+.site-footer { border-top: 3px solid var(--ink); }
+.footer-email { font-family: "Source Sans 3", sans-serif; font-weight: 700; text-transform: uppercase; font-size: 2.5rem; letter-spacing: -.035em; }
+.site-footer nav { font-family: var(--technical); font-size: .65rem; }
+.footer-bottom { font-size: .5rem; }
+@media (max-width: 900px) {
+  .home-intro.mission-hero { min-height: 560px; padding: 2rem 1.5rem; }
+  .mission-copy { width: 49%; }
+  .mission-hero .page-title { font-size: 2.8rem; }
+  .mission-hero .intro-deck { font-size: .85rem; }
+  .mission-strip span { padding: .75rem; font-size: .5rem; }
+}
+@media (max-width: 600px) {
+  html { font-size: 18px; }
+  .home-intro.mission-hero { display: flex; flex-direction: column; align-items: stretch; min-height: 0; padding: 0; }
+  .mission-copy { width: 100%; max-width: none; padding: 2rem 1.25rem .5rem; }
+  .mission-hero .page-title { font-size: clamp(2.3rem, 9vw, 3.3rem); }
+  .mission-hero .intro-deck { max-width: 25rem; font-size: .95rem; }
+  .mission-portrait { position: relative; inset: auto; z-index: auto; width: 100%; }
+  .mission-portrait img { width: 100%; height: auto; object-fit: contain; }
+  .mission-portrait figcaption { position: static; text-align: left; margin: 0; padding: .6rem 1rem 1rem; font-size: .43rem; }
+  .mission-hero::before { display: none; }
+  .mission-strip { grid-template-columns: 1fr; margin-bottom: 2rem; }
+  .mission-strip span { font-size: .55rem; }
+  .mission-strip span + span { border-left: 0; border-top: 1px solid var(--line); }
+  .dossier-heading h2 { font-size: 1.7rem; }
+  .archive-intro .page-title, .section-intro .page-title { overflow-wrap: anywhere; font-size: 2.8rem; }
+  .primary-nav { gap: .5rem; }
+  .primary-nav a { font-size: .6rem; }
+  .footer-email { font-size: 2rem; }
+}
+@media print {
+  .home-intro.mission-hero { display: block; min-height: 0; color: #000; background: #fff; padding: 0; }
+  .mission-copy { width: 100%; max-width: none; }
+  .mission-portrait, .mission-hero::before { display: none; }
+  .mission-hero .page-title, .mission-hero .intro-deck, .mission-copy .eyebrow { color: #000; }
+}
