@@ -1,4 +1,9 @@
 /* Final surface details for the mission-control art direction. */
+:root {
+  --paper: #f3e8d5;
+  --line: #d5c8b3;
+}
+
 .site-footer {
   display: block;
   width: 100%;
