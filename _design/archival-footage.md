@@ -18,6 +18,26 @@ with visible NASA credits linking to the original records.
 - Local files: `public/video/mission-control.mp4`, `public/video/mission-control.jpg`
 - Excerpt: 540–558 seconds. Silent, pillarboxes removed, 960px wide, 24fps.
 
+### Section excerpts from the mission-control film
+
+All excerpts below are silent H.264 MP4 files, 960px wide at 24fps, with a
+same-named JPEG poster. Each excerpt is 16 seconds long.
+
+| Section | Local basename | Excerpt | Editorial subject |
+| --- | --- | --- | --- |
+| Portfolio / Software | `software-console` | 296–312 seconds | Console hardware and technical operators |
+| Portfolio / Misc | `misc-comms` | 744–760 seconds | Headset communications and coordination |
+| Academic | `academic-console` | 836–852 seconds | Wide mission-operations console view |
+| Academic / Research | `research-equipment` | 276–292 seconds | Equipment inspection and technical work |
+| Academic / Publications | `publications-comms` | 718–734 seconds | Communications-room documentation |
+| Academic / Teaching | `teaching-observation` | 530–546 seconds | Observation and information exchange |
+
+### Section excerpt from the Apollo 11 launch film
+
+| Section | Local basename | Excerpt | Editorial subject |
+| --- | --- | --- | --- |
+| Portfolio / Games | `games-gantry` | 54–70 seconds | Gantry activity and launch preparation |
+
 NASA media guidance: https://www.nasa.gov/nasa-brand-center/images-and-media/
 
 The media guidance permits NASA content on personal informational websites,

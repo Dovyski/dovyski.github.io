@@ -14,8 +14,15 @@ was created with the built-in image generation tool using the existing profile
 photo as the identity reference; the prompt is saved in
 `_design/spaceflight-image-prompt.md`.
 
+The current homepage uses separate space and astronaut layers. The developer
+portrait and its prompt are documented in `_design/astronaut-laptop-prompt.md`;
+the space-background prompt is in `_design/layered-hero-prompts.md`. Historical
+video sources and edit timestamps are recorded in `_design/archival-footage.md`.
+Hero motion can be paused and honors reduced-motion and data-saving preferences.
+
 With a clean working tree, switch between designs using `git switch master`
-and `git switch design/editorial-refresh`. Restart the preview server after
+and `git switch design/spaceflight` (or `git switch design/editorial-refresh`
+for the earlier editorial experiment). Restart the preview server after
 switching branches so the generated pages are rebuilt together.
 
 With Jekyll and `jekyll-paginate` installed, run from the repository root:

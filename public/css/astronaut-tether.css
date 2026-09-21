@@ -1,0 +1,60 @@
+.astronaut-tether {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+}
+
+.astronaut-tether path {
+  fill: none;
+  stroke: #d5d1c8;
+  stroke-width: 8;
+  stroke-linecap: round;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, .6));
+}
+
+.astronaut-rig {
+  position: absolute;
+  z-index: 2;
+  right: -1%;
+  top: 3%;
+  height: 94%;
+  aspect-ratio: 2 / 3;
+  transform-origin: 52% 45%;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.astronaut-rig .floating-astronaut {
+  position: static;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin: 0;
+  animation: none;
+  transform: none;
+}
+
+@media (max-width: 600px) {
+  .astronaut-rig {
+    width: min(88%, 287px);
+    height: auto;
+    top: auto;
+    right: calc((88% - min(88%, 287px)) / 2);
+    bottom: 40px;
+  }
+
+  .astronaut-tether path { stroke-width: 6; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .astronaut-rig { will-change: auto; }
+}
+
+@media print {
+  .astronaut-tether { display: none; }
+}

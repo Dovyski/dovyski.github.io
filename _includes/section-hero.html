@@ -1,10 +1,32 @@
 {% assign film = 'mission-control' %}
 {% assign film_title = 'Apollo 11 / Mission control / 1969' %}
 {% assign film_source = 'https://images.nasa.gov/details/KSC-19690716-MH-NAS01-0001-Apollo_11_Mission_Control_Center_Film_Rolls1' %}
-{% if page.url contains '/portfolio' %}
+{% if page.url contains '/portfolio/software' %}
+  {% assign film = 'software-console' %}
+  {% assign film_title = 'Apollo 11 / Console equipment / 1969' %}
+{% elsif page.url contains '/portfolio/games' %}
+  {% assign film = 'games-gantry' %}
+  {% assign film_title = 'Apollo 11 / Gantry preparations / 1969' %}
+  {% assign film_source = 'https://science.nasa.gov/resource/apollo-11-launch/' %}
+{% elsif page.url contains '/portfolio/misc' %}
+  {% assign film = 'misc-comms' %}
+  {% assign film_title = 'Apollo 11 / Flight communications / 1969' %}
+{% elsif page.url contains '/portfolio' %}
   {% assign film = 'apollo-launch' %}
   {% assign film_title = 'Apollo 11 / Launch / 1969' %}
   {% assign film_source = 'https://science.nasa.gov/resource/apollo-11-launch/' %}
+{% elsif page.url contains '/academic/research' %}
+  {% assign film = 'research-equipment' %}
+  {% assign film_title = 'Apollo 11 / Technical operations / 1969' %}
+{% elsif page.url contains '/academic/publications' %}
+  {% assign film = 'publications-comms' %}
+  {% assign film_title = 'Apollo 11 / Communications room / 1969' %}
+{% elsif page.url contains '/academic/teaching' %}
+  {% assign film = 'teaching-observation' %}
+  {% assign film_title = 'Apollo 11 / Flight observation / 1969' %}
+{% elsif page.url contains '/academic' %}
+  {% assign film = 'academic-console' %}
+  {% assign film_title = 'Apollo 11 / Mission operations / 1969' %}
 {% endif %}
 <header class="film-hero" aria-labelledby="section-title">
   <video class="hero-film" muted loop playsinline preload="none" poster="/public/video/{{ film }}.jpg" data-video-src="/public/video/{{ film }}.mp4" aria-hidden="true" tabindex="-1"></video>
