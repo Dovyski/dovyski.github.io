@@ -5,9 +5,10 @@ The source and content of my personal website/blog.
 
 ### Design versions
 
-The charcoal sidebar and Source Sans 3 design is saved on `master`, at the
-`charcoal-source-sans-checkpoint` tag (`08ec2aa`). The editorial redesign lives
-on `design/editorial-refresh`.
+The final spaceflight design is published from `master`, the repository's
+default branch and GitHub Pages source. The charcoal sidebar and Source Sans 3
+design is preserved at the `charcoal-source-sans-checkpoint` tag (`08ec2aa`).
+The earlier editorial redesign lives on `design/editorial-refresh`.
 
 The 1960s spaceflight direction is on `design/spaceflight`. Its homepage portrait
 was created with the built-in image generation tool using the existing profile
@@ -20,10 +21,11 @@ the space-background prompt is in `_design/layered-hero-prompts.md`. Historical
 video sources and edit timestamps are recorded in `_design/archival-footage.md`.
 Hero motion can be paused and honors reduced-motion and data-saving preferences.
 
-With a clean working tree, switch between designs using `git switch master`
-and `git switch design/spaceflight` (or `git switch design/editorial-refresh`
-for the earlier editorial experiment). Restart the preview server after
-switching branches so the generated pages are rebuilt together.
+With a clean working tree, preview the charcoal version using
+`git switch --detach charcoal-source-sans-checkpoint`. Return to the final site
+with `git switch master`, or use `git switch design/editorial-refresh` to view
+the earlier editorial experiment. Restart the preview server after switching
+versions so the generated pages are rebuilt together.
 
 With Jekyll and `jekyll-paginate` installed, run from the repository root:
 
