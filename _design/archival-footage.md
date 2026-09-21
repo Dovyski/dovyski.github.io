@@ -30,7 +30,6 @@ same-named JPEG poster. Each excerpt is 16 seconds long.
 | Academic | `academic-console` | 836–852 seconds | Wide mission-operations console view |
 | Academic / Research | `research-equipment` | 276–292 seconds | Equipment inspection and technical work |
 | Academic / Publications | `publications-comms` | 718–734 seconds | Communications-room documentation |
-| Academic / Teaching | `teaching-observation` | 530–546 seconds | Observation and information exchange |
 
 ### Section excerpt from the Apollo 11 launch film
 

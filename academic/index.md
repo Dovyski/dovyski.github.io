@@ -9,5 +9,3 @@ This is a list of my most relevant academic materials. For a complete list of al
 * [Research](./research): research projects I am involved.
 
 * [Publications](./publications): list of my academic publications.
-
-* [Teaching](./teaching): materials and information related to my teaching activities.

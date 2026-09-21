@@ -4,6 +4,12 @@
   --line: #d5c8b3;
 }
 
+.section-nav.academic-tabs { grid-template-columns: repeat(3, 1fr); }
+
+@media (max-width: 600px) {
+  .academic-tabs a { padding: .85rem .5rem; font-size: .7rem; gap: .35rem; }
+}
+
 .site-footer {
   display: block;
   width: 100%;
