@@ -11,6 +11,33 @@ with visible NASA credits linking to the original records.
 - Local files: `public/video/apollo-launch.mp4`, `public/video/apollo-launch.jpg`
 - Excerpt: 70–88 seconds. Silent, pillarboxes removed, 960px wide, 24fps.
 
+### Interpolated slow motion for all heroes
+
+All video heroes use `public/video/<basename>-slow.mp4`, with half-speed
+motion baked into the file at 24fps. Browser playback stays at rate 1.
+The original clips and posters remain available for comparison and rollback.
+The approved Portfolio launch treatment is applied to all eight clips.
+
+Generated with the installed FFmpeg motion-compensated `minterpolate` filter,
+which estimates intermediate frames instead of simply repeating frames.
+Reproduce from the repository root:
+
+```powershell
+Get-ChildItem public/video/*.mp4 | Where-Object { $_.BaseName -notmatch '-slow$' } | ForEach-Object {
+  $durationText = & ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 $_.FullName
+  $duration = ([double]::Parse($durationText, [cultureinfo]::InvariantCulture) * 2).ToString([cultureinfo]::InvariantCulture)
+  $outputPath = Join-Path $_.DirectoryName ($_.BaseName + '-slow.mp4')
+  & ffmpeg -hide_banner -nostdin -y -i $_.FullName -an -vf "setpts=2*(PTS-STARTPTS),minterpolate=fps=24:mi_mode=mci:mc_mode=aobmc:me_mode=bidir:vsbmc=1,tpad=stop_mode=clone:stop_duration=0.2" -t $duration -c:v libx264 -threads 2 -preset slow -crf 23 -pix_fmt yuv420p -movflags +faststart $outputPath
+  if ($LASTEXITCODE -ne 0) { throw "Encoding failed: $($_.Name)" }
+}
+```
+
+The short end padding partially compensates for the interpolation filter's lookahead.
+The results are approximately 32 seconds for the 16-second excerpts and
+36 seconds for the 18-second excerpts. Review moving edges, people, and smoke
+during playback for interpolation artifacts.
+Filter reference: https://ffmpeg.org/ffmpeg-filters.html#minterpolate
+
 ## Apollo 11 mission-control film rolls, 1969
 
 - Source: https://images.nasa.gov/details/KSC-19690716-MH-NAS01-0001-Apollo_11_Mission_Control_Center_Film_Rolls1

@@ -26,7 +26,7 @@
   {% assign film_title = 'Apollo 11 / Mission operations / 1969' %}
 {% endif %}
 <header class="film-hero" aria-labelledby="section-title">
-  <video class="hero-film" muted loop playsinline preload="none" poster="/public/video/{{ film }}.jpg" data-video-src="/public/video/{{ film }}.mp4" aria-hidden="true" tabindex="-1"></video>
+  <video class="hero-film" muted loop playsinline preload="none" poster="/public/video/{{ film }}.jpg" data-video-src="/public/video/{{ film }}-slow.mp4" data-playback-rate="1" aria-hidden="true" tabindex="-1"></video>
   <div class="film-inner">
     <span class="eyebrow">Fernando Bevilacqua / {% if page.title == 'Blog' %}Field notes{% else %}{{ page.title }}{% endif %}</span>
     <h1 id="section-title">{% if page.title == 'Blog' %}The logbook.{% elsif page.title == 'Portfolio' %}Built to explore.{% else %}{{ page.title }}{% endif %}</h1>

@@ -18,8 +18,9 @@
       if (!playing) { video.pause(); return; }
       if (!video.getAttribute('src')) video.src = video.dataset.videoSrc;
       video.muted = true;
-      video.defaultPlaybackRate = 0.5;
-      video.playbackRate = 0.5;
+      const playbackRate = Number(video.dataset.playbackRate) || 1;
+      video.defaultPlaybackRate = playbackRate;
+      video.playbackRate = playbackRate;
       video.play().catch(() => {
         if (request !== playRequest) return;
         enabled = false;
