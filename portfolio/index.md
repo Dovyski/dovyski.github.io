@@ -1,15 +1,25 @@
 ---
 layout: page
 title: Portfolio
+description: Selected open-source projects and a two-decade archive of software, games, research and experiments by Fernando Bevilacqua.
 menu: true
 ---
 
-I have already placed my hands in a variety of different projects, including (but not limited to) games, softwares and web comics. Below you can find a list of all the things I worked on (or still do) which I consider significant.
+My [engineering work](/engineering/) starts with commercial platforms, productivity systems, healthcare software, developer tools and research. This archive keeps the wider history: projects built across two decades of work and exploration. An older stack in these entries reflects when the project was built.
 
-* [Games](./games): my activities related to game development.
+## Selected public projects
 
-* [Software](./software): my software side-projects.
+- [cvui](https://github.com/Dovyski/cvui) — a UI library for OpenCV built from its drawing primitives, without Qt or OpenGL.
+- [Codebot](https://github.com/Dovyski/Codebot) — a web-based IDE shaped around the full game development workflow.
+- [Flixel Studio](https://github.com/Dovyski/flixel-studio) — an in-game editor for HaxeFlixel.
+- [Ryudragon](/portfolio/games/) — a web MMO that reached nearly 300,000 players during its seven-year life.
 
-* [Misc](./misc): all sorts of things, including non-code contributions as web comics.
+## Full archive
 
-* [Academic](/academic): my academic activities, including research and teaching.
+* [Games](./games): professional and independent game development.
+
+* [Software](./software): open-source tools and historical side projects.
+
+* [Misc](./misc): other work, including non-code contributions and web comics.
+
+* [Academic](/academic): research, publications and teaching.

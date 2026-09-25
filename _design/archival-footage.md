@@ -64,6 +64,13 @@ same-named JPEG poster. Each excerpt is 16 seconds long.
 | --- | --- | --- | --- |
 | Portfolio / Games | `games-gantry` | 54–70 seconds | Gantry activity and launch preparation |
 
+## Engineering: Apollo lunar rover footage
+
+- Source and credit: https://svs.gsfc.nasa.gov/10432/ — NASA/Johnson Space Center.
+- Original rendition: https://svs.gsfc.nasa.gov/vis/a010000/a010400/a010432/apollo_footage_fullres.webmhd.webm
+- Local files: `public/video/engineering-rover.mp4`, `public/video/engineering-rover-slow.mp4`, `public/video/engineering-rover.jpg`.
+- Excerpt: 8–24 seconds of the source, showing the lunar rover in motion, without a flag. The source's black side bars are cropped (960×720 at x=160), so the footage fills the hero. The hero mirrors the clip horizontally to keep the rover visible beside the title. Silent, 24fps. The slow version uses the same motion-compensated interpolation as the other heroes at 2.5× duration (40 seconds); the poster comes from six seconds into the local excerpt.
+
 NASA media guidance: https://www.nasa.gov/nasa-brand-center/images-and-media/
 
 The media guidance permits NASA content on personal informational websites,

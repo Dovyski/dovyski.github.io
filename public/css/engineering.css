@@ -1,0 +1,103 @@
+/* Career and engineering content within the existing spaceflight design. */
+.orbital-copy { width: 75%; max-width: 960px; }
+.orbital-hero::before { background: linear-gradient(90deg, rgba(5,7,9,.92), rgba(5,7,9,.77) 48%, rgba(5,7,9,.16) 82%); }
+.orbital-copy h1 { font-size: clamp(2rem, 3.1vw, 2.9rem); font-weight: 500; line-height: 1.12; letter-spacing: -.025em; text-transform: none; max-width: 920px; }
+.orbital-copy .eyebrow { color: #d7b5a3; font-size: .56rem; letter-spacing: .05em; }
+.orbital-copy p { max-width: 35rem; font-size: 1.06rem; }
+.hero-credentials { max-width: 35rem; color: #f5c2a7; font: .62rem/1.7 var(--technical); text-transform: uppercase; letter-spacing: .045em; margin: 1.35rem 0 .35rem; }
+.hero-credentials span { padding: 0 .3rem; color: #bfbcb1; }
+.hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 1.3rem; }
+.hero-text-link { color: #f5eee2; font: .66rem var(--technical); text-transform: uppercase; text-underline-offset: .3em; }
+.hero-text-link:hover { color: #f5c2a7; }
+.home-dossier { padding-top: 0; }
+.impact-snapshot { display: grid; grid-template-columns: repeat(4, 1fr); border: 1px solid var(--ink); border-top: 7px solid var(--accent); background: #e6e4d9; }
+.impact-snapshot > div { padding: 1.5rem 1.2rem; border-right: 1px solid var(--line); }
+.impact-snapshot > div:last-child { border-right: 0; }
+.impact-snapshot strong { display: block; color: var(--ink); font: 750 clamp(1.35rem, 2.5vw, 2.1rem)/1.1 'Source Sans 3', sans-serif; letter-spacing: -.04em; }
+.impact-snapshot span { display: block; margin-top: .5rem; color: #55524c; font: .62rem/1.45 var(--technical); text-transform: uppercase; }
+.home-dossier > .metric-note { border: 0; padding: .6rem 0 0; margin: 0; max-width: none; color: #686057; font: .55rem/1.5 var(--technical); }
+.mission-section { padding: 3.5rem 0 0; }
+.mission-section-heading { border-top: 1px solid var(--ink); padding-top: 1rem; margin-bottom: 1.5rem; }
+.mission-section-heading h2, .closing-grid h2 { margin: .35rem 0 .5rem; font: 750 clamp(2rem, 4vw, 3rem)/1 'Source Sans 3', sans-serif; text-transform: uppercase; letter-spacing: -.035em; }
+.mission-section-heading p { margin: 0; max-width: 42rem; }
+.impact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.impact-card { display: flex; flex-direction: column; padding: 1.5rem; background: #eee9df; }
+.impact-card h3 { margin: .65rem 0 .75rem; font-size: 1.4rem; line-height: 1.1; }
+.impact-card p { margin-bottom: 1.4rem; font-size: .9rem; line-height: 1.5; }
+.impact-card a { margin-top: auto; font: .65rem var(--technical); text-transform: uppercase; }
+.principles-grid { display: grid; grid-template-columns: repeat(2, 1fr); border: 1px solid var(--line); }
+.principles-grid article { padding: 1.5rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.principles-grid article:nth-child(2n) { border-right: 0; }
+.principles-grid article:nth-last-child(-n+2) { border-bottom: 0; }
+.principles-grid h3 { margin: 0 0 .5rem; font-size: 1.2rem; }
+.principles-grid p { margin: 0; font-size: .92rem; }
+.work-list { border-top: 2px solid var(--ink); }
+.page .work-list a { display: grid; grid-template-columns: 1fr 2fr 1.25fr; align-items: baseline; gap: 1rem; padding: 1.1rem .4rem; border-bottom: 1px solid var(--line); text-decoration: none; }
+.work-list a:hover { background: #e6e4d9; }
+.work-list span, .work-list em { font: .6rem/1.4 var(--technical); text-transform: uppercase; font-style: normal; }
+.work-list strong { font-size: 1.15rem; line-height: 1.2; }
+.work-list em { text-align: right; }
+.section-end-link { margin: 1.2rem 0 0; font: .65rem var(--technical); text-transform: uppercase; }
+.experience-list { list-style: none; margin: 0; padding: 0; border-top: 2px solid var(--ink); }
+.experience-list li { display: grid; grid-template-columns: 10rem 1fr; gap: 1rem; padding: 1rem .3rem; border-bottom: 1px solid var(--line); margin: 0 !important; }
+.experience-list time { font: .63rem var(--technical); text-transform: uppercase; color: var(--accent); }
+.experience-list strong { display: block; font-size: 1.1rem; line-height: 1.2; }
+.experience-list span { display: block; font-size: .85rem; line-height: 1.4; color: #57524a; }
+.closing-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; padding-bottom: 3rem; }
+.closing-grid > div { padding: 1.5rem; background: #e6e4d9; border-top: 5px solid var(--accent); }
+.closing-grid p { font-size: .92rem; }
+.closing-grid p:last-child { margin-bottom: 0; }
+.engineering-page { padding-top: 3rem; }
+.engineering-hero .hero-film { object-position: center 24%; transform: scaleX(-1); }
+.engineering-intro { max-width: 760px; padding: 0 0 1.5rem; }
+.engineering-intro p { font-size: 1.12rem; line-height: 1.5; margin: .8rem 0; }
+.case-study { padding: 2rem 0 2.5rem; border-top: 2px solid var(--ink); scroll-margin-top: 2rem; }
+.case-index { font: .6rem var(--technical); text-transform: uppercase; color: var(--accent); }
+.case-study h2 { font: 750 clamp(1.9rem, 3.7vw, 2.9rem)/1.07 'Source Sans 3', sans-serif; text-transform: uppercase; max-width: 850px; margin: .7rem 0 1rem; }
+.case-lead { max-width: 850px; font-size: 1.18rem; line-height: 1.5; }
+.case-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); margin: 1.5rem 0; }
+.case-grid > div { padding: 1.25rem; background: #eee9df; }
+.case-grid h3 { margin: 0 0 .5rem; font-size: 1.1rem; }
+.case-grid p { margin: 0; font-size: .9rem; line-height: 1.5; }
+.case-study > p:not(.case-lead) { max-width: 850px; }
+.engineering-outro { padding: 1.4rem; background: #252522; color: #f1f0e8; }
+.engineering-page .engineering-outro a { color: #f5c2a7; }
+.selected-writing { border-top: 2px solid var(--ink); padding-top: 1.2rem; }
+.selected-writing h2 { font: 750 2.5rem/1 'Source Sans 3', sans-serif; text-transform: uppercase; margin: .3rem 0 1.5rem; }
+.writing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+.writing-grid article { padding: 1.3rem; background: #eee9df; }
+.writing-grid article > span { font: .56rem var(--technical); color: var(--accent); text-transform: uppercase; }
+.writing-grid h3 { font-size: 1.2rem; line-height: 1.2; margin: .65rem 0; }
+.writing-grid p { font-size: .85rem; line-height: 1.45; margin: 0; }
+.full-archive-title { border-top: 2px solid var(--ink); padding-top: 1rem; margin: 3rem 0 1.5rem; font-size: 1.8rem; text-transform: uppercase; }
+.full-archive-title small { font: .6rem var(--technical); color: var(--accent); margin-left: .6rem; }
+@media (max-width: 900px) {
+  .orbital-copy { width: 72%; }
+  .orbital-copy h1 { font-size: clamp(1.9rem, 3.6vw, 2.5rem); }
+  .impact-snapshot { grid-template-columns: repeat(2, 1fr); }
+  .impact-snapshot > div:nth-child(2) { border-right: 0; }
+  .impact-snapshot > div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+  .impact-grid, .writing-grid { grid-template-columns: 1fr; }
+  .work-list a { grid-template-columns: 1fr 2fr !important; }
+  .work-list em { grid-column: 2; text-align: left; }
+}
+@media (max-width: 600px) {
+  .engineering-page { padding-top: 2rem; }
+  .primary-nav { flex-wrap: wrap; justify-content: flex-start; gap: .2rem 1rem; }
+  .primary-nav a { font-size: .62rem; }
+  .orbital-inner { min-height: 940px; padding-bottom: 340px; }
+  .orbital-copy { width: 100%; padding-top: 2.2rem; }
+  .orbital-copy h1 { font-size: clamp(1.9rem, 7.8vw, 2.45rem); }
+  .orbital-copy p { font-size: .95rem; }
+  .floating-astronaut { height: 350px; bottom: 20px; }
+  .hero-actions { gap: .8rem 1.2rem; }
+  .mission-section { padding-top: 2.5rem; }
+  .principles-grid, .closing-grid, .case-grid { grid-template-columns: 1fr; }
+  .principles-grid article { border-right: 0; border-bottom: 1px solid var(--line) !important; }
+  .principles-grid article:last-child { border-bottom: 0 !important; }
+  .work-list a { display: block !important; }
+  .work-list span, .work-list strong, .work-list em { display: block; margin-bottom: .3rem; }
+  .experience-list li { grid-template-columns: 1fr; gap: .3rem; }
+  .closing-grid { gap: 1rem; }
+}
+@media print { .orbital-hero, .mission-strip { display: none; } .impact-grid, .principles-grid, .closing-grid, .case-grid { display: block; } }

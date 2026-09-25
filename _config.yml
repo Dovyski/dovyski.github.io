@@ -7,8 +7,8 @@ permalink:        /:categories/:year/:month/:title/
 
 # Setup
 title:            Fernando Bevilacqua
-tagline:          'Senior software engineer and open-source contributor'
-description:      'Fernando Bevilacqua is a senior software engineer, former game developer (now enthusiast during the free time), passionate about everything open-source.'
+tagline:          'Software engineer and technical leader'
+description:      'Fernando Bevilacqua is a software engineer and technical leader with 20+ years across enterprise SaaS, distributed systems, developer tooling, AI and open source. CTO and Head of Software at Optidata.'
 url:              https://www.fernandobevilacqua.com
 baseurl:          https://www.fernandobevilacqua.com/
 redirect:         false

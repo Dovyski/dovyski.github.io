@@ -2,9 +2,6 @@
 layout: default
 ---
 
-<div class="page{% if page.title == 'About' %} home-dossier{% endif %}">
-  {% if page.title == 'About' %}
-  <div class="dossier-heading"><span class="eyebrow">Personnel file / 001</span><h2>The person<br />behind the helmet.</h2><span class="dossier-stamp" aria-hidden="true">FB / 01</span></div>
-  {% endif %}
+<div class="page{% if page.title == 'About' %} home-dossier{% elsif page.title == 'Engineering' %} engineering-page{% endif %}">
   {{ content }}
 </div>

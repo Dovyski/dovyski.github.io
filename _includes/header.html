@@ -2,11 +2,12 @@
 <header class="site-header">
   <a class="identity" href="/">
     <img src="/public/img/fernando-bevilacqua.webp" width="48" height="48" alt="" />
-    <span>Fernando Bevilacqua<span class="identity-caption">Software, curiosity & a little bit of everything.</span></span>
+    <span>Fernando Bevilacqua<span class="identity-caption">Software engineering · Technical leadership</span></span>
   </a>
   <nav class="primary-nav" aria-label="Main navigation">
     <a href="/"{% if page.url == '/' %} aria-current="page"{% endif %}>About</a>
     <a href="/blog/"{% if page.url contains '/blog/' %} aria-current="page"{% endif %}>Writing</a>
+    <a href="/engineering/"{% if page.url contains '/engineering/' %} aria-current="page"{% endif %}>Engineering</a>
     <a href="/portfolio/"{% if page.url contains '/portfolio/' %} aria-current="page"{% endif %}>Projects</a>
     <a href="/academic/"{% if page.url contains '/academic/' %} aria-current="page"{% endif %}>Research</a>
   </nav>

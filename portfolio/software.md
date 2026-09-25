@@ -4,7 +4,15 @@ title: Software
 menu: true
 ---
 
-I love everything code and open-source. Several hours of my free time are dedicated to coding. Below is a list of my most relevant software side-projects. You can find more about my software and open-source contributions on [Github](https://github.com/dovyski).
+These projects span different stages of my career. Start with [the engineering stories](/engineering/) for the problem, decisions and impact behind Codebot and cvui. The catalogue below preserves the original projects and their period-specific stacks. More source code is on [GitHub](https://github.com/dovyski).
+
+## Featured developer tools
+
+**[Codebot](https://github.com/Dovyski/Codebot)** — I built a web-based IDE because game development work extends well beyond the code editor: assets, levels, sounds, documentation and publishing all interrupt the flow. Codebot explored how one environment could absorb more of that work.
+
+**[cvui](https://github.com/Dovyski/cvui)** — OpenCV experimentation needed simple controls without another graphical backend. I created and maintained a small UI library rendered using OpenCV primitives, with documentation and both C++ and Python implementations.
+
+## Historical project catalogue
 
 ___  
 

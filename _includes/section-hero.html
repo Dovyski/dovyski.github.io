@@ -1,7 +1,11 @@
 {% assign film = 'mission-control' %}
 {% assign film_title = 'Apollo 11 / Mission control / 1969' %}
 {% assign film_source = 'https://images.nasa.gov/details/KSC-19690716-MH-NAS01-0001-Apollo_11_Mission_Control_Center_Film_Rolls1' %}
-{% if page.url contains '/portfolio/software' %}
+{% if page.title == 'Engineering' %}
+  {% assign film = 'engineering-rover' %}
+  {% assign film_title = 'Apollo lunar surface / Rover drive' %}
+  {% assign film_source = 'https://svs.gsfc.nasa.gov/10432/' %}
+{% elsif page.url contains '/portfolio/software' %}
   {% assign film = 'software-console' %}
   {% assign film_title = 'Apollo 11 / Console equipment / 1969' %}
 {% elsif page.url contains '/portfolio/games' %}
@@ -25,12 +29,12 @@
   {% assign film = 'academic-console' %}
   {% assign film_title = 'Apollo 11 / Mission operations / 1969' %}
 {% endif %}
-<header class="film-hero" aria-labelledby="section-title">
+<header class="film-hero{% if page.title == 'Engineering' %} engineering-hero{% endif %}" aria-labelledby="section-title">
   <video class="hero-film" muted loop playsinline preload="none" poster="/public/video/{{ film }}.jpg" data-video-src="/public/video/{{ film }}-slow.mp4" data-playback-rate="1" aria-hidden="true" tabindex="-1"></video>
   <div class="film-inner">
     <span class="eyebrow">Fernando Bevilacqua / {% if page.title == 'Blog' %}Field notes{% else %}{{ page.title }}{% endif %}</span>
-    <h1 id="section-title">{% if page.title == 'Blog' %}The logbook.{% elsif page.title == 'Portfolio' %}Built to explore.{% else %}{{ page.title }}{% endif %}</h1>
-    {% unless page.layout == 'post' %}<p>{% if page.title == 'Blog' %}Ideas, experiments, and dispatches from a life in software.{% elsif page.url contains '/portfolio' %}Side projects, open-source contributions, and things sent into the world.{% elsif page.url contains '/academic' %}Asking questions. Testing ideas. Sharing what we discover.{% else %}Notes and discoveries from the journey.{% endif %}</p>{% endunless %}
+    <h1 id="section-title">{% if page.title == 'Blog' %}The logbook.{% elsif page.title == 'Portfolio' %}Built to explore.{% elsif page.title == 'Engineering' %}Engineering.{% else %}{{ page.title }}{% endif %}</h1>
+    {% unless page.layout == 'post' %}<p>{% if page.title == 'Blog' %}Selected essays on software, AI and developer tools, followed by the full archive since 2009.{% elsif page.title == 'Engineering' %}Products, platforms, research and the engineering systems behind them.{% elsif page.title == 'Portfolio' %}Selected public work first. Two decades of experiments in the archive.{% elsif page.url contains '/portfolio/software' %}Open-source developer tools and a historical software archive.{% elsif page.url contains '/portfolio' %}Games, software and experiments from the archive.{% elsif page.url contains '/academic' %}Asking questions. Testing ideas. Sharing what we discover.{% else %}Notes and discoveries from the journey.{% endif %}</p>{% endunless %}
     <div class="film-caption"><a href="{{ film_source }}">Film archive: NASA / {{ film_title }} ↗</a><button class="motion-toggle" type="button" data-motion-toggle hidden>Play footage</button></div>
   </div>
 </header>
