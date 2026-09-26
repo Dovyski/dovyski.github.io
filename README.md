@@ -1,6 +1,14 @@
 # dovyski.github.io
 The source and content of my personal website/blog.
 
+## CV
+
+`/cv/` serves the print-ready HTML CV, with `/cv.pdf` and `/cv.md` as direct
+PDF and Markdown files. The files were copied from the private `Dovyski/cv`
+repository at commit `796ac37`. The HTML page uses its local stylesheet,
+portrait, and bundled Roboto fonts in `cv/`. When updating the CV, copy the
+HTML, stylesheet, assets, PDF, and Markdown together so the formats stay in sync.
+
 ## Preview locally
 
 ### Design versions

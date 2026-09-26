@@ -39,6 +39,10 @@
   transform: none;
 }
 
+@media (max-width: 900px) {
+  .astronaut-tether { display: none; }
+}
+
 @media (max-width: 600px) {
   .astronaut-rig {
     width: min(88%, 287px);

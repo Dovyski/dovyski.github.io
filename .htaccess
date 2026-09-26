@@ -81,6 +81,9 @@ ErrorDocument 404 /404.html
     <filesMatch "\\.(html|htm|php)$">
     Header set Cache-Control "max-age=1, private, must-revalidate"
     </filesMatch>
+    <Files "cv.pdf">
+    Header set Cache-Control "max-age=600, public"
+    </Files>
 </ifModule>
 # END Caching
 
