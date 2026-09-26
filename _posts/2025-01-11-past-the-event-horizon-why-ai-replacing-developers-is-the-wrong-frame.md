@@ -1,5 +1,5 @@
 ---
-title: Past the Event Horizon - Why "AI Replacing Developers" Is the Wrong Frame
+title: 'Past the Event Horizon: Why "AI Replacing Developers" Is the Wrong Frame'
 author: Fernando Bevilacqua
 layout: post
 categories:
@@ -9,179 +9,165 @@ tags:
   - ai
 ---
 
-In June 2025, Sam Altman published a blog post titled [*"The Gentle Singularity,"*](https://blog.samaltman.com/the-gentle-singularity) in which he made a declaration that would have sounded insane just three years prior: *"We are past the event horizon; the takeoff has started"*. To the uninitiated, this summons images of science fiction—robots walking the streets or a sudden, dramatic rupture in reality. Yet, as Altman noted, the world looks largely the same. Commuters still sit in traffic; we still use Jira; and the physical constraints of the universe remain stubbornly in place.
+In June 2025, Sam Altman published a short essay titled [*"The Gentle Singularity,"*](https://blog.samaltman.com/the-gentle-singularity) opening with a line that would have sounded absurd just a few years ago: *"We are past the event horizon; the takeoff has started"*. For most people, that kind of language conjures sci-fi visions of humanoid robots or overnight societal disruption. Yet, as Altman noted, everyday life carries on pretty much as usual. Commuters still sit in traffic, companies still track work in Jira, and the laws of physics haven't budged.
 
-But for those of us in software engineering, the shift has been anything but gentle. We stand at the intersection of three contradictory narratives:
+Inside software engineering, though, things feel far from business-as-usual. Depending on who you talk to, you'll hear three completely conflicting storylines:
 
-1. **Barriers to entry have collapsed**, leading to "Vibe Coding" where natural language replaces syntax.
-2. **Labor demand has cratered**, with US job postings falling to pre-pandemic lows.
-3. **The developer population is exploding**, driven by global adoption and AI integration.
+1. **Barriers to entry have collapsed**, giving rise to "vibe coding," where natural language replaces manual syntax.
+2. **Hiring has cooled dramatically**, with tech job postings dropping to pre-pandemic lows.
+3. **The global developer population is exploding**, growing faster than ever as more people start building software.
 
-The capability-to-cost curve has shifted. The real question now is: **how do we integrate this tool into what we already know about building software—without fooling ourselves with demo-driven thinking?**
-
-This post is an attempt to do that, grounded in the latest labor signals, developer-population data, and a critical "third axis" that many discussions ignore: **verification cost** (and why most GenAI projects still fail).
+To make sense of these contradictory signals, we need to look past the headlines at labor data, developer demographics, and the factor that actually determines whether software succeeds: **verification cost**. When verifying generated output is expensive or neglected, generative AI projects stall before reaching production.
 
 ---
 
-## 1) Abstraction doesn't erase developers — it changes what "developer work" means
+## 1) Abstraction doesn't eliminate developers, it redefines their work
 
-A useful historical analogy is the compiler. Before its usage in scale, software was handcrafted on the binary level (or very close to it). As the abstraction improved, developers stopped caring about (or paying attention to) the generated, low-level code. The higher the abstraction (programing languange, paradigm, etc), the less we look down the chain.
+A helpful historical comparison is the compiler. Before compilers became widespread, writing software meant working directly in assembly or punch cards at the machine level. As higher-level languages took hold, programmers stopped inspecting every instruction emitted by the compiler. We raised our layer of abstraction, and looking down the stack became the exception rather than the rule.
 
-We don't spend much time today arguing "compiled vs interpreted", or about the "perfect assembly" in the way people did decades ago. That's because most teams now operate at a higher layer of abstraction. Following that analogy, today's Java code is the abstraction, not its bytecodes. Same for C, for instance: most of the time (not always, but very significantly) you don't look at the generated assembly code. It's simply too low level.
+Hardly anyone today debates handwritten assembly versus compiled code for typical backend or application development. When writing modern Java, Python, or Go, you rarely inspect bytecode or assembly instructions unless you're chasing an extreme edge-case performance bottleneck. The higher level of abstraction simply became the standard way to build.
 
-In that sense, compilers or interpreters didn't eliminate developers; they made it cheaper to create software. That dynamic tends to increase demand. You can see this in how the developer population grew alongside each major abstraction wave.
+Compilers and interpreters never eliminated developers; they drastically lowered the marginal cost of creating software. Lower costs unlocked vastly more use cases, which in turn drove up demand for people who build software. Every major shift in abstraction over the past fifty years has followed this exact playbook.
 
-### Evidence: the pool keeps growing
+### The developer pool keeps growing
 
-Contradicting the narrative of "AI replacing humans" is the relentless growth of the global developer population. According to [SlashData's *Developer Nation* surveys](https://www.slashdata.co/research/developer-population), the number of developers has nearly doubled in four years:
+If AI were already replacing engineers en masse, you would expect the total developer head count to shrink. The numbers show the exact opposite. According to [SlashData's *Developer Nation* surveys](https://www.slashdata.co/research/developer-population), the global developer population has nearly doubled in four years:
 
-* **Q3 2021:** 28.8 Million
-* **Q3 2023:** 38.9 Million
-* **Q3 2025:** [**48.4 Million**](https://www.developernation.net/developer-reports/dn23/)
-
-The image below shows the progression:
+* **Q3 2021:** 28.8 million
+* **Q3 2023:** 38.9 million
+* **Q3 2025:** [**48.4 million**](https://www.developernation.net/developer-reports/dn23/)
 
 ![Developer Population Growth](/public/img/posts/slashdata-developer-nation-growth.png)
 *[Source: SlashData](https://www.slashdata.co/research/developer-population)*
 
-**Takeaway:** If AI reduces the "cost per unit of software," the most historically consistent outcome is **more software**, not less ([the Jevons Paradox](https://uberty.org/wp-content/uploads/2015/08/John_M._Polimeni_Kozo_Mayumi_Mario_Giampietro.pdf)). More importantly, that very software still needs to be designed, operated, secured, audited, and maintained—i.e., the parts of the job that *aren't* "just code."
+When technology makes producing a good cheaper, total consumption usually surges rather than drops. Economists call this [Jevons Paradox](https://uberty.org/wp-content/uploads/2015/08/John_M._Polimeni_Kozo_Mayumi_Mario_Giampietro.pdf). Making code easier to generate leads to *more* software being built, not less. And all of that new software still has to be architected, tested, integrated, secured, operated, and maintained over time. The mechanical act of typing syntax was only ever a fraction of what engineering involves.
 
 ---
 
-## 2) The labor-market chart needs context: the COVID spike distorts the story
+## 2) How the pandemic hiring spike distorts the labor chart
 
-The [FRED/Indeed chart](https://fred.stlouisfed.org/series/IHLIDXUSTPSOFTDEVE) below is often used to prove the "collapse" of the industry. But it requires context.
+The [FRED / Indeed job postings index](https://fred.stlouisfed.org/series/IHLIDXUSTPSOFTDEVE) is frequently cited as proof that AI is gutting the tech industry. But looking at that chart without historical context leads to the wrong conclusions.
 
 ![Software Development Job Postings on Indeed in the United States (IHLIDXUSTPSOFTDEVE)](/public/img/posts/fredgraph.png)
 *[Source: FRED/Indeed](https://fred.stlouisfed.org/series/IHLIDXUSTPSOFTDEVE)*
 
-**What the curve actually says:**
+Here is what that curve actually tracks:
 
-* There was a [major run-up during the COVID-era boom](https://fredblog.stlouisfed.org/2023/03/was-there-a-tech-hiring-bubble/) (the peak visually dominates the chart).
-* Then a sharp decline as interest rates rose and the "growth at all costs" era ended.
-* After 2024, the series looks closer to **stabilization**, and by late 2025 it shows **slight upward drift** (e.g., [**68.30 on 2025-12-12**](https://data.indeed.com/#/)).
+* **The 2021–2022 outlier:** A massive [hiring bubble during the pandemic boom](https://fredblog.stlouisfed.org/2023/03/was-there-a-tech-hiring-bubble/), driven by zero interest rates and over-hiring across the industry.
+* **The correction:** A sharp pullback as capital became expensive and companies shifted focus from headcount growth to cost efficiency.
+* **The new baseline:** Starting around 2024, the curve flattened out into stabilization, showing a modest rebound by late 2025 (reaching [**68.30 in December 2025**](https://data.indeed.com/#/)).
 
-If you anchor on the COVID spike, you'll read everything after as "collapse." If you treat that spike as an outlier boom, the post-2024 pattern reads more like **a market finding a new baseline**.
+If you benchmark the present against the height of that 2021 bubble, it looks like a collapse. But if you recognize that peak as a historical anomaly, the data looks much more like a market establishing a sustainable post-bubble baseline.
 
-However, this stabilization hides a qualitative shift. We are witnessing the decoupling of "coding" from "employment." While the demand for full-time, US-based W-2 engineers has contracted, the population of people building software has exploded.
+At the same time, this normalization hides a deeper structural change: writing software is decoupling from traditional corporate software jobs. While US corporate hiring pulled back from its all-time peak, the global community of people actively writing, shipping, and maintaining software has grown faster than ever.
 
 ---
 
 ## 3) The Rise of "Vibe Coding" and Theory Loss
 
-If the quantitative shift is about numbers, the qualitative shift is about *method*. We have entered the era of **"Vibe Coding."**
+Beyond the numbers, the way we build software has fundamentally changed. We've entered the era of what Andrej Karpathy coined **"vibe coding."**
 
-Popularized by Andrej Karpathy, Vibe Coding describes a workflow where the human acts as a director rather than a mason. You don't write loops; you "vibe" with the LLM. You paste a screenshot and say, *"Make it look like this but pop more."* You describe intent, and the machine generates syntax.
+In this workflow, the developer acts more like a creative director than a stonemason. You don't handcraft every loop or boilerplate class; you prompt the LLM, paste screenshots, describe what behavior you want, and guide the iteration. You express intent, and the model turns it into code.
 
-This was made possible by the rapid commoditization of AI models. Using Claude Opus 4.5 today, for instance, is something impossible to think of (or explain) 10 years ago. It is important to stress that this way of working is in the hands of those who can affort tokens. Also they are gatekept by the FANGS of the world.
-
-Open-source models, however, are improving at neck-breaking speed. As shown below, models like [**Vicuna-13B** quickly reached **92%** of ChatGPT's quality](https://lmsys.org/blog/2023-03-30-vicuna/), collapsing the moat between proprietary and open tools.
+State-of-the-art closed models have made this surprisingly accessible, but proprietary APIs are not the whole story. Open-source models have advanced at breakneck speed. Early milestones like [**Vicuna-13B** reaching over 90% of ChatGPT's quality](https://lmsys.org/blog/2023-03-30-vicuna/) showed early on that the moat between closed and open tools was thinner than many assumed:
 
 ![Vicuna: An Open-Source Chatbot Impressing GPT-4 with 90%* ChatGPT Quality](/public/img/posts/open-source-ai-models-evolution.webp)
 *[Source: Vicuna](https://lmsys.org/blog/2023-03-30-vicuna/)*
 
-If we bring the chinese massive progress regarding AI, specially in the open-source scene, things become even more interesting. As [DeepSeek-V3 states in its README](https://github.com/deepseek-ai/DeepSeek-V3):
+The rapid rise of open models confirms what the leaked [Google "No Moat" memo](https://www.supervised.news/p/revisiting-that-old-google-ai-memo) predicted early on. Open-weight architectures like [DeepSeek-V3](https://github.com/deepseek-ai/DeepSeek-V3) rival frontier closed models at a fraction of the training cost, proving how rapidly open-source engineering commoditizes raw model capabilities.
 
-> DeepSeek-V3 stands as the best-performing open-source model, and also exhibits competitive performance against frontier closed-source models.
+Whether you run local open weights or use hosted frontier APIs, integrating AI into the coding loop is becoming frictionless. Working completely without AI assistance already feels needlessly slow.
 
-The power of open-source is already stablished in software development. It is paving the same way regarding AI. The famous [Google's Leaked "No Moat" Memo](https://www.supervised.news/p/revisiting-that-old-google-ai-memo) warned the company about that. The memo noted that open-source models were achieving results comparable to Google's with significantly less time and capital investment. *"Open-source models are faster, more customizable, more private, and pound-for-pound more capable"*.
+### The hidden trap: Theory Loss
 
-Regardless of the model, be it a paid or an open-source one, its usage has very low friction now. It clearly helps the development and production of software, so it becomes an inflection point. It is simply too slow to create something without AI from now on.
+Yet generating code at the push of a button comes with a serious hidden risk: **Theory Loss**.
 
-### The Danger: Theory Loss
+In his 1985 paper [*Programming as Theory Building*](https://pages.cs.wisc.edu/~remzi/Naur.pdf), Peter Naur argued that a program isn't just the code written to disk. The real software is the mental construct, the shared understanding of how the system solves problems and responds to change held by the engineers who built it.
 
-But this ease of generation brings a hidden risk: **Theory Loss**.
+Historically, you built that theory as you wrestled with the problem, wrote the implementation, and reasoned through edge cases. With pure vibe coding, you skip that struggle. If you accept generated code without deeply understanding how it fits together, that mental model never forms.
 
-[Peter Naur's classic 1985 essay *"Programming as Theory Building"*](https://pages.cs.wisc.edu/~remzi/Naur.pdf) argues that a program is not its source code. A program is a shared mental construct (a **theory**) that lives in the minds of the people who work on it.
-
-* **Old World:** You built the theory by struggling with the syntax.
-* **New World (Vibe Coding):** The AI generates the code. If you merely "approve" it without struggle, the mental model is never formed in your mind.
-
-The software becomes a "zombie": it works, but no one knows why or how to change it safely. This leads us to the central economic friction of the AI era.
+You end up with a codebase that runs, but which nobody truly understands. Making changes, diagnosing subtle production bugs, or refactoring becomes an unpredictable gamble.
 
 ---
 
-## 4) The "new axis": 95% of GenAI pilots fail — and verification cost is why
+## 4) Why 95% of GenAI pilots fail: the cost of verification
 
-In a [recent Forbes piece covering MIT research](https://www.forbes.com/sites/jasonsnyder/2025/08/26/mit-finds-95-of-genai-pilots-fail-because-companies-avoid-friction/), the framing is blunt: **95% of custom GenAI tools fail to cross the pilot-to-production cliff**.
+Reporting on recent MIT research, a [Forbes analysis](https://www.forbes.com/sites/jasonsnyder/2025/08/26/mit-finds-95-of-genai-pilots-fail-because-companies-avoid-friction/) noted a striking figure: roughly **95% of enterprise generative AI pilots fail to make it into reliable production**.
 
-Why? Because of the **Verification Tax**.
+The primary bottleneck is not generation speed, but **the cost of verification**.
 
-Generative AI is confidently wrong. If a model is 95% accurate, you still have to check 100% of its work to find the 5% of errors. The economic formula for AI adoption isn't just about speed.
+LLMs produce plausible, confidently stated output. If a model generates code that is 95% correct, you still have to review 100% of it to catch the 5% of hallucinations, security flaws, or edge-case oversights. If reviewing generated code takes as much cognitive effort as writing it yourself, or turns into an exhausting hunt for subtle bugs, any productivity advantage quickly evaporates.
 
-When systems are confidently wrong, people accumulate **"Trust Debt."** They spend more time forensic-checking the AI's output than they would have spent writing it themselves.
+### Why TypeScript took the top spot
 
-### The Technological Response: Why TypeScript Won
+This verification challenge directly influenced the language trends in [GitHub's *Octoverse 2025*](https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/): in 2025, **TypeScript surpassed Python** as the most popular language on GitHub.
 
-This explains a startling statistic from [GitHub's *Octoverse 2025*](https://github.blog/news-insights/octoverse/octoverse-a-new-developer-joins-github-every-second-as-ai-leads-typescript-to-1/): In August 2025, **TypeScript overtook Python** to become the #1 language on GitHub.
+That shift is not an accident. Static types provide immediate, automated verification.
 
-Why? Because Types are the **automated payment of the Verification Tax**.
-In a world where AI generates millions of lines of code, humans can no longer verify it all by reading. We need automated guardrails. TypeScript's static type system rejects invalid code before it ever runs, preventing the AI from "hallucinating" artifacts that don't exist. It turns the "Vibe" into a contract.
-
-Additionally, types and interfaces are ground theory for any system. A seasoned software engineer can plan and architect using type-defined contracts that the AI will follow. This was good practice before AI-driven development, now it is a requirement. 
+When an AI assistant produces code, you don't want to rely solely on manual code review to spot invalid assumptions or nonexistent method calls. A strong type system catches hallucinations before the code ever runs. Clear types, schemas, and interfaces turn vague prompts into verifiable contracts. Defining explicit boundaries and types was always good engineering practice; in an AI-assisted workflow, it has become essential.
 
 ---
 
-## 5) Humans + AI beats either alone (and this is where "ROI" actually comes from)
+## 5) Why pairing humans and AI creates real ROI
 
-So, how do we fix the failure rate? The answer lies in **pairing**.
+If unsupervised AI generation leads to high failure rates, the solution is not to abandon the tools, but to pair them with experienced engineers.
 
-[OpenAI's recent white paper on productivity impacts (GDPval)](https://arxiv.org/abs/2510.04374) should be treated as part of the "human+agent pairing" evidence base. The research highlights that **big gains appear when AI and experts work together**, not when you try to replace humans outright.
+Productivity research, including [OpenAI's findings on economic impacts (GDPval)](https://arxiv.org/abs/2510.04374), consistently demonstrates that **meaningful gains happen when AI assists experienced practitioners**, not when companies attempt to replace humans outright.
 
-On the [Stack Overflow podcast](https://stackoverflow.blog/2026/01/07/you-need-quality-engineers-to-turn-ai-into-roi/), Pete Johnson (Field CTO, AI at MongoDB) reinforced this, noting that the "job killer" framing is flawed. He argues:
+As Pete Johnson (Field CTO, AI at MongoDB) pointed out on the [Stack Overflow podcast](https://stackoverflow.blog/2026/01/07/you-need-quality-engineers-to-turn-ai-into-roi/), the idea that AI simply removes the need for engineers falls apart the moment software hits production:
 
-> "You still own it… You're still responsible for it running in production."
+> "You still own it. You're still responsible for it running in production."
 
-**Synthesis:** The best ROI story is not "replace people," it's:
+The realistic productivity equation looks like this:
 
-1. **Reduce cycle time** on well-defined tasks (drafting).
-2. **Keep experts responsible** for correctness and system-level coherence (verification).
-3. **Reinvest the productivity gains** into more software and better operations (Jevons Paradox).
+1. **Accelerate drafting:** Use AI to eliminate boilerplate, spin up prototypes, and draft initial implementations quickly.
+2. **Keep engineers accountable:** Rely on human expertise to verify correctness, maintain system coherence, and evaluate architectural trade-offs.
+3. **Reinvest the time saved:** Build higher quality software, tackle backlogged improvements, and improve operational reliability.
 
-Every serious, corporate-grade line of code needs caring beyond text. For instance, systems still need customer feedback loops, support, investiment, decisions. It's naive to belive that when you replace all developers with AI equivalents, you can just say:
+Production software is much more than text in a repository. It involves real stakeholders, customer feedback loops, operational support, trade-offs, and legal liability. When a bug causes data corruption, downtime, or direct financial loss, no executive can simply tell a client or board:
 
-> "Oh, that's wrong because of my AI. I am sorry, it will fix it"
+> *"Our AI made a mistake. Sorry, we've asked it to fix it."*
 
-You can't say that specially when your software causes financial (or human) losses. Someone still has to "sign" and respond for it. Are C-class executives ready to fire all developers then take the fall for absolutely everything? I doubt it. 
-
----
-
-## 6) The JetBrains lens: some categories shrink, others expand
-
-[JetBrains' Developer Ecosystem data](https://devecosystem-2025.jetbrains.com/) reframes the workforce as a portfolio of activities, not just "dev count." With **~20.8M professional developers in 2025**, the work is redistributing.
-
-My read of the likely shift:
-
-* **Fewer people** needed in "first-draft" tasks (boilerplate, rote CRUD scaffolding, basic docs).
-* **More people** needed in tasks that scale with output volume and risk:
-* **Evaluation & Testing:** Building the "Accuracy Flywheels" that catch AI errors.
-* **Platform Engineering:** Managing the infrastructure for 10x more services.
-* **Security & Compliance:** Auditing the black box.
-* **Domain-Heavy Product Engineering:** The "Theory Building" that AI cannot simulate.
-
-This is the same "abstraction expands the surface area" dynamic—except now the abstraction is probabilistic and requires verification.
+Someone has to be accountable for the system. Leadership isn't about to eliminate their engineering teams only to shoulder personal liability for every automated hallucination in production.
 
 ---
 
-## 7) Final claim: If software eats the world, AI makes it hungrier
+## 6) Shifting engineering roles: what shrinks and what expands
 
-Software development is coordination across stakeholders (execs, product, support, legal, ops). If AI starts to mediate *all* of those interfaces—writing specs, drafting contracts, generating runbooks, then society doesn't become less dependent on engineers.
+Data from [JetBrains' Developer Ecosystem survey](https://devecosystem-2025.jetbrains.com/) shows a global workforce of roughly 20.8 million professional developers. What is changing isn't the need for engineers, but the distribution of their day-to-day work.
 
-It becomes **more dependent on the people who can design, integrate, and operate AI-enabled systems end-to-end**, with accountability.
+As routine tasks become automated, effort naturally shifts:
 
-> The engineers of the future will not be those who can prompt the fastest, but those who can verify and plan the deepest.
+* **Less time on mechanical boilerplate:** Writing basic CRUD endpoints, boilerplate glue code, and repetitive docstrings.
+* **More focus on areas where scale, verification, and risk matter:**
+  * **Automated testing and evaluation:** Building robust test suites and verification pipelines to catch regressions automatically.
+  * **Platform and infrastructure engineering:** Keeping systems reliable as organizations ship more services and features faster.
+  * **Security and compliance:** Understanding system vulnerabilities and auditing generated logic before it reaches production.
+  * **Domain architecture and product design:** The deeper work of understanding user requirements and business rules to build systems that hold up over time.
+
+This follows the same pattern as past abstraction shifts. The only difference is that our new abstraction is probabilistic, which makes automated verification and architecture all the more critical.
 
 ---
 
-# What leaders should do
+## 7) If software eats the world, AI makes it hungrier
 
-Finally some not-requested ideas for the future.
+Software engineering has always been about coordination: translating messy requirements between stakeholders, product teams, operations, and users into reliable systems. As AI helps draft specifications, generate code, and produce operational runbooks, organizations don't become less dependent on engineers.
 
-1. **Treat GenAI as a system, not a feature.** Budget for evaluation, monitoring, and workflow redesign.
-2. **Engineer for the verification tax.** Make uncertainty explicit; build feedback loops ("accuracy flywheel").
-3. **Adopt "Safety-First" languages and tooling.** The rise of TypeScript is a signal: use tools that automate verification.
-4. **Pair AI with accountable experts.** The "human + AI" combination is where gains compound.
-5. **Measure transformation, not logins.** Pilot success is redesign + adoption in real workflows, not just chat usage.
+They become **more dependent on people who understand systems end-to-end**, who can connect the pieces securely, and who take responsibility for the outcome.
+
+> The most valuable engineers going forward won't be those who prompt the fastest, but those who can architect, verify, and reason through systems the most thoroughly.
+
+---
+
+## Practical takeaways for engineering leaders
+
+A few pragmatic principles for teams navigating this transition:
+
+1. **Treat AI as part of a system, not a magic fix.** Invest in evaluation, monitoring, and workflow integration rather than just handing out licenses.
+2. **Design for verification upfront.** Assume generated code contains subtle flaws. Invest in automated testing, static analysis, and fast feedback loops.
+3. **Rely on strong types and explicit contracts.** Tooling like TypeScript makes boundaries clear and prevents hallucinations from silently creeping into production.
+4. **Pair AI with experienced engineers.** The highest returns come from multiplying the output of people who already understand the system architecture, not from removing them.
+5. **Measure workflow outcomes, not adoption metrics.** A pilot's success shouldn't be judged by how many chat prompts were sent, but by whether real delivery cycles improved without sacrificing quality.
 
 ---
 
@@ -194,4 +180,4 @@ Finally some not-requested ideas for the future.
 
 ### Note
 
-This text has been edited by me and mostly written by AI models. I provided the ideas, my notes, the links to fetch information (which I have consumed myself previously) and the narravite I wanted. I iterated on the final text for quite some time. I also wrote parts of the text myself.
+This post is based on my own research, notes, and curated sources, developed through iterative collaboration with AI tools. I outlined the core arguments, supplied the references, wrote several sections directly, and refined the text to reflect my perspective as a practicing engineer and leader.
