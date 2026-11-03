@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Devpilot — Mission control for your AI coding agents</title>
+<meta name="description" content="Devpilot is a desktop terminal manager for running many Claude Code, Codex and ssh sessions side by side: live status, agent questions, context, an in-app browser, voice and a mesh across machines.">
+<meta property="og:title" content="Devpilot — Mission control for your AI coding agents">
+<meta property="og:description" content="Every agent. One window. Live status, questions, context and voice for Claude Code and Codex.">
+<meta property="og:image" content="https://www.fernandobevilacqua.com/devpilot/assets/poster.webp">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#08090a">
+<link rel="preconnect" href="https://rsms.me/">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <a class="pill reveal" href="#film">
+      <span class="pill-tag">New</span>
+      <span>Devpilot 0.3.20 — agent mesh across machines</span>
+      <i data-i="chev"></i>
+    </a>
+    <h1 class="hero-title reveal">Mission control for<br>your AI coding agents</h1>
+    <p class="hero-sub reveal">Devpilot is a desktop home for every Claude Code, Codex and ssh session you run. See who is working, who is waiting for you, and what each one touched — in one window.</p>
+    <div class="hero-cta reveal">
+      <a class="btn btn-primary" href="#film"><i data-i="play"></i>Watch the film</a>
+      <a class="btn btn-ghost" href="#features">Explore features <span class="kbd">↓</span></a>
+    </div>
+  </div>
+
+  <div class="hero-stage reveal">
+    <div class="app hero-app" data-demo="hero" aria-label="Animated Devpilot window: a release runs in one terminal while another asks a question.">
+      <div class="app-top">
+        <div class="at-brand"><span class="logo-dot"></span>Devpilot</div>
+        <div class="at-crumbs">devpilot <span class="badge">i56-devpilot</span><i data-i="chev"></i><span class="dot idle" data-row-dot="release"></span><b>release</b></div>
+        <div class="at-tabs"><span class="tab on"><i data-i="term"></i>Terminal</span><span class="tab"><i data-i="globe"></i>Browser</span><i data-i="plus" class="mut"></i></div>
+        <div class="at-win"><i data-i="min"></i><i data-i="max"></i><i data-i="x"></i></div>
+      </div>
+      <div class="app-body">
+        <aside class="app-side">
+          <div class="sd-filter"><i data-i="search"></i>Filter terminals <span class="kbd sm">Ctrl K</span></div>
+          <div class="sd-cat"><i data-i="down"></i>DEVPILOT <span class="badge">i56-devpilot</span><span class="sd-n">4</span></div>
+          <div class="sd-row active" data-row="release"><span class="dot idle"></span><div><b>release</b><small>Cut the v0.3.20 release</small></div><span class="glyph"></span></div>
+          <div class="sd-row" data-row="mesh"><span class="dot working"></span><div><b>mesh</b><small>Edit src-tauri/src/mesh.rs</small></div><span class="glyph spin">⠋</span></div>
+          <div class="sd-row" data-row="orb"><span class="dot done"></span><div><b>orb</b><small>Orb pulses on every event</small></div><span class="glyph"></span></div>
+          <div class="sd-row" data-row="docs"><span class="dot idle"></span><div><b>docs</b></div><span class="glyph"></span></div>
+          <div class="sd-cat"><i data-i="down"></i>MOBILE <span class="badge">i49-mobile</span><span class="sd-n">3</span></div>
+          <div class="sd-row" data-row="chief"><span class="dot done"></span><div><b>chief</b><small>Merged after one approval</small></div><span class="glyph"></span></div>
+          <div class="sd-row" data-row="android-qa"><span class="dot running"></span><div><b>android-qa</b><small>Running 3 subagents</small></div><span class="glyph spin">⠙</span></div>
+          <div class="sd-row" data-row="ios-build"><span class="dot idle"></span><div><b>ios-build</b></div><span class="glyph"></span></div>
+          <div class="sd-cat"><i data-i="down"></i>SHOWREEL<span class="sd-n">1</span></div>
+          <div class="sd-row" data-row="videomaker"><span class="dot done"></span><div><b>videomaker</b><small>Rendered 2400 frames</small></div><span class="glyph"></span></div>
+        </aside>
+        <main class="app-main">
+          <div class="term-head"><span class="dot idle" data-row-dot="release"></span><b>release</b><span class="badge">local</span><span class="th-tools"><i data-i="msg"></i><i data-i="folder"></i><i data-i="max"></i><i data-i="panel"></i></span></div>
+          <div class="term" data-term>
+            <div class="tl"><span class="c-or">✻</span> <b>Welcome to Claude Code</b> <span class="mut">· Opus 5.5 · ~/devpilot</span></div>
+            <div class="tl prompt">&gt; <span data-type></span><span class="tcaret"></span></div>
+          </div>
+        </main>
+        <aside class="app-ctx">
+          <div class="ctx-head"><b>Context</b><i data-i="chev"></i></div>
+          <div class="ctx-tabs"><span class="on"><i data-i="list"></i>All</span><span><i data-i="issue"></i>Issues <em>2</em></span><span><i data-i="pr"></i>PRs <em data-prs>2</em></span><span><i data-i="q"></i>Pending <em data-pend>0</em></span></div>
+          <div class="ctx-list" data-ctx>
+            <div class="ctx-sec">Existing</div>
+            <div class="card"><div class="card-top"><i data-i="pr" class="c-vi"></i><code>acme/web#5921</code><span class="st merged">Merged</span></div><b>Per-account usage in the status bar</b><div class="card-meta"><span class="c-gr">✓ 6/6</span><span class="av" style="--c:#3b82f6">FB</span><span class="av" style="--c:#f97316">C</span><span class="age">2h</span></div></div>
+            <div class="card"><div class="card-top"><i data-i="issue" class="c-gr"></i><code>acme/api#218</code><span class="st open">Open</span></div><b>Rate-limit the webhook retries</b><div class="card-meta"><span class="mut">3 comments</span><span class="av" style="--c:#a855f7">PK</span><span class="age">3h</span></div></div>
+          </div>
+        </aside>
+      </div>
+      <div class="app-status"><span><span class="dot working sm"></span> <b>Opus 5.5</b> <span class="mut">(max, 31k/250k)</span></span><span class="mut sb-mid">cpu 12% · mem 41% · disk 6%</span><span><span class="mut">default ·</span> Day <b>36%</b> <span class="g-y">▼</span> <span class="minibar"><i></i></span> <span class="mut">·</span> Week <b>23%</b> <span class="g-y">▼</span></span></div>
+
+      <div class="float-q" data-floatq>
+        <div class="fq-head"><span class="dot asking"></span><b>mesh</b><span class="mut">asks</span><span class="tag amber">asking</span></div>
+        <p>Which branch should the mesh fix go to?</p>
+        <label class="opt" data-opt="1"><span class="radio"></span>main</label>
+        <label class="opt" data-opt="2"><span class="radio"></span>release/0.3</label>
+        <div class="fq-foot"><span class="btn-s primary" data-send>Send</span><span class="mut">Ctrl ↵</span></div>
+      </div>
+      <div class="orb" data-orb><img src="assets/head.webp" alt=""><span class="orb-badge" data-badge></span></div>
+      <div class="caption" data-caption><small>release</small><b>Devpilot 0.3.20 is out.</b><span class="wave"><i></i><i></i><i></i><i></i><i></i></span></div>
+      <div class="cursor" data-cursor><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6.5 1.5L10 19z" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/></svg></div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ AGENTS STRIP ============ -->
+<section class="strip">
+  <div class="wrap">
+    <p class="strip-lead">Hosts the agents you already use</p>
+    <ul class="strip-list">
+      <li><span class="ico">✳</span>Claude Code</li>
+      <li><span class="ico">◎</span>Codex CLI</li>
+      <li><span class="ico">⇄</span>ssh + tmux</li>
+      <li><span class="ico">›_</span>PowerShell</li>
+      <li><span class="ico">⌁</span>Git Bash</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ PROBLEM ============ -->
+<section class="problem">
+  <div class="wrap problem-grid">
+    <div class="problem-copy reveal">
+      <h2 class="h2">Eight agents.<br><span class="dim">One of them has been waiting for twenty minutes.</span></h2>
+      <p class="lead">Running agents in parallel is easy. Keeping track of them is not. Tabs hide the session that is asking for a branch name, the build that failed, the pull request that is ready to merge. Devpilot turns the swarm into a board you can read at a glance.</p>
+    </div>
+    <div class="problem-art reveal">
+      <img src="assets/swarm.webp" width="1200" height="1100" loading="lazy" alt="A field of hundreds of coloured dots, each an agent; labels read 'tests failed', 'asking: which branch?' and 'waiting for input · 24 min'.">
+    </div>
+  </div>
+</section>
+
+<div id="features"></div>
+
+<!-- ============ STATUS ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="feature-head reveal">
+      <div class="eyebrow"><span class="eb-dot blue"></span>Status</div>
+      <h2 class="h2">Every agent.<br>One window.</h2>
+      <p class="lead">Terminals live in a grouped, filterable sidebar. Hooks report what each session is doing — no AI guessing, no title scraping — so the dot next to every name is always the truth.</p>
+    </div>
+
+    <div class="panel reveal" data-demo="status">
+      <div class="status-demo">
+        <div class="sd-side">
+          <div class="sd-filter"><i data-i="search"></i>Filter terminals <span class="kbd sm">Ctrl K</span></div>
+          <div class="sd-cat">DEVPILOT <span class="badge">i56-devpilot</span><span class="sd-n">4</span></div>
+          <div class="sd-row active" data-row="release"><span class="dot idle"></span><div><b>release</b><small>Cut the v0.3.20 release</small></div><span class="glyph"></span></div>
+          <div class="sd-row" data-row="mesh"><span class="dot done"></span><div><b>mesh</b><small>Gate listens on the tunnel</small></div><span class="glyph"></span></div>
+          <div class="sd-row" data-row="orb"><span class="dot idle"></span><div><b>orb</b></div><span class="glyph"></span></div>
+          <div class="sd-cat">MOBILE <span class="badge">i49-mobile</span><span class="sd-n">3</span></div>
+          <div class="sd-row" data-row="android-qa"><span class="dot idle"></span><div><b>android-qa</b></div><span class="glyph"></span></div>
+          <div class="sd-row" data-row="chief"><span class="dot done"></span><div><b>chief</b><small>Merged after one approval</small></div><span class="glyph"></span></div>
+          <div class="sd-row" data-row="ios-build"><span class="dot working"></span><div><b>ios-build</b><small>Bash xcodebuild archive</small></div><span class="glyph spin">⠋</span></div>
+        </div>
+        <div class="sd-legend">
+          <div class="lg" data-lg="idle"><span class="dot idle"></span><b>idle</b><span>Session started, or quiet for two minutes after a turn.</span></div>
+          <div class="lg" data-lg="working"><span class="dot working"></span><b>working</b><span>A prompt is being processed; the row shows the latest step.</span></div>
+          <div class="lg" data-lg="running"><span class="dot running"></span><b>running tool</b><span>A tool is executing. Subagents keep the spinner turning.</span></div>
+          <div class="lg" data-lg="asking"><span class="dot asking"></span><b>asking</b><span>Permission prompt, plan approval or an open question.</span></div>
+          <div class="lg" data-lg="done"><span class="dot done"></span><b>done</b><span>Turn finished; the row shows the session's short title.</span></div>
+          <div class="lg" data-lg="exited"><span class="dot exited"></span><b>exited</b><span>The process ended. Press Enter to restart it.</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cols3">
+      <div class="col reveal"><h3>Categories &amp; initiatives</h3><p>Group terminals by project. Link a category to an initiative and its badge follows you in the sidebar and the top bar.</p></div>
+      <div class="col reveal"><h3>Comes back after a restart</h3><p>Every terminal reopens in the same folder, with the same command and environment. Profiles prefill shells, accounts and hosts.</p></div>
+      <div class="col reveal"><h3>Rename once, everywhere</h3><p>Renaming a terminal renames the Claude session inside it — queued until the prompt is free, never mid-turn.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ASK + PROGRESS ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="feature-head reveal">
+      <div class="eyebrow"><span class="eb-dot amber"></span>Questions</div>
+      <h2 class="h2">Agents ask.<br>You answer.</h2>
+      <p class="lead">An agent that needs you posts a real question — yes/no, a choice, a line of text. It lands in the Pending tab; your answer goes straight back into the session that asked.</p>
+    </div>
+
+    <div class="app frag reveal" data-demo="ask">
+      <div class="frag-grid ask-grid">
+        <div class="frag-term">
+          <div class="term-head"><span class="dot asking" data-askdot></span><b>mesh</b><span class="badge">claude-runner-2</span></div>
+          <div class="term" data-term>
+            <div class="tl"><span class="c-gr">●</span> The fix touches the tunnel gate. Asking where it should land.</div>
+            <div class="tl"><span class="c-gr">●</span> <b>Bash</b>(devpilot ask choose --id mesh-branch "Which branch…?")</div>
+            <div class="tl ind mut">⎿ asked mesh-branch (new)</div>
+            <div class="tl c-am" data-wait><span class="spin">⠋</span> Waiting for your answer…</div>
+          </div>
+        </div>
+        <div class="frag-ctx">
+          <div class="ctx-tabs"><span><i data-i="list"></i>All</span><span><i data-i="pr"></i>PRs <em>1</em></span><span class="on"><i data-i="q"></i>Pending <em data-pend>1</em></span></div>
+          <div class="ctx-list">
+            <div class="ctx-sec">Questions</div>
+            <div class="qcard" data-qcard>
+              <div class="fq-head"><span class="dot asking"></span><b>Which branch should the mesh fix go to?</b></div>
+              <label class="opt" data-opt="1"><span class="radio"></span>main</label>
+              <label class="opt" data-opt="2"><span class="radio"></span>release/0.3</label>
+              <label class="opt" data-opt="3"><span class="radio"></span>A new branch</label>
+              <div class="fq-foot"><span class="btn-s primary" data-send>Send</span><span class="btn-s">Reply…</span><span class="tag answered" data-answered>answered</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cursor" data-cursor><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6.5 1.5L10 19z" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/></svg></div>
+    </div>
+
+    <div class="duo">
+      <div class="duo-copy reveal">
+        <h3 class="h3">Progress you can see from across the room.</h3>
+        <p class="lead sm">Long steps — deploys, test gates, rollouts — report themselves with <code>devpilot progress</code>. The terminal row shows the step instead of the summary, the Pending tab keeps the history, and failures stay red until you clear them.</p>
+        <div class="code mini">
+<pre><code><span class="c-cmd">devpilot progress</span> <span class="c-flag">--id</span> release <span class="c-str">"Publish 0.3.20"</span> <span class="c-flag">--step</span> 3/5 <span class="c-flag">--detail</span> <span class="c-str">"Signing"</span>
+<span class="c-cmd">devpilot progress</span> <span class="c-flag">--id</span> release <span class="c-flag">--done</span></code></pre>
+        </div>
+      </div>
+      <div class="app frag reveal" data-demo="progress">
+        <div class="ctx-list pad">
+          <div class="ctx-sec">In progress</div>
+          <div class="prow" data-p1>
+            <span class="spin c-gr" data-pspin>⠋</span>
+            <div><b>Publish 0.3.20</b><small data-pdetail>Bumping versions</small><div class="pbar"><i data-pbar></i></div></div>
+            <span class="pstep" data-pstep>1/5</span>
+          </div>
+          <div class="prow" data-p2>
+            <span class="spin c-gr" data-pspin2>⠙</span>
+            <div><b>Deploy stage</b><small data-pdetail2>Rolling out 2 pods</small><div class="pbar"><i data-pbar2></i></div></div>
+            <span class="pstep" data-pstep2>0%</span>
+          </div>
+          <div class="prow done">
+            <span class="c-gr">✓</span>
+            <div><b>Test gate</b><small>412 passed</small></div>
+            <span class="pstep mut">4m</span>
+          </div>
+          <div class="prow fail">
+            <span class="c-rd">✕</span>
+            <div><b>Android build</b><small>Gradle daemon out of memory</small></div>
+            <span class="pstep c-rd">failed</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ OVERWATCH ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="split rev">
+      <div class="feature-head left reveal">
+        <div class="eyebrow"><span class="eb-dot blue"></span>Overwatch</div>
+        <h2 class="h2">It tells you<br>where to look.</h2>
+        <p class="lead">The orb floats above every window. It counts who is asking, pulses on each event, and when an agent finishes it speaks one line — while the terminal that spoke glows in the sidebar.</p>
+        <ul class="ticks">
+          <li><b>Overwatch list.</b> Click the orb for every terminal with its status, latest step and the pull request it is on.</li>
+          <li><b>Speak and point.</b> <code>devpilot speak</code> plays a short line with a caption; the active terminal never switches under you.</li>
+          <li><b>Quiet by design.</b> Silence is the default; sound is for turns that ended in a result.</li>
+        </ul>
+      </div>
+      <div class="app frag desk reveal" data-demo="overwatch">
+        <div class="ow-list" data-owlist>
+          <div class="ow-head"><b>Overwatch</b><span class="pill-s amber">1 asking</span><span class="pill-s green">2 working</span><i data-i="vol" class="mut"></i></div>
+          <div class="ow-row" data-ow="release"><span class="dot working"></span><div><b>release</b><small>Bash pnpm tauri build</small></div><span class="chip"><i data-i="pr"></i>#5940</span></div>
+          <div class="ow-row"><span class="dot asking"></span><div><b>mesh</b><small>Which branch should the fix go to?</small></div><span class="chip"><i data-i="issue"></i>#331</span></div>
+          <div class="ow-row"><span class="dot running"></span><div><b>android-qa</b><small>Running 3 subagents</small></div><span class="chip"><i data-i="pr"></i>#5932</span></div>
+          <div class="ow-row"><span class="dot done"></span><div><b>chief</b><small>Merged after one approval</small></div></div>
+          <div class="ow-row"><span class="dot idle"></span><div><b>docs</b><small>idle · 14 min</small></div></div>
+        </div>
+        <div class="caption" data-caption><small>release</small><b>Devpilot 0.3.20 is out.</b><span class="wave"><i></i><i></i><i></i><i></i><i></i></span></div>
+        <div class="orb big" data-orb><img src="assets/head.webp" alt=""><span class="orb-badge amber on">1</span></div>
+        <div class="cursor" data-cursor><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6.5 1.5L10 19z" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTEXT + PR ACTIONS ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="feature-head reveal">
+      <div class="eyebrow"><span class="eb-dot violet"></span>Context</div>
+      <h2 class="h2">Every PR, every issue —<br><span class="grad">surfaced, and one click away.</span></h2>
+      <p class="lead">Devpilot reads what each session does and collects the pull requests it opened, the issues it touched and the links it mentioned. GitHub fills in the rest — and a right-click acts on it.</p>
+    </div>
+
+    <div class="app frag reveal" data-demo="context">
+      <div class="frag-grid ctx-grid">
+        <div class="frag-term">
+          <div class="term-head"><span class="dot done"></span><b>android-qa</b><span class="badge">local</span></div>
+          <div class="term" data-term>
+            <div class="tl"><span class="c-gr">●</span> <b>Bash</b>(gh pr create --draft --title "Restore sessions after a reconnect")</div>
+            <div class="tl ind mut">⎿ https://github.com/acme/web/pull/5932</div>
+            <div class="tl"><span class="c-gr">●</span> Draft PR opened. CI is running.</div>
+            <div class="tl prompt">&gt; <span data-type></span><span class="tcaret"></span></div>
+          </div>
+        </div>
+        <div class="frag-ctx">
+          <div class="ctx-tabs"><span class="on"><i data-i="list"></i>All</span><span><i data-i="issue"></i>Issues <em>1</em></span><span><i data-i="pr"></i>PRs <em data-prs>1</em></span><span><i data-i="link"></i>Links <em>1</em></span></div>
+          <div class="ctx-list" data-ctx>
+            <div class="ctx-sec">New</div>
+            <div class="card new" data-newcard><div class="card-top"><i data-i="pr" class="c-gr"></i><code>acme/web#5932</code><span class="st open">Open</span></div><b>Restore sessions after a reconnect</b><div class="card-meta"><span class="c-am" data-checks>◷ 9/14</span><span class="av" style="--c:#14b8a6">AL</span><span class="av" style="--c:#f97316">C</span><span class="age">now</span></div></div>
+            <div class="ctx-sec">Existing</div>
+            <div class="card"><div class="card-top"><i data-i="issue" class="c-gr"></i><code>acme/web#5910</code><span class="st open">Open</span></div><b>Sessions drop after Wi-Fi changes</b><div class="card-meta"><span class="mut">8 comments</span><span class="av" style="--c:#3b82f6">FB</span><span class="age">1d</span></div></div>
+            <div class="ctx-sec">Links</div>
+            <div class="card"><div class="card-top"><i data-i="link" class="mut"></i><code>github.com/acme/web</code></div><b>Release v2.14.0 · Faster deploys</b></div>
+          </div>
+        </div>
+      </div>
+      <div class="hovercard" data-hover>
+        <small class="mut">acme/web on Nov 3</small>
+        <b>Restore sessions after a reconnect <span class="mut">#5932</span></b>
+        <div class="hc-pills"><span class="st-fill open">Open</span></div>
+        <p>Reattach the tmux session and replay the last status instead of showing the row as exited.</p>
+        <code class="hc-br">main ← 5932-restore-sessions</code>
+        <div class="hc-row"><span class="mut">Reviewers</span><span class="av" style="--c:#f97316">C</span><span class="c-gr">✓</span><span class="av" style="--c:#14b8a6">AL</span><span class="c-am">●</span></div>
+      </div>
+      <div class="menu" data-menu>
+        <div class="m-item"><i data-i="tag"></i>Labels<span class="m-chev">›</span></div>
+        <div class="m-sep"></div>
+        <div class="m-lbl">Actions</div>
+        <div class="m-item" data-mi="review"><i data-i="eye"></i>Review locally</div>
+        <div class="m-item"><i data-i="baby"></i>Babysit</div>
+        <div class="m-sep"></div>
+        <div class="m-lbl">Request review</div>
+        <div class="m-item"><i data-i="bot"></i>Copilot</div>
+        <div class="m-item"><i data-i="bot"></i>CodeRabbit</div>
+        <div class="m-item"><i data-i="bot"></i>All</div>
+        <div class="m-sep"></div>
+        <div class="m-item"><i data-i="globe"></i>Open in browser tab</div>
+        <div class="m-item"><i data-i="copy"></i>Copy URL</div>
+      </div>
+      <div class="cursor" data-cursor><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6.5 1.5L10 19z" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/></svg></div>
+    </div>
+
+    <div class="cols3">
+      <div class="col reveal"><h3>New, Existing, Mentioned</h3><p>Created by this session, worked on, or just referenced — with GitHub state, checks, labels and reviewer verdicts.</p></div>
+      <div class="col reveal"><h3>GitHub hover cards</h3><p>Title, body, branches, labels and reviewers without opening a browser. Ctrl+Shift+F searches all of it.</p></div>
+      <div class="col reveal"><h3>PR actions</h3><p>Right-click to toggle labels, request a review from your bots, or send <code>/review-locally</code> and <code>/babysit-pr</code> to the terminal.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BROWSER + MOCKUP FEEDBACK ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="feature-head reveal">
+      <div class="eyebrow"><span class="eb-dot green"></span>Browser</div>
+      <h2 class="h2">Review the mockup<br><span class="dim">where the agent made it.</span></h2>
+      <p class="lead">Every terminal has its own browser tabs. An agent runs <code>devpilot preview</code> and its HTML mockup opens next to it — read in place, from this PC or a remote host — with the sign-off question docked under the page. Pick an option, add a note, and the agent gets back to work.</p>
+    </div>
+
+    <div class="app frag reveal" data-demo="browser">
+      <div class="app-top slim">
+        <div class="at-crumbs"><span class="dot asking" data-bdot></span><b>videomaker</b></div>
+        <div class="at-tabs"><span class="tab"><i data-i="term"></i>Terminal</span><span class="tab on"><i data-i="globe"></i>login.html · this PC<i data-i="x" class="tx"></i></span><i data-i="plus" class="mut"></i></div>
+      </div>
+      <div class="bw-bar"><i data-i="back"></i><i data-i="fwd"></i><i data-i="reload" data-reload></i><span class="bw-url">login.html</span><span class="bw-chip">served from this PC · reload picks up edits</span></div>
+      <div class="bw-page" data-page>
+        <div class="mk">
+          <div class="mk-logo"></div>
+          <b>Sign in to Acme</b>
+          <span class="mk-in">Email</span>
+          <span class="mk-in">Password</span>
+          <span class="mk-btn" data-mkbtn>Continue</span>
+          <span class="mk-link" data-mklink>Forgot your password? · Create an account</span>
+        </div>
+      </div>
+      <div class="dock" data-dock>
+        <div class="dock-head"><span class="dot asking"></span><b>videomaker</b><span class="mut">asks</span><span class="dock-q">Approve the login layout?</span><span class="mut dock-n">1 of 1</span></div>
+        <div class="dock-body">
+          <label class="opt" data-opt="1"><span class="radio"></span>Approve</label>
+          <label class="opt" data-opt="2"><span class="radio"></span>Hold, I have changes</label>
+          <div class="note" data-note><span data-type></span><span class="tcaret"></span></div>
+          <span class="btn-s primary" data-send>Send</span>
+        </div>
+        <div class="dock-done" data-dockdone><span class="c-gr">✓</span> Sent to <b>videomaker</b> · it is editing the page</div>
+      </div>
+      <div class="cursor" data-cursor><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6.5 1.5L10 19z" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/></svg></div>
+    </div>
+
+    <div class="cols3">
+      <div class="col reveal"><h3>A browser per activity</h3><p>Tabs belong to the terminal they were opened from: pull requests, docs, dashboards, rendered Markdown — beside the work, not in another window.</p></div>
+      <div class="col reveal"><h3>Served in place</h3><p>Mockups load from where the agent wrote them, assets included, local or over ssh. Reload picks up the agent's edits.</p></div>
+      <div class="col reveal"><h3>Feedback with a note</h3><p>Choose an option and say why. The answer — and the note — arrive in the agent's session as a single message.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CUSTOM COMMANDS ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="split">
+      <div class="app frag reveal" data-demo="prompts">
+        <div class="term-head"><span class="dot done" data-pdot></span><b>reviewer</b><span class="badge">local</span><span class="th-tools"><span class="tool-btn" data-ptool><i data-i="msg"></i></span><i data-i="folder"></i><i data-i="max"></i></span></div>
+        <div class="pmenu" data-pmenu>
+          <div class="m-lbl">Prompts</div>
+          <div class="m-item">Summarise this PR for the changelog</div>
+          <div class="m-item" data-pm="gate">Run the test gate and report failures</div>
+          <div class="m-item">Address the open review threads</div>
+          <div class="m-sep"></div>
+          <div class="m-item mut"><i data-i="plus"></i>Add prompt</div>
+        </div>
+        <div class="term tall" data-term>
+          <div class="tl"><span class="c-gr">●</span> Review threads resolved. 0 open.</div>
+          <div class="tl prompt">&gt; <span data-type></span><span class="tcaret"></span></div>
+        </div>
+        <div class="fkeys">
+          <span class="fk" data-fk="F1"><b>F1</b>chief</span>
+          <span class="fk" data-fk="F9"><b>F9</b>devops</span>
+          <span class="fk" data-fk="F10"><b>F10</b>reviewer</span>
+          <span class="fk"><b>F11</b>docs</span>
+        </div>
+        <div class="toast" data-toast><i data-i="term"></i><span><b>devops</b> created from its launch spec · <code>ssh claude-runner-2</code></span></div>
+        <div class="cursor" data-cursor><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6.5 1.5L10 19z" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/></svg></div>
+      </div>
+      <div class="feature-head left reveal">
+        <div class="eyebrow"><span class="eb-dot amber"></span>Custom commands</div>
+        <h2 class="h2">Say it once.<br><span class="dim">Send it anywhere.</span></h2>
+        <p class="lead">Save the prompts you type every day and send one to the active terminal from its toolbar. Bind F-keys to launch specs: press one to jump to that terminal, or create it — category, profile, folder and command — if it is not open yet.</p>
+        <ul class="ticks">
+          <li><b>Prompts.</b> Name, body, done. One click pastes and presses Enter.</li>
+          <li><b>Launch hotkeys.</b> F1 and F9–F12 focus or create; Shift+F edits the spec.</li>
+          <li><b>Command palette.</b> Tap Shift twice for everything else.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MESH ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="feature-head reveal">
+      <div class="eyebrow"><span class="eb-dot green"></span>Mesh</div>
+      <h2 class="h2">Sessions talk.<br>Across machines.</h2>
+      <p class="lead">Remote terminals run inside tmux on your build boxes and survive restarts and dropped networks. A per-host tunnel brings their status, questions and voice home, and the agent mesh lets one session message another — on any host, with or without the app open.</p>
+    </div>
+
+    <div class="app frag mesh-frag reveal" data-demo="mesh">
+      <div class="hosts">
+        <div class="host" data-host="pc"><div class="host-h"><i data-i="monitor"></i><b>this-pc</b><span class="badge">Windows</span><span class="ag">● agent</span></div>
+          <div class="hrow" data-h="chief"><span class="dot working"></span>chief</div><div class="hrow"><span class="dot done"></span>release</div><div class="hrow"><span class="dot idle"></span>videomaker</div></div>
+        <div class="host" data-host="cr2"><div class="host-h"><i data-i="server"></i><b>claude-runner-2</b><span class="badge">Linux</span><span class="ag">● agent</span></div>
+          <div class="hrow" data-h="qa"><span class="dot idle"></span>android-qa</div><div class="hrow"><span class="dot running"></span>soak-r20</div><div class="hrow"><span class="dot done"></span>reviewer</div></div>
+        <div class="host" data-host="cr3"><div class="host-h"><i data-i="server"></i><b>claude-runner3</b><span class="badge">Linux</span><span class="ag">● agent</span></div>
+          <div class="hrow"><span class="dot working"></span>mesh</div><div class="hrow"><span class="dot asking"></span>docs</div><div class="hrow"><span class="dot idle"></span>ios-build</div></div>
+      </div>
+      <div class="packet" data-packet><i data-i="msg"></i>Run the QA pass on build 84</div>
+      <div class="inbox" data-inbox>› Message from <b>@chief</b> · Run the QA pass on build 84</div>
+    </div>
+
+    <div class="cols3">
+      <div class="col reveal"><h3>tmux that reattaches</h3><p>Open a remote profile and you land in a named tmux session. Close Devpilot, lose Wi-Fi — it is still there when you come back.</p></div>
+      <div class="col reveal"><h3>Notify by name</h3><p><code>devpilot notify --to android-qa</code> drops a message in that session's inbox, on whichever machine it runs.</p></div>
+      <div class="col reveal"><h3>Drop files anywhere</h3><p>Drag a file or paste a screenshot onto a remote terminal: it is uploaded to that host and its path typed at the prompt.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ USAGE ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="feature-head reveal">
+      <div class="eyebrow"><span class="eb-dot blue"></span>Usage</div>
+      <h2 class="h2">Know your limits<br><span class="dim">before you hit them.</span></h2>
+      <p class="lead">The status bar shows the active session's model, effort and context, your machine's health and the daily and weekly usage of its account — with a pace arrow that projects where you will land at the reset.</p>
+    </div>
+
+    <div class="panel reveal">
+      <div class="sbar">
+        <div class="sb-left"><span class="dot working sm"></span><b>Opus 5.5</b> <span class="mut">(max, 31k/250k)</span></div>
+        <div class="sb-mid"><span class="mut">cpu</span> 12% <span class="mut">·</span> <span class="mut">mem</span> 41% <span class="mut">·</span> <span class="mut">disk</span> 6%</div>
+        <div class="sb-right">
+          <span class="mut">default ·</span> Day <b>36%</b> <span class="g-y">▼</span> <span class="mut">(1:10pm)</span>
+          <span class="bar"><i style="width:36%"></i></span>
+          <span class="mut">·</span> Week <b>23%</b> <span class="g-y">▼</span>
+        </div>
+      </div>
+      <div class="pace">
+        <div class="pc"><span class="g-r">▲</span><b>Runs out</b><span>On this slope you hit 100% before the reset. Day adds the time: <code>out ~6:13pm</code>.</span></div>
+        <div class="pc"><span class="g-g">▶</span><b>On pace</b><span>You will end the window between 85 and 99% — using what you pay for.</span></div>
+        <div class="pc"><span class="g-y">▼</span><b>Headroom</b><span>Below 85% at the reset. Week projections skip weekends.</span></div>
+      </div>
+    </div>
+
+    <div class="cols3">
+      <div class="col reveal"><h3>One chip per account</h3><p>Every Claude config dir you use is its own account, tracked live from the status line and Anthropic's usage endpoint.</p></div>
+      <div class="col reveal"><h3>Pick the fullest tank</h3><p>A new Claude terminal suggests the account with the most weekly quota left. One click to accept, still yours to change.</p></div>
+      <div class="col reveal"><h3>Hover for the forecast</h3><p>Reset times, rate per hour and the projected percentage at reset for every account, side by side.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DETAILS GRID ============ -->
+<section class="details">
+  <div class="wrap">
+    <div class="feature-head center reveal">
+      <h2 class="h2">Built for the hundredth hour.</h2>
+      <p class="lead">The small things that make a terminal you live in all day.</p>
+    </div>
+    <div class="grid">
+      <div class="card-d reveal">
+        <div class="card-art palette">
+          <div class="pal-in"><span class="mut">›</span> rel<span class="caret"></span></div>
+          <div class="pal-item on"><span class="dot working sm"></span>release <span class="mut">~/devpilot</span></div>
+          <div class="pal-item"><span class="mut">＋</span>New terminal from profile…</div>
+          <div class="pal-item"><span class="mut">?</span>Answer question…</div>
+        </div>
+        <h3>Command palette</h3><p>Tap Shift twice — even inside a terminal — to switch, create, move, answer or open anything.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art keys"><span class="kbd lg">Ctrl</span><span class="kbd lg">Tab</span><span class="kbd lg">Alt</span><span class="kbd lg">1</span></div>
+        <h3>Keyboard first</h3><p>Ctrl+Tab cycles terminals, Alt+number jumps to a category, F2 renames, Ctrl+P opens quick-access profiles.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art themes">
+          <span style="--a:#0b0d12;--b:#5b8cff"></span><span style="--a:#282a36;--b:#bd93f9"></span><span style="--a:#1e1e2e;--b:#f5c2e7"></span><span style="--a:#1a1b26;--b:#7aa2f7"></span><span style="--a:#2e3440;--b:#88c0d0"></span><span style="--a:#282828;--b:#fabd2f"></span>
+        </div>
+        <h3>Themes &amp; accents</h3><p>Nine terminal themes, eight accents or any hex. Spinner and attention colours are yours too.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art drop"><div class="dz"><span>Drop to upload to <b>claude-runner-2</b><br>→ tmp/devpilot-drop</span></div></div>
+        <h3>Drop &amp; paste files</h3><p>Files and screenshots become paths at the prompt, locally or on a remote host, exactly like a native drop.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art profiles">
+          <div class="pf"><span class="ag">✳</span>Claude <span class="mut">~/.claude</span></div>
+          <div class="pf"><span class="ag">✳</span>Claude max <span class="mut">~/.claude-max</span></div>
+          <div class="pf"><span class="ag">◎</span>Codex <span class="mut">~/.codex</span></div>
+        </div>
+        <h3>Profiles &amp; accounts</h3><p>Command, environment and folder presets: several Claude or Codex accounts, ssh hosts, plain shells.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art api"><code>GET /terminals</code><code>POST /speak</code><code>POST /point</code></div>
+        <h3>Scriptable</h3><p>A loopback API and the <code>devpilot</code> CLI let agents and scripts drive terminals, tabs and toasts.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FILM ============ -->
+<section class="film" id="film">
+  <div class="wrap">
+    <div class="feature-head center reveal">
+      <h2 class="h2">See it in forty seconds.</h2>
+    </div>
+    <div class="film-frame reveal">
+      <video controls preload="none" playsinline poster="assets/poster.webp">
+        <source src="https://s3.us1.odhserver.com/testpilot/9a7ca61efd75ef1d38ff11ea1171335e" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSING ============ -->
+<section class="cta">
+  <div class="wrap">
+    <img class="cta-head reveal" src="assets/head.webp" width="700" height="550" loading="lazy" alt="The Devpilot mascot: a chrome helmet with a white visor.">
+    <h2 class="h2 reveal">Fly the whole fleet.</h2>
+    <p class="lead reveal">Devpilot runs on Windows, built with Tauri, Rust and xterm.js.</p>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span>Devpilot · built by <a href="https://www.fernandobevilacqua.com/">Fernando Bevilacqua</a></span>
+    <span class="mut">Claude Code is a product of Anthropic. Codex is a product of OpenAI.</span>
+  </div>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>
