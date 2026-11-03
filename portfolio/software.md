@@ -10,11 +10,27 @@ These projects span different stages of my career. Start with [the engineering s
 
 **[Codebot](https://github.com/Dovyski/Codebot)** — I built a web-based IDE because game development work extends well beyond the code editor: assets, levels, sounds, documentation and publishing all interrupt the flow. Codebot explored how one environment could absorb more of that work.
 
+**[Devpilot](/devpilot/)** — Running a dozen AI coding agents at once turned my desktop into a wall of terminals, and the bottleneck became knowing which one needed me. I built a Windows desktop app that groups the terminals, shows every agent's status live, collects their questions in one place and speaks up when one finishes.
+
 **[cvui](https://github.com/Dovyski/cvui)** — OpenCV experimentation needed simple controls without another graphical backend. I created and maintained a small UI library rendered using OpenCV primitives, with documentation and both C++ and Python implementations.
 
 ## Historical project catalogue
 
 ___  
+
+<div class="item">
+<h2>Devpilot <span class="type rust">Rust</span> <span class="type ts">TypeScript</span> <span class="type tauri">Tauri</span></h2>
+<p class="meta">A Windows desktop app built with Tauri: a Rust back-end manages the terminal sessions, hooks and a small HTTP API, while a React/TypeScript front-end renders the terminals with xterm.js.</p>
+<a href="/devpilot/"><img src="/public/img/devpilot.png" title="Devpilot" /></a>
+<p class="description">
+Devpilot is a terminal workspace for running many AI coding agents (Claude Code, Codex) in parallel. Terminals are grouped by initiative and show a live status (working, running a tool, asking, done). Agents' questions land in a single Pending tab, and long steps (deploys, test gates) report their progress. A context panel collects the pull requests, issues and links each session mentions, with one-click actions such as a local review. Mockups open in an in-app browser where you can give feedback. A floating orb tells you which terminal needs attention and speaks a short line when an agent finishes. Saved prompts and F-key launch specs handle repetitive commands, and a mesh connects sessions running on remote Linux machines.
+</p>
+<p class="more">
+    <span class="type extra"><a href="/devpilot/"><img src="/public/img/link.png" title="Website" /> Website</a></span>
+</p>
+</div>
+
+___
 
 <div class="item">
 <h2>cvui <span class="type cpp">C++</span> <span class="type opencv">OpenCV</span></h2>
