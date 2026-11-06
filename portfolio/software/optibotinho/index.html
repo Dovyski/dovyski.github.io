@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OptiBotinho — The teammate that lives in your pull requests</title>
+<meta name="description" content="OptiBotinho is a GitHub bot built for the Optidata engineering team: AI code review by a panel of Claude Code and Codex reviewers, a merge queue with risk lanes, issue status automation, chat notifications and production error triage.">
+<meta property="og:title" content="OptiBotinho — The teammate that lives in your pull requests">
+<meta property="og:description" content="A panel of AI reviewers on every pull request, a merge queue that merges the safe ones, and issues that move when the code moves.">
+<meta property="og:image" content="https://www.fernandobevilacqua.com/public/img/optibotinho.png">
+<meta property="og:url" content="https://www.fernandobevilacqua.com/portfolio/software/optibotinho/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#09080b">
+<link rel="icon" href="assets/bot.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://rsms.me/">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="bot-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#b794ff"/><stop offset="1" stop-color="#7c3aed"/></linearGradient>
+    <symbol id="bot" viewBox="0 0 64 64">
+      <rect width="64" height="64" rx="18" fill="url(#bot-g)"/>
+      <path d="M32 10v7" stroke="#f5f3ff" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="32" cy="9" r="3.6" fill="#f0abfc"/>
+      <rect x="11" y="18" width="42" height="32" rx="11" fill="#f5f3ff"/>
+      <rect x="16.5" y="24.5" width="31" height="16" rx="8" fill="#1d1330"/>
+      <circle cx="25.5" cy="32.5" r="3.3" fill="#c4b5fd"/>
+      <circle cx="38.5" cy="32.5" r="3.3" fill="#c4b5fd"/>
+      <path d="M27 45h10" stroke="#a78bfa" stroke-width="2.6" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <a class="pill reveal" href="#review">
+      <span class="pill-tag">Internal</span>
+      <span>Built for the Optidata engineering team</span>
+      <i data-i="chev"></i>
+    </a>
+    <h1 class="hero-title reveal">The teammate that lives<br>in your pull requests</h1>
+    <p class="hero-sub reveal">OptiBotinho is a GitHub bot. It reviews every pull request with a panel of AI reviewers, merges the safe ones through its own queue, and keeps issues, releases and the team chat in step with the code.</p>
+    <div class="hero-cta reveal">
+      <a class="btn btn-primary" href="#review"><i data-i="eye"></i>See how it reviews</a>
+      <a class="btn btn-ghost" href="#features">Explore features <span class="kbd">↓</span></a>
+    </div>
+  </div>
+
+  <div class="hero-stage reveal">
+    <div class="app gh hero-app" data-demo="hero" aria-label="Animated GitHub pull request: OptiBotinho labels it, reviews it, approves it, waits for a human approval and merges it.">
+      <div class="gh-top">
+        <span class="gh-logo"><i data-i="gh"></i></span>
+        <span class="gh-crumbs"><span class="mut">acme</span> / <b>web</b></span>
+        <div class="gh-nav">
+          <span><i data-i="code"></i>Code</span>
+          <span><i data-i="issue"></i>Issues <em>31</em></span>
+          <span class="on"><i data-i="pr"></i>Pull requests <em>12</em></span>
+          <span><i data-i="play"></i>Actions</span>
+        </div>
+      </div>
+      <div class="gh-head">
+        <h4>Retry webhook deliveries with backoff <span class="mut">#5932</span></h4>
+        <div class="gh-meta"><span class="state open" data-state><i data-i="pr"></i><span data-state-t>Open</span></span><span class="mut gh-meta-t" data-meta><b>alex</b> wants to merge 3 commits into <code>dev</code> from <code>5932-webhook-retries</code></span></div>
+      </div>
+      <div class="gh-body">
+        <div class="gh-main" data-tl>
+          <div class="tli comment">
+            <span class="av lg" style="--c:#0ea5e9">AL</span>
+            <div class="cbox">
+              <div class="cbox-h"><b>alex</b> <span class="mut">commented 2 minutes ago</span></div>
+              <div class="cbox-b">Failed webhook deliveries are retried up to five times, with exponential backoff and jitter.<span class="marks"><code>Fix: #5910</code><code>- ENV: WEBHOOK_RETRY_MAX=5</code></span></div>
+            </div>
+          </div>
+        </div>
+        <aside class="gh-side">
+          <div class="gs">
+            <div class="gs-h">Reviewers</div>
+            <div class="gs-row"><svg class="bot-av"><use href="#bot"/></svg>OptiBotinho<span class="rv-st" data-rv-bot></span></div>
+            <div class="gs-row"><span class="av" style="--c:#f97316">SM</span>sam<span class="rv-st" data-rv-sam><span class="dot pending"></span></span></div>
+          </div>
+          <div class="gs">
+            <div class="gs-h">Labels</div>
+            <div class="labels" data-labels><span class="none">None yet</span></div>
+          </div>
+          <div class="gs">
+            <div class="gs-h">Merge queue</div>
+            <div class="mq-row"><span class="mut">Lane</span><b data-mq-lane>—</b></div>
+            <div class="mq-row"><span class="mut">Approval score</span><b data-mq-score>0 / 2</b></div>
+            <div class="mq-bar"><i data-mq-bar></i></div>
+            <div class="mq-next" data-mq-next>Waiting for evaluation</div>
+          </div>
+          <div class="gs">
+            <div class="gs-h">Development</div>
+            <div class="gs-row dev"><i data-i="issue" class="c-gr"></i><span>#5910 Webhook deliveries are lost on 502</span></div>
+            <div class="gs-row"><span class="status-chip" data-issue>In progress</span></div>
+          </div>
+        </aside>
+      </div>
+      <div class="chat-toast" data-toast>
+        <div class="ct-h"><span class="ct-app"><i data-i="msg"></i>Talk</span><span class="mut">now</span></div>
+        <div class="ct-b"><svg class="bot-av"><use href="#bot"/></svg><div><b>OptiBotinho</b><span><b>sam</b> mentioned you in <code>acme/web#5932</code>: “@alex nice. Can the retry count show up on the dashboard later?”</span></div></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ STRIP ============ -->
+<section class="strip">
+  <div class="wrap">
+    <p class="strip-lead">Listens to webhooks, works through the tools the team already uses</p>
+    <ul class="strip-list">
+      <li><span class="ico">⌥</span>GitHub</li>
+      <li><span class="ico">✳</span>Claude Code</li>
+      <li><span class="ico">◎</span>Codex CLI</li>
+      <li><span class="ico">◐</span>Laravel Nightwatch</li>
+      <li><span class="ico">✉</span>Optiwork Talk</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ PROBLEM ============ -->
+<section class="problem">
+  <div class="wrap problem-grid">
+    <div class="problem-copy reveal">
+      <h2 class="h2">Every pull request needs a reviewer.<br><span class="dim">Every reviewer already has a backlog.</span></h2>
+      <p class="lead">A small team ships across dozens of repositories. Dependency bumps wait days for an approval nobody has to think about. Issues sit in the wrong column because no one moved them. Mentions go to an inbox nobody reads during the day. OptiBotinho takes the repetitive part of that loop and leaves the decisions to people.</p>
+    </div>
+    <div class="backlog reveal" aria-hidden="true">
+      <div class="bl-head"><i data-i="pr"></i><b>Review requested</b><span class="bl-n">14</span></div>
+      <div class="bl-row"><span class="dot amber"></span><div><b>chore(deps): bump axios from 1.7.4 to 1.7.7</b><small>acme/web#5941 · dependabot</small></div><span class="age hot">4d</span></div>
+      <div class="bl-row"><span class="dot amber"></span><div><b>chore(deps): bump guzzlehttp/guzzle to 7.9.2</b><small>acme/api#221 · dependabot</small></div><span class="age hot">4d</span></div>
+      <div class="bl-row"><span class="dot red"></span><div><b>feat: CSV export for monthly reports</b><small>acme/web#5926 · CI failed</small></div><span class="age">2d</span></div>
+      <div class="bl-row"><span class="dot amber"></span><div><b>fix: keep the session after a token refresh</b><small>acme/mobile#87 · waiting for review</small></div><span class="age">2d</span></div>
+      <div class="bl-row"><span class="dot amber"></span><div><b>Release: dev → main</b><small>acme/chat#140 · version PR</small></div><span class="age">1d</span></div>
+      <div class="bl-row dimmed"><span class="dot amber"></span><div><b>feat: new billing schema</b><small>acme/api#219 · issue still in “In progress”</small></div><span class="age">20h</span></div>
+      <div class="bl-fade"></div>
+    </div>
+  </div>
+</section>
+
+<div id="features"></div>
+
+<!-- ============ REVIEW ============ -->
+<section class="feature" id="review">
+  <div class="wrap">
+    <div class="feature-head reveal">
+      <div class="eyebrow"><span class="eb-dot violet"></span>Code review</div>
+      <h2 class="h2">A review panel,<br><span class="grad">not a single opinion.</span></h2>
+      <p class="lead">Every pull request is routed to a review tier. The tier's reviewers run in parallel through the Claude Code and Codex CLIs on a real checkout. A manager then checks their findings against the head commit and publishes one consolidated review.</p>
+    </div>
+
+    <div class="app frag reveal" data-demo="review">
+      <div class="frag-grid rv-grid">
+        <div class="rv-run">
+          <div class="term-head"><svg class="bot-av"><use href="#bot"/></svg><b>Review round 2</b><span class="badge">acme/api#218</span><span class="th-r mut">head 9c1e07d</span></div>
+          <div class="rv-body">
+            <div class="rv-sec">Tier · first match wins</div>
+            <div class="tier" data-tier="1"><span class="t-n">1</span><b>Sensitive</b><span class="t-why">app/Http/Middleware/**</span><span class="t-st" data-tier-st="1"></span></div>
+            <div class="tier" data-tier="2"><span class="t-n">2</span><b>Trivial</b><span class="t-why">≤ 5 files and ≤ 200 lines</span><span class="t-st" data-tier-st="2"></span></div>
+            <div class="tier" data-tier="3"><span class="t-n">3</span><b>Full</b><span class="t-why">catch-all</span><span class="t-st" data-tier-st="3"></span></div>
+            <div class="rv-sec">Reviewers</div>
+            <div class="rvr" data-r="1"><span class="cli claude">claude</span><b>Security</b><span class="rv-out" data-r-out="1">queued</span></div>
+            <div class="rvr" data-r="2"><span class="cli codex">codex</span><b>Correctness</b><span class="rv-out" data-r-out="2">queued</span></div>
+            <div class="rvr" data-r="3"><span class="cli claude">claude</span><b>Tests</b><span class="rv-out" data-r-out="3">queued</span></div>
+            <div class="rv-sec">Manager</div>
+            <div class="rvr mgr" data-mgr><span class="cli codex">codex</span><b>Manager</b><span class="rv-out" data-mgr-out>waiting for reviewers</span></div>
+          </div>
+        </div>
+        <div class="rv-gh">
+          <div class="ck" data-ck><span class="ck-st" data-ck-st><span class="dot pending"></span></span><b>Optibotinho · AI code review</b><span class="mut ck-t" data-ck-t>Review queued</span></div>
+          <div class="cbox bot ov" data-ov>
+            <div class="cbox-h"><svg class="bot-av"><use href="#bot"/></svg><b>OptiBotinho</b><span class="bot-tag">bot</span><span class="mut">reviewed now</span></div>
+            <div class="cbox-b">
+              <div class="ov-h"><span class="vd amber"></span>Changes recommended</div>
+              <p class="ov-p">The retry middleware is sound, but the signature check can leak timing and the empty-payload path has no test.</p>
+              <div class="ov-meta"><b>Review round:</b> 2 · <b>Reviewers:</b> <code>Security</code> <code>Correctness</code> <code>Tests</code></div>
+              <div class="ov-meta"><b>Findings:</b> <span class="sev high">High</span> 1 · <span class="sev low">Low</span> 1</div>
+              <div class="ov-open">
+                <div class="ov-oh"><i data-i="down"></i><b>Open (2)</b></div>
+                <div class="ov-f"><span class="sev high">High</span><span>Compare signatures in constant time</span><code>VerifySignature.php:41</code></div>
+                <div class="ov-f"><span class="sev low">Low</span><span>No test for an empty payload</span><code>WebhookTest.php</code></div>
+              </div>
+              <div class="ov-fold"><i data-i="chev"></i>What changed in this pull request</div>
+              <div class="ov-fold"><i data-i="chev"></i>Full report</div>
+            </div>
+          </div>
+          <div class="inline" data-inline>
+            <div class="in-file"><i data-i="file"></i>app/Http/Middleware/VerifySignature.php</div>
+            <div class="in-code"><span class="ln">40</span><span>    $expected = hash_hmac('sha256', $body, $secret);</span></div>
+            <div class="in-code del"><span class="ln">41</span><span>    if ($signature == $expected) {</span></div>
+            <div class="in-cm"><svg class="bot-av"><use href="#bot"/></svg><div><span class="sev high">High</span> <b>Compare signatures in constant time</b><p><code>==</code> stops at the first different byte. Use <code>hash_equals($expected, $signature)</code>.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cols3">
+      <div class="col reveal"><h3>Tiers by risk</h3><p>Ordered rules on paths, sizes, labels and repositories pick how hard to look. Sensitive code gets the full panel; a docs typo gets a light one. The last tier always matches.</p></div>
+      <div class="col reveal"><h3>Real CLIs, real checkouts</h3><p>Reviewers are Claude Code and Codex sessions with their own prompts and accounts, run by a separate review runtime. Profiles can add a code graph over MCP.</p></div>
+      <div class="col reveal"><h3>One verified review</h3><p>The manager drops what it cannot confirm at the head commit, rates the rest from critical to low, and posts inline comments plus a check run. Drafts and empty diffs are skipped.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ROUNDS ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="split rev">
+      <div class="feature-head left reveal">
+        <div class="eyebrow"><span class="eb-dot pink"></span>Review rounds</div>
+        <h2 class="h2">Round three remembers<br><span class="dim">round two.</span></h2>
+        <p class="lead">Every push starts a new round at the current head. Findings are fingerprinted against earlier rounds, so the bot does not say the same thing twice, and the thread stays readable after ten pushes.</p>
+        <ul class="ticks">
+          <li><b>Novel, carried, duplicate, reintroduced.</b> Each finding is labelled against history; duplicates are not posted again.</li>
+          <li><b>Old overviews fold away.</b> The previous summary collapses to “Superseded by round N”, keeping the findings it had at the time.</li>
+          <li><b>Approval waits for open threads.</b> A clean round with carried findings still unresolved does not approve.</li>
+        </ul>
+      </div>
+      <div class="app frag reveal" data-demo="rounds">
+        <div class="rounds" data-rounds>
+          <div class="round" data-round="1">
+            <div class="rd-h"><svg class="bot-av"><use href="#bot"/></svg><b>OptiBotinho</b><span class="mut">round 1</span><span class="rd-v" data-rd-v><span class="vd amber"></span>Changes recommended</span></div>
+            <div class="rd-f"><span class="sev high">High</span>Compare signatures in constant time</div>
+            <div class="rd-f"><span class="sev low">Low</span>No test for an empty payload</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MERGE QUEUE ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="feature-head reveal">
+      <div class="eyebrow"><span class="eb-dot green"></span>Merge queue</div>
+      <h2 class="h2">Clean pull requests<br>merge themselves.</h2>
+      <p class="lead">Configured rules put every pull request in one of three lanes. <b>lane:auto</b> merges after a clean AI review. <b>lane:assist</b> also needs enough human approval and a delay. <b>lane:human</b> is left to people. The queue automates; it does not enforce, so anyone can still merge by hand.</p>
+    </div>
+
+    <div class="app frag reveal" data-demo="queue">
+      <div class="q-top"><i data-i="merge"></i><b>Merge queue</b><span class="badge">acme</span><span class="q-mode"><span class="sw"></span>automate</span><span class="mut q-cnt" data-q-cnt>0 merged today</span></div>
+      <div class="lanes">
+        <div class="lane">
+          <div class="lane-h"><span class="lbl l-auto">lane:auto</span><span class="mut">AI review only</span></div>
+          <div class="qc" data-qc="dep">
+            <div class="qc-t"><i data-i="pr" class="c-gr"></i><code>acme/web#5941</code><span class="qc-st" data-st>evaluating</span></div>
+            <b>chore(deps): bump axios from 1.7.4 to 1.7.7</b>
+            <div class="qc-c"><span class="chip">dependabot</span><span class="chip" data-ai>AI review: skip</span></div>
+          </div>
+          <div class="qc" data-qc="ver">
+            <div class="qc-t"><i data-i="pr" class="c-gr"></i><code>acme/chat#140</code><span class="qc-st" data-st>evaluating</span></div>
+            <b>Release: dev → main</b>
+            <div class="qc-c"><span class="chip">version PR</span><span class="chip">merge commit</span></div>
+          </div>
+        </div>
+        <div class="lane">
+          <div class="lane-h"><span class="lbl l-assist">lane:assist</span><span class="mut">AI review + approval score</span></div>
+          <div class="qc" data-qc="csv">
+            <div class="qc-t"><i data-i="pr" class="c-gr"></i><code>acme/web#5926</code><span class="qc-st" data-st>waiting</span></div>
+            <b>feat: CSV export for monthly reports</b>
+            <div class="qc-c"><span class="chip c-gr">✓ AI review clean</span><span class="chip" data-score>score 1 / 2</span><span class="chip" data-delay>delay 10 min</span></div>
+            <div class="qc-bar"><i data-bar></i></div>
+          </div>
+          <div class="qc" data-qc="sess">
+            <div class="qc-t"><i data-i="pr" class="c-gr"></i><code>acme/mobile#87</code><span class="qc-st" data-st>reviewing</span></div>
+            <b>fix: keep the session after a token refresh</b>
+            <div class="qc-c"><span class="chip" data-ai><span class="spin">⠋</span> AI review</span></div>
+          </div>
+        </div>
+        <div class="lane">
+          <div class="lane-h"><span class="lbl l-human">lane:human</span><span class="mut">a person decides</span></div>
+          <div class="qc" data-qc="bill">
+            <div class="qc-t"><i data-i="pr" class="c-gr"></i><code>acme/api#219</code><span class="qc-st" data-st>blocked</span></div>
+            <b>feat: new billing schema</b>
+            <div class="qc-c"><span class="chip c-rd" data-wip>blocked_by_label: WIP</span><span class="chip">migration</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="q-log" data-qlog><span class="q-log-h">Merge attempts</span></div>
+    </div>
+
+    <div class="cols3">
+      <div class="col reveal"><h3>Score, not count</h3><p>Approvals are weighed by a score per GitHub user, with boosts per repository. The author's own approval never counts toward the threshold.</p></div>
+      <div class="col reveal"><h3>Rechecked before every merge</h3><p>Head and base SHAs, mergeability, labels and kill switches are read again right before the merge call. Every attempt is recorded: merged, conflict, stale, blocked or merged by a person.</p></div>
+      <div class="col reveal"><h3>People keep the last word</h3><p><code>lane:human</code> is never removed, a <code>WIP</code> label holds the queue, and audited overrides can merge now, hold, force a lane or change the delay.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMMANDS ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="split">
+      <div class="app frag reveal" data-demo="commands">
+        <div class="gh-head slim">
+          <h4>Webhook deliveries are lost on 502 <span class="mut">#5910</span></h4>
+          <div class="gh-meta"><span class="state open"><i data-i="issue"></i><span>Open</span></span><span class="mut gh-meta-t">acme/web · milestone <b>Faster checkout</b></span></div>
+        </div>
+        <div class="cmd-tl" data-tl>
+          <div class="tli comment">
+            <span class="av lg" style="--c:#0ea5e9">AL</span>
+            <div class="cbox"><div class="cbox-h"><b>alex</b> <span class="mut">commented yesterday</span></div><div class="cbox-b">The same bug shows up in the API and the mobile app.</div></div>
+          </div>
+        </div>
+        <div class="composer">
+          <span class="av lg" style="--c:#0ea5e9">AL</span>
+          <div class="cmp-box"><span data-type></span><span class="tcaret"></span></div>
+          <span class="btn-s primary" data-send>Comment</span>
+        </div>
+        <div class="cursor" data-cursor><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6.5 1.5L10 19z" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/></svg></div>
+      </div>
+      <div class="feature-head left reveal">
+        <div class="eyebrow"><span class="eb-dot amber"></span>Commands</div>
+        <h2 class="h2">Mention it.<br><span class="dim">It answers.</span></h2>
+        <p class="lead">Write <code>@OptiBotinho</code> and a command in any issue or pull request. The bot reacts with 👀 so you know it heard, does the work, and replies in the thread. Anything that is not a command gets an AI answer.</p>
+        <ul class="ticks">
+          <li><b>Pull requests.</b> <code>write</code> drafts the title and body, <code>review</code> queues a review at the current head, <code>approve</code> approves.</li>
+          <li><b>Across repositories.</b> <code>clone</code> an issue everywhere it applies; create, delete or copy labels and milestones in one comment.</li>
+          <li><b>Reports.</b> Milestone progress, releases, team contributions and the project board, on request.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ WORKFLOW ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="feature-head reveal">
+      <div class="eyebrow"><span class="eb-dot blue"></span>Workflow</div>
+      <h2 class="h2">Issues move<br><span class="dim">when the code moves.</span></h2>
+      <p class="lead">Opening a pull request puts its issue in <b>In review</b>. Merging into <code>dev</code> moves it to <b>To deploy</b>; merging into <code>main</code> moves it to <b>Testing</b> and tells the assignee. Marks in the pull request body label the issue and end up in the release notes.</p>
+    </div>
+
+    <div class="app frag reveal" data-demo="workflow">
+      <div class="frag-grid wf-grid">
+        <div class="board">
+          <div class="bcol" data-col="0"><div class="bcol-h">In progress <em>6</em></div><div class="slot"></div><div class="gcard"><i></i><i></i></div><div class="gcard"><i></i><i></i></div></div>
+          <div class="bcol" data-col="1"><div class="bcol-h">In review <em>9</em></div><div class="slot"></div><div class="gcard"><i></i><i></i></div><div class="gcard"><i></i><i></i></div></div>
+          <div class="bcol" data-col="2"><div class="bcol-h">To deploy <em>4</em></div><div class="slot"></div><div class="gcard"><i></i><i></i></div></div>
+          <div class="bcol" data-col="3"><div class="bcol-h">Testing <em>3</em></div><div class="slot"></div><div class="gcard"><i></i><i></i></div></div>
+          <div class="icard" data-icard>
+            <div class="ic-t"><i data-i="issue" class="c-gr"></i><code>#5910</code><span class="av" style="--c:#0ea5e9">AL</span></div>
+            <b>Webhook deliveries are lost on 502</b>
+            <div class="ic-l" data-ilabels></div>
+          </div>
+        </div>
+        <div class="wf-side">
+          <div class="wf-sec">Pull request body</div>
+          <div class="wf-code">Retries failed deliveries with backoff.<br><br>Fix: #5910<br><span class="mk" data-mk="env">- ENV: WEBHOOK_RETRY_MAX=5</span><br><span class="mk" data-mk="mi">- MI:</span></div>
+          <div class="wf-sec">Activity</div>
+          <div class="wf-log" data-wlog></div>
+          <div class="release" data-release>
+            <div class="rl-h"><i data-i="tag"></i><b>v2026.11.06.1400</b><span class="st-fill">Latest</span></div>
+            <div class="rl-b"><b>Environment variables</b><code>WEBHOOK_RETRY_MAX=5</code></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cols3">
+      <div class="col reveal"><h3>Status follows the branch</h3><p>A <code>Fix: #5910</code> line in the pull request body is all it takes. Nobody drags the card, and nobody forgets to.</p></div>
+      <div class="col reveal"><h3>Marks that travel</h3><p><code>ENV:</code>, <code>FF:</code> and <code>MI:</code> lines add <code>has:env</code>, <code>has:feature-flag</code> and <code>has:migration</code>. When a release is published, the envs and flags from its commits are added to the release body.</p></div>
+      <div class="col reveal"><h3>A board report, in working hours</h3><p>On working days the bot posts how many items sit in each column, at a minimum interval, and warns when <b>In review</b> piles up. Nothing is posted at night or on weekends.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CHAT ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="split rev">
+      <div class="feature-head left reveal">
+        <div class="eyebrow"><span class="eb-dot pink"></span>Chat</div>
+        <h2 class="h2">Mentions reach people<br><span class="dim">where they read.</span></h2>
+        <p class="lead">A GitHub @mention becomes one more notification that is easy to miss. OptiBotinho also sends it as a direct message in the team chat, using a map from GitHub logins to chat users.</p>
+        <ul class="ticks">
+          <li><b>Every place a mention can hide.</b> Pull request descriptions, conversation comments, review bodies and line comments.</li>
+          <li><b>Ready for testing.</b> When issues reach Testing, assignees get one message per batch, not one per issue.</li>
+          <li><b>Never in the way.</b> Messages go out from a queue, exactly once; a slow chat never delays the rest of the webhook.</li>
+        </ul>
+      </div>
+      <div class="app frag reveal" data-demo="chat">
+        <div class="frag-grid chat-grid">
+          <div class="ch-side">
+            <div class="ch-h"><i data-i="msg"></i><b>Talk</b></div>
+            <div class="ch-conv on" data-conv="dm"><svg class="bot-av"><use href="#bot"/></svg><div><b>OptiBotinho</b><small data-prev="dm">Direct message</small></div><span class="ch-n" data-n="dm"></span></div>
+            <div class="ch-conv" data-conv="grp"><span class="hash">#</span><div><b>dev-news</b><small data-prev="grp">Team channel</small></div><span class="ch-n" data-n="grp"></span></div>
+          </div>
+          <div class="ch-main">
+            <div class="ch-title" data-ch-title>OptiBotinho</div>
+            <div class="ch-msgs" data-msgs="dm"></div>
+            <div class="ch-msgs" data-msgs="grp" hidden></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NIGHTWATCH ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="feature-head reveal">
+      <div class="eyebrow"><span class="eb-dot red"></span>Production errors</div>
+      <h2 class="h2">One cause.<br><span class="grad">One issue.</span></h2>
+      <p class="lead">Laravel Nightwatch reports exceptions per application, so a Redis restart seen by ten apps is ten reports. OptiBotinho classifies each one before filing anything, fingerprints the cause, and links repeats to the issue that already tracks it.</p>
+    </div>
+
+    <div class="app frag reveal" data-demo="nightwatch">
+      <div class="frag-grid nw-grid">
+        <div class="nw-in">
+          <div class="term-head"><i data-i="bell"></i><b>Nightwatch webhooks</b><span class="badge">issue.opened</span></div>
+          <div class="nw-list" data-nwin></div>
+        </div>
+        <div class="nw-out">
+          <div class="term-head"><i data-i="issue"></i><b>GitHub issues</b></div>
+          <div class="nw-list" data-nwout></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cols3">
+      <div class="col reveal"><h3>Four categories</h3><p><b>Application</b> errors go to the repository that saw them. <b>Infrastructure</b> and <b>external dependency</b> failures go to the platform repository. The monitoring agent's own noise is dropped.</p></div>
+      <div class="col reveal"><h3>Fingerprinted causes</h3><p>Messages are normalised before matching, so the same failure with a different id, path or timestamp joins the open issue as a comment.</p></div>
+      <div class="col reveal"><h3>Triage, then follow-up</h3><p>A triage dashboard tracks reports by category and cause. Resolving or ignoring an error in Nightwatch closes the GitHub issue, and a backfill command sorts out the issues filed before triage existed.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DETAILS GRID ============ -->
+<section class="details">
+  <div class="wrap">
+    <div class="feature-head center reveal">
+      <h2 class="h2">Also running the back office.</h2>
+      <p class="lead">A web app behind GitHub sign-in, with page-level permissions, for the parts of the job that are not a pull request.</p>
+    </div>
+    <div class="grid">
+      <div class="card-d reveal">
+        <div class="card-art vault">
+          <div class="va-row"><i data-i="key"></i><b>stage.db.password</b><span class="mask">••••••••••</span><span class="lvl">L2</span></div>
+          <div class="va-row"><i data-i="key"></i><b>smtp.relay</b><span class="mask">••••••••</span><span class="lvl">L1</span></div>
+          <div class="va-totp"><span class="mut">TOTP</span><span class="otp"><i>4</i><i>8</i><i>1</i><i>0</i><i>2</i><i class="cur"></i></span></div>
+        </div>
+        <h3>Vault</h3><p>Team secrets, each with a clearance level. Revealing one takes a TOTP code and a ten-minute token. Entries above your level look exactly like missing ones.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art device">
+          <span class="mut">Confirm the code shown in your terminal</span>
+          <div class="dv-code">WDJB-MJHT</div>
+          <span class="btn-s primary">Approve device</span>
+        </div>
+        <h3>CLI sign-in</h3><p>A device-code flow signs the team CLI in through GitHub. From there it uploads screenshots for PRs, messages teammates, reads the vault and triggers redeploys.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art code-art"><pre>GET /api/bastion/allowlist?env=stage
+[
+  { "username": "alex",
+    "keys": ["ssh-ed25519 AAAA…"] },
+  { "username": "sam", "keys": [] }
+]</pre></div>
+        <h3>SSH bastion allow-list</h3><p>Bastions pull who may connect, with each person's public keys from GitHub. Production access is a separate grant.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art spend">
+          <div class="sp-row"><span class="cli claude">claude</span><span class="sp-bar"><i style="width:62%"></i></span><b>62%</b></div>
+          <div class="sp-row"><span class="cli codex">codex</span><span class="sp-bar"><i style="width:41%"></i></span><b>41%</b></div>
+          <div class="sp-tot"><span class="mut">Reviewer · this month</span><b>$1,284</b><small class="mut">API-equivalent</small></div>
+        </div>
+        <h3>Spending</h3><p>Every review run records its tokens and an API-equivalent cost. Subscription accounts show how much of their usage window is left.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art agents">
+          <div class="ag-row"><span class="dot running"></span><b>coder-bot</b><span class="mut">2 jobs · 1.2M tokens</span></div>
+          <div class="ag-row"><span class="dot running"></span><b>qa-bot</b><span class="mut">5 testers</span></div>
+          <div class="ag-row"><span class="dot idle"></span><b>docs-bot</b><span class="tag-s">stale</span></div>
+        </div>
+        <h3>AI agents</h3><p>The team's other bots push snapshots and events. One page shows what each agent is doing, its jobs and its token use.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art bars"><span style="--h:38%"></span><span style="--h:56%"></span><span style="--h:44%"></span><span style="--h:72%"></span><span style="--h:61%"></span><span style="--h:84%"></span><span style="--h:69%"></span><span style="--h:90%"></span></div>
+        <h3>Dashboards</h3><p>Pull requests, issues, commits, reviews, releases, weekly test coverage and a contributor ranking, across every registered repository.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art todos">
+          <div><span class="td t1">TODO</span><code>retry on 429 too</code></div>
+          <div><span class="td t2">FIXME</span><code>N+1 in report export</code></div>
+          <div><span class="td t3">HACK</span><code>skip tz for legacy rows</code></div>
+        </div>
+        <h3>Tech debt</h3><p><code>@OptiBotinho scan-todos</code> stores TODO, FIXME and HACK comments as tech debt. Any of them becomes an issue in one click.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art flags">
+          <div class="fl-row"><code>feature_csv_export</code><span class="fl-b"><i style="width:80%"></i></span><span class="mut">80%</span></div>
+          <div class="fl-row"><code>feature_new_editor</code><span class="fl-b"><i style="width:35%"></i></span><span class="mut">35%</span></div>
+          <div class="fl-row"><code>feature_dark_mode</code><span class="fl-b"><i style="width:100%"></i></span><span class="mut">100%</span></div>
+        </div>
+        <h3>Feature flags</h3><p>An inventory of the flags found in the code, plus their state per tenant, so you can see who has a feature on before you remove it.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art checks">
+          <div><span class="c-gr">✓</span><code>workspace</code><span class="mut">ready</span></div>
+          <div><span class="c-gr">✓</span><code>cli-auth:codex:default</code></div>
+          <div class="bad"><span class="c-rd">✕</span><code>cli-auth:claude:reviewer</code><span class="c-rd">logged out</span></div>
+          <div class="alert-s"><i data-i="bell"></i>Runtime alert sent</div>
+        </div>
+        <h3>Watches itself</h3><p>Preflight checks prove each reviewer CLI is still logged in, and a lost session raises an alert instead of quietly dropping a reviewer. The database is replicated continuously.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSING ============ -->
+<section class="cta">
+  <div class="wrap">
+    <svg class="cta-bot reveal" viewBox="0 0 64 64" role="img" aria-label="The OptiBotinho avatar: a small violet robot head."><use href="#bot"/></svg>
+    <h2 class="h2 reveal">Let the bot take the queue.</h2>
+    <p class="lead reveal">OptiBotinho is built with Laravel and PHP for the Optidata engineering team, with the Claude Code and Codex CLIs doing the reviewing.</p>
+    <div class="hero-cta reveal"><a class="btn btn-ghost" href="/portfolio/software/">More software <span class="kbd">→</span></a></div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span>OptiBotinho · built by <a href="https://www.fernandobevilacqua.com/">Fernando Bevilacqua</a> · <a href="/portfolio/software/">Software portfolio</a></span>
+    <span class="mut">Claude Code is a product of Anthropic. Codex is a product of OpenAI. GitHub is a trademark of GitHub, Inc.</span>
+  </div>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>

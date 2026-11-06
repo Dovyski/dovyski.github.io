@@ -1,0 +1,499 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>o-cli — The work around the code, one command away</title>
+<meta name="description" content="o is the internal command line of the Optidata engineering team: issue workspaces, releases, shells on stage and production, a TOTP-guarded vault, a Laravel formatter and a Markdown review loop for people and AI agents.">
+<meta property="og:title" content="o-cli — The work around the code, one command away">
+<meta property="og:description" content="Issue workspaces, releases, shells, secrets, formatting and plan reviews. One Go binary for the Optidata engineering team and its agents.">
+<meta property="og:image" content="https://www.fernandobevilacqua.com/public/img/o-cli.png">
+<meta property="og:url" content="https://www.fernandobevilacqua.com/portfolio/software/o-cli/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#08090a">
+<link rel="icon" href="assets/mark.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://rsms.me/">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <a class="pill reveal" href="#board">
+      <span class="pill-tag">New</span>
+      <span>o 0.43.0 — <code>o issue update</code> edits board fields in place</span>
+      <i data-i="chev"></i>
+    </a>
+    <h1 class="hero-title reveal">The work around the code,<br>one command away</h1>
+    <p class="hero-sub reveal">o is the command line of the Optidata engineering team. It sets up a workspace for an issue, cuts releases, opens a shell on stage or production, keeps secrets off the screen, formats Laravel code and hands plans back and forth between people and their AI agents.</p>
+    <div class="hero-cta reveal">
+      <a class="btn btn-primary" href="#features"><i data-i="term"></i>Explore the commands</a>
+      <a class="btn btn-ghost" href="#details">Everything else <span class="kbd">↓</span></a>
+    </div>
+  </div>
+
+  <div class="hero-stage reveal">
+    <div class="app hero-app" data-demo="hero" aria-label="Animated terminal: o work sets up a folder, branch, draft pull request, database, site and environment for issue 124.">
+      <div class="app-top">
+        <div class="at-brand"><span class="o-mark">o</span>o-cli</div>
+        <div class="at-crumbs"><i data-i="folder"></i>~/work <span class="badge">pwsh</span></div>
+        <div class="at-tabs"><span class="tab on"><i data-i="term"></i>Terminal</span><span class="tab"><i data-i="term"></i>agent</span><i data-i="plus" class="mut"></i></div>
+        <div class="at-win"><i data-i="min"></i><i data-i="max"></i><i data-i="x"></i></div>
+      </div>
+      <div class="app-body hero-body">
+        <main class="app-main">
+          <div class="term hero-term" data-term></div>
+        </main>
+        <aside class="app-ws">
+          <div class="ws-head"><b>Workspace</b><span class="badge">acme-app#124</span></div>
+          <div class="ws-title">webhooks: retry failed deliveries</div>
+          <div class="ws-list">
+            <div class="ws-row" data-ws="clone"><span class="ws-st"></span><div><b>Clone</b><small>./acme-app-124</small></div></div>
+            <div class="ws-row" data-ws="branch"><span class="ws-st"></span><div><b>Branch</b><small>124-retry-failed-deliveries</small></div></div>
+            <div class="ws-row" data-ws="pr"><span class="ws-st"></span><div><b>Draft pull request</b><small>#131 · WIP (issue #124)</small></div></div>
+            <div class="ws-row" data-ws="db"><span class="ws-st"></span><div><b>Databases</b><small>acme-app-124 · acme-app-124_test</small></div></div>
+            <div class="ws-row" data-ws="site"><span class="ws-st"></span><div><b>Herd site</b><small>https://acme-app-124.test</small></div></div>
+            <div class="ws-row" data-ws="env"><span class="ws-st"></span><div><b>Environment</b><small>.env · composer · npm · migrate · seed</small></div></div>
+            <div class="ws-row" data-ws="test"><span class="ws-st"></span><div><b>.env.testing</b><small>migrated against _test</small></div></div>
+          </div>
+        </aside>
+      </div>
+      <div class="app-status"><span><span class="dot ok sm"></span> <b>o 0.43.0</b> <span class="mut">· signed in</span></span><span class="mut sb-mid">gh ✓ · postgres@localhost:5432 ✓ · herd ✓</span><span class="mut" data-clock>step 0/7</span></div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ STRIP ============ -->
+<section class="strip">
+  <div class="wrap">
+    <p class="strip-lead">Drives the tools the team already uses</p>
+    <ul class="strip-list">
+      <li><span class="ico">gh</span>GitHub CLI</li>
+      <li><span class="ico">⎇</span>git</li>
+      <li><span class="ico">pg</span>PostgreSQL</li>
+      <li><span class="ico">◆</span>Laravel Herd</li>
+      <li><span class="ico">⇄</span>OpenSSH</li>
+      <li><span class="ico">✳</span>Claude Code</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ PROBLEM ============ -->
+<section class="problem">
+  <div class="wrap problem-grid">
+    <div class="problem-copy reveal">
+      <h2 class="h2">Fourteen steps before<br>the first line of code.<br><span class="dim">The same fourteen, every issue.</span></h2>
+      <p class="lead">Clone, branch, draft pull request, two databases, a local site, an <code>.env</code>, dependencies, migrations. Done by hand, one step gets skipped — often the cache prefix, and then two clones quietly share keys in the same Redis. o turns the routine into commands, and the commands into something an agent can run as well as a person.</p>
+    </div>
+    <div class="panel problem-art reveal" data-demo="problem">
+      <div class="chk-head"><span class="mut">by hand</span><span class="chk-n" data-chkn>0 / 14</span></div>
+      <ol class="chk" data-chk>
+        <li>git clone acme/acme-app acme-app-124</li>
+        <li>git switch -c 124-retry-… origin/dev</li>
+        <li>git commit --allow-empty &amp;&amp; git push -u</li>
+        <li>gh pr create --draft --base dev</li>
+        <li>createdb acme-app-124 + user</li>
+        <li>createdb acme-app-124_test</li>
+        <li>herd link &amp;&amp; herd secure</li>
+        <li>cp .env.example .env</li>
+        <li>edit DB_*, APP_URL, cookie domain</li>
+        <li>pick a CACHE_PREFIX nobody else uses</li>
+        <li>composer install</li>
+        <li>npm install &amp;&amp; npm run build</li>
+        <li>php artisan migrate:fresh --seed</li>
+        <li>.env.testing, migrate, seed</li>
+      </ol>
+      <div class="chk-one" data-chkone><span class="ps">$</span> o w acme-app/124 --herd <span class="mut">— one command</span></div>
+    </div>
+  </div>
+</section>
+
+<div id="features"></div>
+
+<!-- ============ WORKSPACE ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="feature-head reveal">
+      <div class="eyebrow"><span class="eb-dot green"></span>Workspace</div>
+      <h2 class="h2">One issue.<br>One folder, ready to run.</h2>
+      <p class="lead"><code>o work</code> reads the issue, clones the repository into its own folder, branches, opens a draft pull request linked to the issue and builds the app against fresh databases. Every clone gets its own identity, so ten of them can run side by side.</p>
+    </div>
+
+    <div class="app frag reveal" data-demo="env">
+      <div class="frag-grid env-grid">
+        <div class="envpane">
+          <div class="term-head"><i data-i="file" class="mut"></i><b>acme-app-124/.env</b><span class="badge">written by o work</span></div>
+          <div class="envf" data-envf="a">
+            <div class="el">APP_NAME=Acme</div>
+            <div class="el" data-k="url">APP_URL=<span class="ev">https://acme-app-124.test</span></div>
+            <div class="el mut"># …</div>
+            <div class="el" data-k="db">DB_DATABASE=<span class="ev">acme-app-124</span></div>
+            <div class="el" data-k="user">DB_USERNAME=<span class="ev">acme-app-124</span></div>
+            <div class="el" data-k="cookie">SESSION_DOMAIN=<span class="ev">acme-app-124.test</span></div>
+            <div class="el" data-k="cache">CACHE_PREFIX=<span class="ev">acme_app_124_cache_</span></div>
+          </div>
+        </div>
+        <div class="envpane">
+          <div class="term-head"><i data-i="file" class="mut"></i><b>acme-app-131-hotfix/.env</b><span class="badge">--suffix hotfix</span></div>
+          <div class="envf" data-envf="b">
+            <div class="el">APP_NAME=Acme</div>
+            <div class="el" data-k="url">APP_URL=<span class="ev">https://acme-app-131-hotfix.test</span></div>
+            <div class="el mut"># …</div>
+            <div class="el" data-k="db">DB_DATABASE=<span class="ev">acme-app-131-hotfix</span></div>
+            <div class="el" data-k="user">DB_USERNAME=<span class="ev">acme-app-131-hotfix</span></div>
+            <div class="el" data-k="cookie">SESSION_DOMAIN=<span class="ev">acme-app-131-hotfix.test</span></div>
+            <div class="el" data-k="cache">CACHE_PREFIX=<span class="ev">acme_app_131_hotfix_cache_</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="env-foot">
+        <span class="redis"><i data-i="db"></i>one local Redis</span>
+        <span class="keys" data-keys><code>acme_app_124_cache_…</code><code>acme_app_131_hotfix_cache_…</code></span>
+        <span class="c-gr ok-note" data-oknote>✓ no shared keys</span>
+      </div>
+    </div>
+
+    <div class="cols3">
+      <div class="col reveal"><h3>Hotfix from the release tag</h3><p><code>--from</code> takes a branch, a tag or a commit. A hotfix starts from what production runs, the last release tag, and targets <code>main</code> with <code>--to</code>.</p></div>
+      <div class="col reveal"><h3>Host-coupled keys follow</h3><p>With <code>--herd</code>, <code>APP_URL</code> is set to the clone's HTTPS site and every other key carrying the example's <code>.test</code> host is rewritten. Shared hosts like <code>localhost</code> are left alone.</p></div>
+      <div class="col reveal"><h3>Tests included</h3><p>A <code>_test</code> database and an <code>.env.testing</code> pointing at it are created, migrated and seeded with the rest. <code>o db</code> does the same on its own.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEW (o md) ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="feature-head reveal">
+      <div class="eyebrow"><span class="eb-dot violet"></span>Review</div>
+      <h2 class="h2">Comment on the plan.<br><span class="grad">The agent reads the file.</span></h2>
+      <p class="lead"><code>o md plan.md</code> opens a local review page. Select a sentence, write a comment, and it is saved into the Markdown file itself. The agent that wrote the plan runs <code>o md --list</code>, gets every open thread with its line, and answers in the same file.</p>
+    </div>
+
+    <div class="app frag reveal" data-demo="md">
+      <div class="frag-grid md-grid">
+        <div class="mdv">
+          <div class="bw-bar"><i data-i="back"></i><i data-i="fwd"></i><span class="bw-url">127.0.0.1:53817/?file=plan.md</span><span class="btn-s">Done</span></div>
+          <div class="md-page" data-page>
+            <div class="md-h">Import retries</div>
+            <p>Each row is posted to the partner API in batches of 200. The importer retries three times <span class="sel" data-sel>and then drops the row silently</span> before giving up on the batch.</p>
+            <p>Retries back off by 2, 4 and 8 seconds. A batch that fails three times is moved to the dead-letter table.</p>
+            <div class="md-code"><span class="lang">php</span><code>$rows = $importer-&gt;run($batch);</code></div>
+            <div class="cbox" data-cbox>
+              <div class="cb-who"><span class="av" style="--c:#10b981">FB</span><b>fernando</b><span class="mut">comment</span></div>
+              <div class="cb-in"><span data-type></span><span class="tcaret"></span></div>
+              <div class="cb-foot"><span class="btn-s primary" data-send>Comment</span><span class="mut">Ctrl ↵</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="mdraw">
+          <div class="term-head"><i data-i="file" class="mut"></i><b>plan.md</b><span class="badge" data-saved>saved</span></div>
+          <div class="raw" data-raw>
+            <div class="rl"><span class="ln">5</span><span class="c-vi">## Import retries</span></div>
+            <div class="rl"><span class="ln">6</span></div>
+            <div class="rl"><span class="ln">7</span><span>Each row is posted … retries three times <span class="mk" data-mk>&lt;!--@1--&gt;</span>and then drops the row silently<span class="mk" data-mk>&lt;!--@1--&gt;</span> before giving up on the batch.</span></div>
+            <div class="rl"><span class="ln">8</span></div>
+            <div class="rl"><span class="ln">9</span><span>Retries back off by 2, 4 and 8 seconds. …</span></div>
+            <div class="rl dimmed"><span class="ln">⋮</span></div>
+            <div class="anno-sec" data-annosec>
+              <div class="rl"><span class="ln">31</span><span class="mk">&lt;!-- annotations next=2 --&gt;</span></div>
+              <div class="rl"><span class="ln">32</span><span class="mk">&lt;!--@1 fernando 2026-11-06--&gt;</span></div>
+              <div class="rl"><span class="ln">33</span><span>Log it and expose the count in the summary.</span></div>
+              <div class="rl"><span class="ln">34</span><span class="mk">&lt;!--/@1--&gt;</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="md-term">
+        <div class="term" data-term></div>
+      </div>
+      <div class="cursor" data-cursor><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6.5 1.5L10 19z" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/></svg></div>
+    </div>
+
+    <div class="cols3">
+      <div class="col reveal"><h3>Invisible everywhere else</h3><p>Anchors and comments are HTML comments, so GitHub, editors and formatters ignore them. Everything that is not an annotation stays byte-identical.</p></div>
+      <div class="col reveal"><h3>Threads that keep their number</h3><p>Replies share the thread's id, and the file records the next id to hand out, so a deleted thread is never renumbered into someone else's.</p></div>
+      <div class="col reveal"><h3>Code and diagrams too</h3><p>Fenced code is highlighted by language and can be commented by line and column. Mermaid blocks render as diagrams. <code>--strip</code> leaves a clean document.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RELEASE ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="split">
+      <div class="app frag reveal" data-demo="release">
+        <div class="term-head"><span class="dot working" data-rdot></span><b>release</b><span class="badge">acme-app</span></div>
+        <div class="term tall rel-term" data-term></div>
+      </div>
+      <div class="feature-head left reveal">
+        <div class="eyebrow"><span class="eb-dot amber"></span>Release</div>
+        <h2 class="h2">Two pull requests,<br><span class="dim">one tag, no clicking.</span></h2>
+        <p class="lead">Every repository follows the same branch flow, so releasing is the same few steps everywhere. o runs them in order, waits where it has to, and prints the links when it is done.</p>
+        <ul class="ticks">
+          <li><b>To stage.</b> <code>o version stage</code> opens the main → dev sync and the dev → main pull request; CI takes it from there.</li>
+          <li><b>To production.</b> <code>o release</code> also merges both once branch protection allows it, then tags <code>vYYYY.MM.DD.HHMM</code> with the minute rounded to five.</li>
+          <li><b>Resumable.</b> A failed merge stops before the tag and prints what was created. <code>--skip-merges</code> picks up from there; <code>--skip-release</code> syncs without tagging.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SHELL ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="feature-head reveal">
+      <div class="eyebrow"><span class="eb-dot blue"></span>Shell</div>
+      <h2 class="h2">A shell in any container.<br><span class="dim">Stage or production.</span></h2>
+      <p class="lead"><code>o ssh</code> goes through each environment's bastion. On stage the target is a container name; on the Kubernetes clusters it is <code>namespace/workload</code>, and the bastion picks a ready pod of that Deployment or Rollout for you.</p>
+    </div>
+
+    <div class="app frag reveal" data-demo="ssh">
+      <div class="term-head"><span class="dot working" data-sdot></span><b>ssh</b><span class="badge" data-senv>stage</span><span class="th-tools"><span class="mut">key</span><code>~/.ssh/id_ed25519</code></span></div>
+      <div class="term tall ssh-term" data-term></div>
+    </div>
+
+    <div class="cols3">
+      <div class="col reveal"><h3>Onboarding in one command</h3><p><code>o ssh setup</code> reuses or generates an ed25519 key, publishes it to GitHub through <code>gh</code>, then tries the bastion and explains what a failure means.</p></div>
+      <div class="col reveal"><h3>The right key, every time</h3><p>ssh offers agent keys first and can run out of attempts before yours. o pins the managed key as the only identity offered.</p></div>
+      <div class="col reveal"><h3>Checked on both ends</h3><p>Targets are validated before ssh starts, in either form, and the bastion validates them again before it opens a shell.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VAULT ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="split rev">
+      <div class="feature-head left reveal">
+        <div class="eyebrow"><span class="eb-dot amber"></span>Vault</div>
+        <h2 class="h2">Secrets that stay<br>off the screen.</h2>
+        <p class="lead">The team's credentials live in a server-side vault. Listings show names, formats and clearance levels, never values. Revealing one takes a six-digit code from your phone.</p>
+        <ul class="ticks">
+          <li><b>Clipboard, not scrollback.</b> Text secrets are copied, never printed. Markdown runbooks are rendered in the terminal.</li>
+          <li><b>People reveal, scripts write.</b> Without an interactive terminal, <code>get</code> refuses. <code>set</code> reads stdin and has no <code>--value</code> flag to leak into shell history.</li>
+          <li><b>One code per burst.</b> The code buys a vault token of about ten minutes, cached encrypted.</li>
+        </ul>
+      </div>
+      <div class="app frag reveal" data-demo="vault">
+        <div class="term-head"><span class="dot working" data-vdot></span><b>vault</b><span class="badge">TOTP</span></div>
+        <div class="term tall vault-term" data-term></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FORMAT ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="feature-head reveal">
+      <div class="eyebrow"><span class="eb-dot violet"></span>Format</div>
+      <h2 class="h2">House style,<br><span class="dim">read from the syntax tree.</span></h2>
+      <p class="lead"><code>o fmt laravel</code> parses PHP with tree-sitter and applies the team's Laravel conventions where Pint is too blunt: nine rewrites that only touch the cases that are safe, and twenty report-only rules for the decisions a person has to make.</p>
+    </div>
+
+    <div class="app frag reveal" data-demo="fmt">
+      <div class="frag-grid fmt-grid">
+        <div class="codepane">
+          <div class="term-head"><i data-i="file" class="mut"></i><b>app/Services/ReportService.php</b><span class="badge" data-fstate>before</span></div>
+          <div class="php" data-php>
+            <div class="pl old" data-old><span class="ln">12</span><span class="k">public function</span> <span class="f">build</span>(</div>
+            <div class="pl old" data-old><span class="ln">13</span>    <span class="t">Report</span> <span class="v">$report</span>,</div>
+            <div class="pl old" data-old><span class="ln">14</span>    <span class="t">User</span> <span class="v">$owner</span>,</div>
+            <div class="pl old" data-old><span class="ln">15</span>): <span class="t">ReportResult</span></div>
+            <div class="pl new" data-new><span class="ln">12</span><span class="k">public function</span> <span class="f">build</span>(<span class="t">Report</span> <span class="v">$report</span>, <span class="t">User</span> <span class="v">$owner</span>): <span class="t">ReportResult</span></div>
+            <div class="pl"><span class="ln">·</span>{</div>
+            <div class="pl old" data-old><span class="ln">·</span>    <span class="k">return</span> <span class="v">$this</span>-&gt;<span class="v">renderer</span>-&gt;<span class="f">render</span>(</div>
+            <div class="pl old" data-old><span class="ln">·</span>        <span class="v">$report</span>,</div>
+            <div class="pl old" data-old><span class="ln">·</span>        <span class="v">$owner</span>,</div>
+            <div class="pl old" data-old><span class="ln">·</span>    );</div>
+            <div class="pl new" data-new><span class="ln">·</span>    <span class="k">return</span> <span class="v">$this</span>-&gt;<span class="v">renderer</span>-&gt;<span class="f">render</span>(<span class="v">$report</span>, <span class="v">$owner</span>);</div>
+            <div class="pl"><span class="ln">·</span>}</div>
+          </div>
+        </div>
+        <div class="fmt-side">
+          <div class="term" data-term></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cols3">
+      <div class="col reveal"><h3>Exceptions name the rule</h3><p><code>// o:ignore method-length &lt;reason&gt;</code> excuses one declaration. There is no blanket or file-wide ignore, and a directive that cannot apply is itself reported.</p></div>
+      <div class="col reveal"><h3>Annotations on the diff</h3><p><code>--format=github-action</code> turns findings into warnings on the pull request; <code>--fail-on</code> makes chosen rules block the build.</p></div>
+      <div class="col reveal"><h3>One run is enough</h3><p>Rewrites repeat over their own output until nothing changes, so a second run finds nothing new. <code>--pint</code> runs Pint before and after.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOARD ============ -->
+<section class="feature" id="board">
+  <div class="wrap">
+    <div class="feature-head reveal">
+      <div class="eyebrow"><span class="eb-dot blue"></span>Board</div>
+      <h2 class="h2">Your board,<br>in the terminal.</h2>
+      <p class="lead"><code>o tasks</code> streams what is assigned to you, board by board, with each board's own statuses. <code>o issue create</code> and <code>o issue update</code> set the type, the issue fields and the board fields in one call, and check every value before they write anything.</p>
+    </div>
+
+    <div class="app frag reveal" data-demo="board">
+      <div class="term-head"><span class="dot working" data-bdot></span><b>tasks</b><span class="badge">gh</span></div>
+      <div class="term tall board-term" data-term></div>
+    </div>
+
+    <div class="cols3">
+      <div class="col reveal"><h3>Live work first</h3><p>By default only TODO, DOING, TESTING and REDO show. <code>--everyone</code> turns it into the team's triage view; <code>--table</code> and <code>--json</code> are there for scripts.</p></div>
+      <div class="col reveal"><h3>Names, not IDs</h3><p>Fields and options are resolved by name and cached for a day. A typo fails before the issue exists, with the board's valid options in the message.</p></div>
+      <div class="col reveal"><h3>Plans before writes</h3><p><code>--dry-run</code> shows each field's current and new value. <code>o issue fields</code> prints the whole schema a repository's board accepts.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AGENTS ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="feature-head reveal">
+      <div class="eyebrow"><span class="eb-dot green"></span>Agents</div>
+      <h2 class="h2">Made for people<br><span class="dim">and the agents working with them.</span></h2>
+      <p class="lead">o is used by coding agents as much as by people. They attach screenshots to pull requests, message the person they work for, and pull the team's shared prompts and skills — with the same commands a person types.</p>
+    </div>
+
+    <div class="app frag reveal" data-demo="agent">
+      <div class="frag-grid agent-grid">
+        <div class="frag-term">
+          <div class="term-head"><span class="dot working" data-adot></span><b>agent</b><span class="badge">acme-app-124</span></div>
+          <div class="term" data-term>
+            <div class="tl"><span class="c-or">✻</span> <b>Claude Code</b> <span class="mut">· ~/work/acme-app-124</span></div>
+          </div>
+        </div>
+        <div class="chat">
+          <div class="chat-head"><i data-i="msg"></i><b>Team chat</b><span class="mut">direct</span></div>
+          <div class="chat-body" data-chat>
+            <div class="bub old"><div class="bub-h"><span class="o-mark sm">o</span><b>Team bot</b><span class="mut">09:12</span></div>Stage release proposed for <b>acme-app</b>.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cols3">
+      <div class="col reveal"><h3>Evidence in one line</h3><p><code>o upload</code> checks the file by its content, uploads it, confirms the public URL serves it, and prints a URL, Markdown or JSON with its SHA-256.</p></div>
+      <div class="col reveal"><h3>Notifications that arrive</h3><p><code>o talk</code> messages a person by e-mail or GitHub handle, or a group chat. The team bot sends it with your name attached, so an agent signed in as you can still reach you.</p></div>
+      <div class="col reveal"><h3>Shared prompts and skills</h3><p><code>o skills update</code> and <code>o prompts update</code> sync the team's agent skills and prompts. <code>! o prompts &lt;name&gt;</code> pastes one into a session.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DETAILS GRID ============ -->
+<section class="details" id="details">
+  <div class="wrap">
+    <div class="feature-head center reveal">
+      <h2 class="h2">Small commands,<br>used every day.</h2>
+      <p class="lead">Everything else a working day asks for, in the same binary.</p>
+    </div>
+    <div class="grid">
+      <div class="card-d reveal">
+        <div class="card-art art-doctor">
+          <div><span class="c-gr">✓</span> gh CLI is installed</div>
+          <div><span class="c-gr">✓</span> Session can be renewed</div>
+          <div><span class="c-gr">✓</span> PostgreSQL accepts the login</div>
+          <div><span class="mut">○</span> Bastion reachable <span class="mut">— not checked</span></div>
+          <div class="mut small">✓ All checks that ran passed.</div>
+        </div>
+        <h3><code>o doctor</code></h3><p>The single list of prerequisites. Real logins, not port checks; <code>--quick</code> skips the ones that need the VPN and says so.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art art-auth">
+          <span class="mut">Your code</span>
+          <b class="code-big">WXYZ-1234</b>
+          <span class="mut">Confirm it in the browser…</span>
+        </div>
+        <h3><code>o auth login</code></h3><p>A browser device flow. No token is ever pasted, and the stored pair is encrypted and renewed on its own. GitHub access comes from your <code>gh</code> login.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art art-tree">
+<pre>~/.o/
+├── config.json
+├── bin/o        <span class="mut">→ shim</span>
+└── versions/
+    ├── 0.42.0/
+    └── 0.43.0/  <span class="c-gr">●</span></pre>
+        </div>
+        <h3><code>o install</code> &amp; <code>o update</code></h3><p>Installs in your home folder with no admin rights, versions side by side. <code>o update --all</code> also syncs skills and prompts.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art art-flags">
+          <div class="fl-h"><code>new_editor</code><span class="mut">default</span><span class="pill-off">off</span></div>
+          <div class="fl"><span>tenant 12</span><span class="pill-on">on</span></div>
+          <div class="fl"><span>tenant 48</span><span class="pill-on">on</span></div>
+          <div class="fl"><span>tenant 77</span><span class="pill-off">off</span></div>
+        </div>
+        <h3><code>o optiwork feature</code></h3><p>App params and feature flags per environment and tenant. <code>where</code> shows who overrides a flag; a production write without a tenant asks first.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art art-config">
+          <div><span class="c-cy">ssh.envs.stage.port</span>=2222</div>
+          <div><span class="c-cy">upload.mode</span>=remote</div>
+          <div><span class="c-cy">upload.s3.secret_key</span>=<span class="mut">••••••••</span></div>
+          <div class="c-rd small">✕ set refuses a secret in argv: use --stdin</div>
+        </div>
+        <h3><code>o config</code></h3><p>Like <code>git config</code>, with validation by the command that owns each key. Secrets are encrypted at rest and masked in listings.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art art-sql">
+<pre><span class="mut">$ o db create shop_api --dry</span>
+<span class="k">CREATE USER</span> shop_api …;
+<span class="k">CREATE DATABASE</span> shop_api …;
+<span class="k">CREATE DATABASE</span> shop_api_test …;</pre>
+        </div>
+        <h3><code>o db</code></h3><p>Create, delete and list local PostgreSQL databases, each with a matching user and a <code>_test</code> twin. <code>--dry</code> prints the SQL.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art art-rec">
+          <div class="rec-pill"><span class="rec-dot"></span><b>00:14</b><span class="btn-s">Stop</span></div>
+        </div>
+        <h3><code>o rec</code></h3><p>Records the screen with ffmpeg behind a small overlay with a timer and a Stop button. The video then goes up with <code>o upload</code>.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art art-docs">
+          <div class="mut">$ o docs migration</div>
+          <div><span class="c-gr">1</span> Running migrations on stage</div>
+          <div><span class="c-gr">2</span> Zero-downtime column renames</div>
+          <div><span class="c-gr">3</span> Seeding large tables</div>
+        </div>
+        <h3><code>o docs</code></h3><p>Searches the team's documentation in the organisation's GitHub Discussions, straight from the terminal.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art art-help">
+          <div><b>o w</b> <span class="mut">work</span></div>
+          <div><b>o t</b> <span class="mut">tasks</span></div>
+          <div><b>o v</b> <span class="mut">vault</span></div>
+          <div><b>o d</b> <span class="mut">docs</span></div>
+        </div>
+        <h3>GitHub CLI manners</h3><p>Nouns and verbs, <code>--help</code> everywhere, one-letter aliases for the daily ones, <code>--json</code> where a script might read the output.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSING ============ -->
+<section class="cta">
+  <div class="wrap">
+    <div class="cta-mark reveal"><span class="o-mark xl">o</span></div>
+    <h2 class="h2 reveal">Type o.<br><span class="dim">Get back to the code.</span></h2>
+    <p class="lead reveal">o is a single Go binary for Windows, Linux and macOS, built for the Optidata engineering team and used every day by its developers and their agents.</p>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span>o-cli · built by <a href="https://www.fernandobevilacqua.com/">Fernando Bevilacqua</a></span>
+    <span><a href="/portfolio/software/">← More software</a></span>
+  </div>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>

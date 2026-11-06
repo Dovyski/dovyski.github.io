@@ -1191,3 +1191,23 @@ hr.section-divider {
     background: #24c8db;
     color: #000;
 }
+
+.type.go {
+    background: #00add8;
+    color: #000;
+}
+
+.type.laravel {
+    background: #ff2d20;
+    color: #fff;
+}
+
+.type.node {
+    background: #5fa04e;
+    color: #fff;
+}
+
+.type.docker {
+    background: #1d63ed;
+    color: #fff;
+}

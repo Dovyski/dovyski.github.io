@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OptiDevinho — The teammate that takes the ticket</title>
+<meta name="description" content="OptiDevinho is an AI developer built for the Optidata engineering team. It picks up labelled issues, opens a draft pull request, writes the code, runs the repository's tests the way CI does and answers review comments, from its own GitHub account. It never merges and never deploys to production.">
+<meta property="og:title" content="OptiDevinho — The teammate that takes the ticket">
+<meta property="og:description" content="An AI developer that picks up issues, opens the pull request, runs the tests and answers the reviewers. One task at a time, in the open.">
+<meta property="og:image" content="https://www.fernandobevilacqua.com/public/img/optidevinho.png">
+<meta property="og:url" content="https://www.fernandobevilacqua.com/portfolio/software/optidevinho/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#070a0b">
+<link rel="icon" href="assets/dev.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://rsms.me/">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="dev-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5eead4"/><stop offset="1" stop-color="#0e7490"/></linearGradient>
+    <symbol id="dev" viewBox="0 0 64 64">
+      <rect width="64" height="64" rx="18" fill="url(#dev-g)"/>
+      <path d="M32 10v7" stroke="#f0fdfa" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="32" cy="9" r="3.6" fill="#a5f3fc"/>
+      <rect x="11" y="18" width="42" height="32" rx="11" fill="#f0fdfa"/>
+      <rect x="16.5" y="24.5" width="31" height="16" rx="8" fill="#062a2a"/>
+      <path d="M26.5 28.5l-4 4 4 4M37.5 28.5l4 4-4 4" stroke="#5eead4" stroke-width="2.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M30.5 37l3-9" stroke="#5eead4" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M27 45h10" stroke="#2dd4bf" stroke-width="2.6" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <a class="pill reveal" href="#how">
+      <span class="pill-tag">Internal</span>
+      <span>Built for the Optidata engineering team</span>
+      <i data-i="chev"></i>
+    </a>
+    <h1 class="hero-title reveal">The teammate that<br>takes the ticket</h1>
+    <p class="hero-sub reveal">OptiDevinho is an AI developer. It picks up an issue, opens a draft pull request, writes the code, runs the repository's own tests and answers the reviewers, from its own GitHub account. It never merges and never deploys to production.</p>
+    <div class="hero-cta reveal">
+      <a class="btn btn-primary" href="#how"><i data-i="play"></i>See how it works</a>
+      <a class="btn btn-ghost" href="#features">Explore features <span class="kbd">↓</span></a>
+    </div>
+  </div>
+
+  <div class="hero-stage reveal">
+    <div class="app hero-app" data-demo="hero" aria-label="Animated GitHub issue: it is labelled ai:managed, OptiDevinho is assigned, opens a draft pull request, implements the change in its terminal, runs the tests and marks the pull request ready for review.">
+      <div class="gh-top">
+        <span class="gh-logo"><i data-i="gh"></i></span>
+        <span class="gh-crumbs"><span class="mut">acme</span> / <b>web</b></span>
+        <div class="gh-nav">
+          <span><i data-i="code"></i>Code</span>
+          <span class="on"><i data-i="issue"></i>Issues <em>31</em></span>
+          <span><i data-i="pr"></i>Pull requests <em>12</em></span>
+          <span><i data-i="board"></i>Projects</span>
+        </div>
+      </div>
+      <div class="hx-body">
+        <div class="hx-issue">
+          <div class="gh-head">
+            <h4>Retry failed webhook deliveries <span class="mut">#5932</span></h4>
+            <div class="gh-meta"><span class="state open"><i data-i="issue"></i><span>Open</span></span><span class="mut gh-meta-t"><b>alex</b> opened this issue 3 hours ago</span></div>
+          </div>
+          <div class="gh-main" data-tl>
+            <div class="tli comment">
+              <span class="av lg" style="--c:#0ea5e9">AL</span>
+              <div class="cbox">
+                <div class="cbox-h"><b>alex</b> <span class="mut">commented 3 hours ago</span></div>
+                <div class="cbox-b">Deliveries that fail with a 5xx are dropped.
+                  <div class="ac"><b>Acceptance criteria</b>
+                    <span><i class="box"></i>Retry 5xx and timeouts up to 5 times</span>
+                    <span><i class="box"></i>Exponential backoff with jitter</span>
+                    <span><i class="box"></i>Give up and log after the last attempt</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="gh-side">
+          <div class="gs">
+            <div class="gs-h">Assignees</div>
+            <div class="gs-row"><span class="av" style="--c:#0ea5e9">AL</span>alex</div>
+            <div class="gs-row add" data-asg><svg class="bot-av"><use href="#dev"/></svg>OptiDevinho</div>
+          </div>
+          <div class="gs">
+            <div class="gs-h">Labels</div>
+            <div class="labels" data-labels><span class="lbl l-bug">bug</span></div>
+          </div>
+          <div class="gs">
+            <div class="gs-h">Project · Status</div>
+            <div class="gs-row"><span class="status-chip todo" data-status>Todo</span></div>
+          </div>
+          <div class="gs">
+            <div class="gs-h">Development</div>
+            <div class="gs-row dev" data-dev><span class="none">No branches or pull requests</span></div>
+          </div>
+        </aside>
+        <div class="hx-term">
+          <div class="term-head"><svg class="bot-av"><use href="#dev"/></svg><b>OptiDevinho</b><span class="badge">acme/web#issue-5932</span><span class="th-r mut" data-clock>idle</span></div>
+          <div class="term-body" data-term></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ STRIP ============ -->
+<section class="strip">
+  <div class="wrap">
+    <p class="strip-lead">Works where the team already works</p>
+    <ul class="strip-list">
+      <li><span class="ico">⌥</span>GitHub</li>
+      <li><span class="ico">✳</span>Claude Code</li>
+      <li><span class="ico">◎</span>Codex CLI</li>
+      <li><span class="ico">✉</span>Optiwork Talk</li>
+      <li><span class="ico">▣</span>Docker</li>
+      <li><span class="ico">◐</span>Playwright</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ PROBLEM ============ -->
+<section class="problem">
+  <div class="wrap problem-grid">
+    <div class="problem-copy reveal">
+      <h2 class="h2">Small issues are not small work.<br><span class="dim">They still need a whole afternoon.</span></h2>
+      <p class="lead">A validation rule, a red check, a merge conflict, three review comments to address. Each one is well understood. Each one still needs a branch, a checkout, the services the tests expect, a pull request that follows the template and someone to answer the reviewers. OptiDevinho does that part, in the open, where the team can read every step and stop it.</p>
+    </div>
+    <div class="backlog reveal" aria-hidden="true">
+      <div class="bl-head"><i data-i="issue"></i><b>Todo</b><span class="bl-n">23</span></div>
+      <div class="bl-row"><span class="dot amber"></span><div><b>Retry failed webhook deliveries</b><small>acme/web#5932 · bug</small></div><span class="age hot">6d</span></div>
+      <div class="bl-row"><span class="dot red"></span><div><b>fix: keep the filter after pagination</b><small>acme/web#5940 · CI failed</small></div><span class="age hot">4d</span></div>
+      <div class="bl-row"><span class="dot amber"></span><div><b>Validate the tax id on the signup form</b><small>acme/api#221 · feature</small></div><span class="age">3d</span></div>
+      <div class="bl-row"><span class="dot amber"></span><div><b>feat: CSV export for monthly reports</b><small>acme/web#5926 · 3 unresolved threads</small></div><span class="age">2d</span></div>
+      <div class="bl-row"><span class="dot red"></span><div><b>chore: move the date helpers to a service</b><small>acme/api#219 · merge conflict</small></div><span class="age">2d</span></div>
+      <div class="bl-row dimmed"><span class="dot amber"></span><div><b>Empty state for the reports page</b><small>acme/web#5944 · needs a screenshot</small></div><span class="age">20h</span></div>
+      <div class="bl-fade"></div>
+    </div>
+  </div>
+</section>
+
+<div id="features"></div>
+
+<!-- ============ HOW IT WORKS ============ -->
+<section class="feature" id="how">
+  <div class="wrap">
+    <div class="feature-head reveal">
+      <div class="eyebrow"><span class="eb-dot teal"></span>How it works</div>
+      <h2 class="h2">A brain that coordinates.<br><span class="grad">A worker that codes.</span></h2>
+      <p class="lead">Work arrives from three places: a sweep of the managed repositories, an <code>@OptiDevinho</code> mention on GitHub, or a message in the team chat. A persistent <b>brain</b> hands each event to a short-lived <b>resolver</b>, which decides which issue or pull request it is about. The result becomes a durable task for a single <b>worker</b>, which does one thing at a time.</p>
+    </div>
+
+    <div class="app frag reveal" data-demo="flow">
+      <div class="frag-grid flow-grid">
+        <div class="fl-col">
+          <div class="term-head"><i data-i="inbox"></i><b>Inbox</b><span class="th-r mut" data-in-n>0 pending</span></div>
+          <div class="fl-list" data-inbox></div>
+        </div>
+        <div class="fl-col">
+          <div class="term-head"><i data-i="brain"></i><b>Brain · resolver</b><span class="th-r mut">up to 3 in parallel</span></div>
+          <div class="fl-list" data-resolve></div>
+        </div>
+        <div class="fl-col">
+          <div class="term-head"><i data-i="list"></i><b>Task queue</b><span class="th-r mut">by priority</span></div>
+          <div class="fl-list" data-queue></div>
+          <div class="fl-worker" data-worker>
+            <div class="fw-h"><svg class="bot-av"><use href="#dev"/></svg><b>Worker</b><span class="mut" data-w-st>idle</span></div>
+            <div class="fw-t" data-w-t>Waiting for a task</div>
+            <div class="fw-bar"><i data-w-bar></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cols3">
+      <div class="col reveal"><h3>The brain only reads</h3><p>It blocks on chat and queue events, dispatches tasks and answers simple questions. It never writes to GitHub and never edits a workspace.</p></div>
+      <div class="col reveal"><h3>A resolver per event</h3><p>Each event gets a read-only resolver that fetches the current state and returns one result checked against a schema. Event text is treated as data, never as instructions.</p></div>
+      <div class="col reveal"><h3>One serial worker</h3><p>Explicit requests come first, then review feedback, then ongoing work, then new issues. A request about a task already running joins it instead of queueing a second one.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PULL REQUEST ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="split">
+      <div class="feature-head left reveal">
+        <div class="eyebrow"><span class="eb-dot cyan"></span>Pull requests</div>
+        <h2 class="h2">A draft pull request<br><span class="dim">before any code.</span></h2>
+        <p class="lead">When a task starts on an issue, the runtime opens a draft pull request with an empty kickoff commit, before the model runs. Anyone looking at the issue can see the work has started and follow it from there.</p>
+        <ul class="ticks">
+          <li><b>The team's conventions.</b> Branch <code>5932-retry-failed-webhook-deliveries</code> off <code>dev</code>, a semantic title ending in <code>(issue #5932)</code>, the shared template and a last line <code>- Fix: #5932</code>.</li>
+          <li><b>Draft until it is true.</b> The body only reports verified progress and test results. The pull request is marked ready when the checks and UI evidence pass, not before.</li>
+          <li><b>The board moves with it.</b> The issue goes to <b>Doing</b> when work starts, <b>In review</b> when the pull request opens and <b>Pending</b> when it is blocked. Empty fields are filled; fields a person set are left alone.</li>
+        </ul>
+      </div>
+      <div class="app frag reveal" data-demo="pr">
+        <div class="gh-head slim">
+          <h4 data-pr-title>Retry failed webhook deliveries <span class="mut">#5933</span></h4>
+          <div class="gh-meta"><span class="state draft" data-pr-state><i data-i="pr"></i><span data-pr-state-t>Draft</span></span><span class="mut gh-meta-t"><b>OptiDevinho</b> wants to merge <span data-pr-n>1 commit</span> into <code>dev</code></span></div>
+        </div>
+        <div class="pr-body">
+          <div class="cbox dev">
+            <div class="cbox-h"><svg class="bot-av"><use href="#dev"/></svg><b>OptiDevinho</b><span class="mut">commented</span><span class="lbl l-ai sm">ai:managed</span></div>
+            <div class="cbox-b md" data-md>
+              <p class="mut" data-md-start>Implementation and checks have not started yet.</p>
+              <p class="md-fix">- Fix: #5932</p>
+            </div>
+          </div>
+          <div class="pr-commits" data-commits>
+            <div class="pc"><i data-i="commit"></i><span class="pc-t">Start work on #5932</span><code>e41a0c9</code><span class="mut pc-e">empty</span></div>
+          </div>
+          <div class="ck" data-ck><span class="ck-st" data-ck-st><span class="dot idle"></span></span><b>tests</b><span class="mut ck-t" data-ck-t>No checks yet</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TEST GATE ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="feature-head reveal">
+      <div class="eyebrow"><span class="eb-dot green"></span>Checks</div>
+      <h2 class="h2">It runs the tests<br><span class="dim">the way CI runs them.</span></h2>
+      <p class="lead">Each repository has a profile: the binaries it needs, the services its tests expect and the checks that must pass. Before the model starts, the worker prepares dependencies and starts the services on loopback, so a green run means the same thing it means in CI.</p>
+    </div>
+
+    <div class="app frag reveal" data-demo="gate">
+      <div class="frag-grid gate-grid">
+        <div class="gt-prof">
+          <div class="term-head"><i data-i="file"></i><b>Repository profile</b><span class="badge">acme/web</span></div>
+          <pre class="json" data-prof><span class="k">"testServices"</span>: [<span class="s" data-svc="pg">"postgresql"</span>, <span class="s" data-svc="rd">"redis"</span>],
+<span class="k">"requiredBinaries"</span>: [
+  <span class="s" data-bin>"php"</span>, <span class="s" data-bin>"composer"</span>, <span class="s" data-bin>"git"</span>,
+  <span class="s" data-bin>"gh"</span>, <span class="s" data-bin>"psql"</span>, <span class="s" data-bin>"redis-cli"</span>
+],
+<span class="k">"verificationChecks"</span>: [{
+  <span class="k">"command"</span>: <span class="s" data-chk>"composer test:unit"</span>
+}]</pre>
+          <div class="gt-steps">
+            <div class="gs-step" data-step="1"><span class="gs-i"></span>Binaries present</div>
+            <div class="gs-step" data-step="2"><span class="gs-i"></span>Dependencies prepared</div>
+            <div class="gs-step" data-step="3"><span class="gs-i"></span>Services on loopback</div>
+            <div class="gs-step" data-step="4"><span class="gs-i"></span>Checks pass</div>
+          </div>
+        </div>
+        <div class="gt-term">
+          <div class="term-head"><i data-i="term"></i><b>Worker turn</b><span class="th-r mut" data-g-clock>0:00</span></div>
+          <div class="term-body tall" data-gterm></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cols3">
+      <div class="col reveal"><h3>Same services, private data</h3><p>Postgres and Redis start on loopback for each activity, with the activity database written into a marked block of <code>.env</code> that is rewritten on every attempt. Shared test servers are off limits.</p></div>
+      <div class="col reveal"><h3>Real browser for UI</h3><p>A UI change is exercised with Playwright in a real browser. Screenshots, and recordings for new screens, are attached to the pull request. Verification that did not run is never claimed.</p></div>
+      <div class="col reveal"><h3>A result, not an exit code</h3><p>Every turn ends with one structured result checked against a schema: success, verified no-op or failure. A blank answer or an exit code of zero alone counts as a failure.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEW ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="split rev">
+      <div class="feature-head left reveal">
+        <div class="eyebrow"><span class="eb-dot amber"></span>Review</div>
+        <h2 class="h2">Every review comment<br><span class="dim">gets an answer.</span></h2>
+        <p class="lead">A new review on a pull request it owns is a task. OptiDevinho reads every thread, fixes what is actionable, pushes, replies in each thread like a colleague would and resolves it. Then it asks the AI reviewer to look again.</p>
+        <ul class="ticks">
+          <li><b>Only its own pull requests.</b> A pull request is managed when it carries <code>ai:managed</code> and OptiDevinho is assigned, or when OptiDevinho opened it. A person can still ask it to act on any other one.</li>
+          <li><b>A re-review that knows when to stop.</b> Copilot is asked again only if it already reviewed, nothing is pending and the head changed, up to five rounds by default.</li>
+          <li><b>Its own events do not wake it.</b> Its comments, replies and commits are left out of the change fingerprint, so it never loops on itself. A red check on its own commit does count.</li>
+        </ul>
+      </div>
+      <div class="app frag reveal" data-demo="review">
+        <div class="rv-head"><i data-i="pr"></i><b>Conversation</b><span class="badge">acme/web#5933</span><span class="th-r mut" data-rv-n>2 unresolved</span></div>
+        <div class="rv-list" data-rvl>
+          <div class="thread" data-th="1">
+            <div class="th-file"><i data-i="file"></i>app/Jobs/DeliverWebhook.php<span class="th-st" data-th-st="1"></span></div>
+            <div class="th-c"><span class="av" style="--c:#6b7280">CP</span><div><b>Copilot</b><span class="bot-tag">bot</span><p>This also retries 4xx responses. A 404 will be retried five times.</p></div></div>
+          </div>
+          <div class="thread" data-th="2">
+            <div class="th-file"><i data-i="file"></i>config/webhooks.php<span class="th-st" data-th-st="2"></span></div>
+            <div class="th-c"><span class="av" style="--c:#f97316">SM</span><div><b>sam</b><p>Can we cap the backoff at ten minutes?</p></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TALK ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="split">
+      <div class="app frag reveal" data-demo="talk">
+        <div class="frag-grid chat-grid">
+          <div class="ch-side">
+            <div class="ch-h"><i data-i="msg"></i><b>Talk</b></div>
+            <div class="ch-conv on"><span class="hash">#</span><div><b>dev</b><small>Team channel</small></div></div>
+            <div class="ch-conv"><svg class="bot-av"><use href="#dev"/></svg><div><b>OptiDevinho</b><small>Direct message</small></div></div>
+          </div>
+          <div class="ch-main">
+            <div class="ch-title"># dev</div>
+            <div class="ch-msgs" data-msgs></div>
+            <div class="ch-comp"><span data-type></span><span class="tcaret"></span></div>
+          </div>
+        </div>
+      </div>
+      <div class="feature-head left reveal">
+        <div class="eyebrow"><span class="eb-dot blue"></span>Conversation</div>
+        <h2 class="h2">Ask it in chat.<br><span class="dim">Like a colleague.</span></h2>
+        <p class="lead">Mention <code>@OptiDevinho</code> in the team chat or in a GitHub comment. It answers within about a minute with what it understood and what happens next, posts a note if the work takes long, and closes the thread with what it did.</p>
+        <ul class="ticks">
+          <li><b>Status questions get answers, not tasks.</b> "What are you working on?" or a bare link is answered from current state, with links. Concrete work becomes a task.</li>
+          <li><b>Follow-ups join the running task.</b> A second message about the same pull request is read by the worker before it runs the full checks and before it pushes.</li>
+          <li><b>Only the team can give it work.</b> Organization members, collaborators and the team's own agents start tasks. Anyone else is told a team member needs to confirm.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DETAILS GRID ============ -->
+<section class="details">
+  <div class="wrap">
+    <div class="feature-head center reveal">
+      <h2 class="h2">Built to be trusted<br>with a checkout.</h2>
+      <p class="lead">An agent that pushes code needs hard limits, not good intentions. Most of OptiDevinho is the runtime around the model.</p>
+    </div>
+    <div class="grid">
+      <div class="card-d reveal">
+        <div class="card-art rules">
+          <div class="ru"><span class="c-rd">✕</span><code>gh pr merge 5933</code><span class="mut">never</span></div>
+          <div class="ru"><span class="c-rd">✕</span><code>deploy --env production</code><span class="mut">never</span></div>
+          <div class="ru"><span class="c-gr">✓</span><code>deploy --env stage</code><span class="mut">if asked</span></div>
+        </div>
+        <h3>Never merges, never ships</h3><p>Merging stays with people and the merge queue. Production deploys are out of scope; a stage deploy happens only when the operator includes it in the task.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art ident">
+          <div class="id-row"><svg class="bot-av"><use href="#dev"/></svg><b>OptiDevinho</b><span class="mut">pushed 2 commits</span></div>
+          <div class="id-row"><i data-i="commit" class="c-te"></i><code>Author: OptiDevinho</code></div>
+          <div class="id-row"><i data-i="msg" class="c-te"></i><span>“Fixed in 7c2e9b1: only 5xx and timeouts are retried now.”</span></div>
+        </div>
+        <h3>Its own account</h3><p>Commits, pull requests and replies come from a dedicated GitHub user, written in the first person like a teammate. Reads use a separate read-only token.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art gate">
+          <div class="gw-row"><code>gh issue view 5932</code><span class="tag-s ok">read</span></div>
+          <div class="gw-row"><code>git push origin 5932-…</code><span class="tag-s wr">write</span></div>
+          <div class="gw-row bad"><code>gh pr comment acme/api#40</code><span class="tag-s no">blocked</span></div>
+          <div class="gw-note mut">writes stay on the active repository</div>
+        </div>
+        <h3>A gate on every write</h3><p>The <code>gh</code> and <code>git</code> on the model's path classify each command. Writes stop when the worker is paused, the task is cancelled, or the target is not the active repository.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art sandbox">
+          <div class="bx-l"><span class="mut">/</span><span class="tag-s">read-only</span></div>
+          <div class="bx-l"><span class="mut">uid</span><code>1000</code></div>
+          <div class="bx-l"><span class="mut">/work/acme/web/issue-5932</span><span class="tag-s ok">rw</span></div>
+          <div class="bx-l"><span class="mut">.claude/settings.json in repo</span><span class="tag-s no">ignored</span></div>
+        </div>
+        <h3>The container is the sandbox</h3><p>Read-only root, an unprivileged user and only explicit writable mounts. Credentials are readable by root alone. Hooks, settings and MCP servers committed to a branch do not load.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art ceil">
+          <div class="ce-row"><span class="mut">per attempt</span><span class="ce-b"><i style="width:46%"></i></span><b>184k / 400k</b></div>
+          <div class="ce-row"><span class="mut">per activity</span><span class="ce-b"><i style="width:71%"></i></span><b>1.4M / 2M</b></div>
+          <div class="ce-row"><span class="mut">attempts</span><span class="ce-b"><i style="width:37%"></i></span><b>3 / 8</b></div>
+        </div>
+        <h3>Ceilings on spend</h3><p>Optional token ceilings per attempt and per activity over a window, plus a cap on attempts. A task that hits one is blocked and reported; it is not retried.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art notice">
+          <div class="nt-m"><svg class="bot-av"><use href="#dev"/></svg><span>OptiDevinho degraded (worker): usage limit since 19:25 UTC; resets 22:30 UTC; work paused until then</span></div>
+          <div class="nt-m ok"><svg class="bot-av"><use href="#dev"/></svg><span>Daily digest · 2 blocked tasks, 1 parked hint</span></div>
+        </div>
+        <h3>Tells the operator, once</h3><p>Lost logins and usage limits open an incident. The operator gets one chat message per incident, debounced and grouped across services, and everything else in one daily digest.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art mem">
+          <div class="me-c"><b>memory/</b><span class="mut">conventions, gotchas</span></div>
+          <div class="me-c"><b>knowledge/</b><span class="mut">team, procedures</span></div>
+          <div class="me-c"><b>journal/</b><span class="mut">one entry per attempt</span></div>
+        </div>
+        <h3>Memory that carries over</h3><p>The brain and the worker each keep memory, knowledge and a journal. A setup lesson from one repository is there the next time the worker opens another.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art rt">
+          <div class="rt-row"><b>brain</b><span class="cli claude">claude</span><code>--model sonnet --effort medium</code></div>
+          <div class="rt-row"><b>resolver</b><span class="cli claude">claude</span><code>--model haiku --effort low</code></div>
+          <div class="rt-row"><b>worker</b><span class="cli codex">codex</span><code>-m gpt-5-codex</code></div>
+        </div>
+        <h3>Claude Code or Codex</h3><p>Each service picks its runtime, model and effort. Extra CLI arguments go through a closed allow-list, so a setting can never switch off isolation.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art bars"><span style="--h:34%"></span><span style="--h:52%"></span><span style="--h:41%"></span><span style="--h:66%"></span><span style="--h:58%"></span><span style="--h:80%"></span><span style="--h:62%"></span><span style="--h:88%"></span></div>
+        <h3>Usage on record</h3><p>Every model run records tokens, cache reads and duration, with an optional cost per model. Snapshots can feed the team's agents dashboard.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSING ============ -->
+<section class="cta">
+  <div class="wrap">
+    <svg class="cta-bot reveal" viewBox="0 0 64 64" role="img" aria-label="The OptiDevinho avatar: a small teal robot head with code brackets for eyes."><use href="#dev"/></svg>
+    <h2 class="h2 reveal">Label the issue.<br><span class="dim">Review the pull request.</span></h2>
+    <p class="lead reveal">OptiDevinho is built with Node.js for the Optidata engineering team and runs in Docker, with Claude Code or Codex doing the work. It has two siblings: <a class="lnk" href="/portfolio/software/optibotinho/">OptiBotinho</a> reviews and merges pull requests, and OptiQazinho tests them.</p>
+    <div class="hero-cta reveal"><a class="btn btn-ghost" href="/portfolio/software/">More software <span class="kbd">→</span></a></div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span>OptiDevinho · built by <a href="https://www.fernandobevilacqua.com/">Fernando Bevilacqua</a> · <a href="/portfolio/software/">Software portfolio</a></span>
+    <span class="mut">Claude Code is a product of Anthropic. Codex is a product of OpenAI. GitHub is a trademark of GitHub, Inc.</span>
+  </div>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>

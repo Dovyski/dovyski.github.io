@@ -1,0 +1,535 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OptiQazinho — The QA teammate that tests every issue on stage</title>
+<meta name="description" content="OptiQazinho is an AI member of the QA team, built for the Optidata engineering team: it writes test cases from the issue and its pull request, drives the deployed app in a real browser with two accounts, and reports the verdict on the issue with screenshots attached.">
+<meta property="og:title" content="OptiQazinho — The QA teammate that tests every issue on stage">
+<meta property="og:description" content="Test cases written from the acceptance criteria, a real browser on stage, and a verdict on the issue with evidence anyone can open.">
+<meta property="og:image" content="https://www.fernandobevilacqua.com/public/img/optiqazinho.png">
+<meta property="og:url" content="https://www.fernandobevilacqua.com/portfolio/software/optiqazinho/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0a0908">
+<link rel="icon" href="assets/qa.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://rsms.me/">
+<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="qa-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fcd34d"/><stop offset="1" stop-color="#ea580c"/></linearGradient>
+    <symbol id="qa" viewBox="0 0 64 64">
+      <rect width="64" height="64" rx="18" fill="url(#qa-g)"/>
+      <path d="M32 10v7" stroke="#fff7ed" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="32" cy="9" r="3.6" fill="#fef3c7"/>
+      <rect x="11" y="18" width="42" height="32" rx="11" fill="#fff7ed"/>
+      <rect x="16.5" y="24.5" width="31" height="13" rx="6.5" fill="#2a1806"/>
+      <circle cx="25.5" cy="31" r="3.1" fill="#fcd34d"/>
+      <circle cx="38.5" cy="31" r="3.1" fill="#fcd34d"/>
+      <path d="M26.5 43.2l3.6 3 7.6-6.4" stroke="#ea580c" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap">
+    <a class="pill reveal" href="#browser">
+      <span class="pill-tag">Internal</span>
+      <span>Built for the Optidata engineering team</span>
+      <i data-i="chev"></i>
+    </a>
+    <h1 class="hero-title reveal">The QA teammate that tests <br>every issue on stage</h1>
+    <p class="hero-sub reveal">OptiQazinho is an AI member of the QA team. When an issue reaches Testing, it writes test cases from the issue and its pull request, uses the deployed app in a real browser, and posts the verdict on the issue with the screenshots attached.</p>
+    <div class="hero-cta reveal">
+      <a class="btn btn-primary" href="#browser"><i data-i="play"></i>See a test run</a>
+      <a class="btn btn-ghost" href="#features">Explore features <span class="kbd">↓</span></a>
+    </div>
+  </div>
+
+  <div class="hero-stage reveal">
+    <div class="app gh hero-app" data-demo="hero" aria-label="Animated GitHub issue: OptiQazinho assigns itself, writes three test cases, runs them in a browser on stage, posts a comment with a screenshot, adds qa:ok and unassigns itself.">
+      <div class="gh-top">
+        <span class="gh-logo"><i data-i="gh"></i></span>
+        <span class="gh-crumbs"><span class="mut">acme</span> / <b>web</b></span>
+        <div class="gh-nav">
+          <span><i data-i="code"></i>Code</span>
+          <span class="on"><i data-i="issue"></i>Issues <em>31</em></span>
+          <span><i data-i="pr"></i>Pull requests <em>12</em></span>
+          <span><i data-i="board"></i>Projects</span>
+        </div>
+      </div>
+      <div class="gh-head">
+        <h4>Show the due date on shared tasks <span class="mut">#5917</span></h4>
+        <div class="gh-meta"><span class="state open"><i data-i="issue"></i><span>Open</span></span><span class="mut gh-meta-t"><b>sam</b> opened this issue 3 days ago · fixed by <code>#5928</code></span></div>
+      </div>
+      <div class="gh-body">
+        <div class="gh-main" data-tl>
+          <div class="tli">
+            <span class="av lg" style="--c:#f97316">SM</span>
+            <div class="cbox">
+              <div class="cbox-h"><b>sam</b> <span class="mut">opened 3 days ago</span><span class="cbox-e mut" data-edited></span></div>
+              <div class="cbox-b">
+                <p>People a task is shared with cannot see its due date. Show it in the task panel, the same way the owner sees it.</p>
+                <div class="md-h">🧪 Tests</div>
+                <div class="det">
+                  <div class="det-s"><i data-i="down"></i>🧪 Test Cases</div>
+                  <table class="tc"><thead><tr><th>Id</th><th>Description</th><th>Status</th><th class="tc-cm">Comments</th></tr></thead>
+                    <tbody data-tc><tr class="tc-none"><td colspan="4">No test cases yet</td></tr></tbody></table>
+                </div>
+                <div class="det">
+                  <div class="det-s"><i data-i="down"></i>👍 Acceptance Criteria</div>
+                  <ul class="ac"><li data-ac="1"><span class="cb"></span>The task panel shows the due date to everyone it is shared with</li><li data-ac="2"><span class="cb"></span>A task without a due date says so</li></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="gh-side">
+          <div class="gs">
+            <div class="gs-h">Assignees</div>
+            <div class="gs-row" data-asg><span class="none">No one assigned</span></div>
+          </div>
+          <div class="gs">
+            <div class="gs-h">Labels</div>
+            <div class="labels" data-labels><span class="lbl l-test">ai:testing</span></div>
+          </div>
+          <div class="gs">
+            <div class="gs-h">Projects</div>
+            <div class="gs-row"><span class="mut">Status</span><span class="status-chip testing" data-status>Testing</span></div>
+          </div>
+          <div class="gs">
+            <div class="gs-h">Development</div>
+            <div class="gs-row dev"><i data-i="merge" class="c-vi"></i><span>#5928 Due date in the shared task panel</span></div>
+            <div class="gs-row"><span class="mut sm">Merged and deployed to stage</span></div>
+          </div>
+        </aside>
+      </div>
+
+      <div class="sb" data-sb aria-hidden="true">
+        <div class="sb-top"><span class="sb-dots"><i></i><i></i><i></i></span><span class="sb-url"><i data-i="lock"></i><span data-sb-url>app.stage.example/tasks</span></span><span class="sb-acc" data-sb-acc>general account</span></div>
+        <div class="sb-page">
+          <div class="sb-list">
+            <div class="sb-task" data-sb-task="1"><span class="sb-ck"></span><b>Quarterly report draft</b><span class="sb-sh">shared</span></div>
+            <div class="sb-task" data-sb-task="2"><span class="sb-ck"></span><b>Renew the domain</b><span class="sb-sh">shared</span></div>
+            <div class="sb-task" data-sb-task="3"><span class="sb-ck"></span><b>Team offsite plan</b></div>
+          </div>
+          <div class="sb-panel" data-sb-panel>
+            <b data-sb-title>Quarterly report draft</b>
+            <div class="sb-f"><span class="mut">Owner</span><span>sam</span></div>
+            <div class="sb-f"><span class="mut">Due</span><span class="sb-due" data-sb-due>Nov 12</span></div>
+          </div>
+        </div>
+        <div class="sb-step" data-sb-step><span class="spin">⠋</span><span data-sb-step-t>Opening the app on stage</span></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============ STRIP ============ -->
+<section class="strip">
+  <div class="wrap">
+    <p class="strip-lead">Works through the tools the team already uses</p>
+    <ul class="strip-list">
+      <li><span class="ico">⌥</span>GitHub</li>
+      <li><span class="ico">◇</span>Playwright</li>
+      <li><span class="ico">◎</span>Codex CLI</li>
+      <li><span class="ico">✳</span>Claude Code</li>
+      <li><span class="ico">✉</span>Optiwork Talk</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ PROBLEM ============ -->
+<section class="problem">
+  <div class="wrap problem-grid">
+    <div class="problem-copy reveal">
+      <h2 class="h2">Every merged fix needs someone to try it.<br><span class="dim">The Testing column is where issues wait.</span></h2>
+      <p class="lead">A fix is merged, deployed to stage and moved to Testing. Then someone has to read the issue, work out what to check, log in, click through it, take screenshots and write it up. Across many apps that is a full-time queue, and a quick retest is the easiest thing to put off. OptiQazinho takes that queue and works it like a tester would.</p>
+    </div>
+    <div class="backlog reveal" aria-hidden="true">
+      <div class="bl-head"><span class="status-chip testing">Testing</span><b>Waiting for a tester</b><span class="bl-n">11</span></div>
+      <div class="bl-row"><i data-i="issue" class="c-gr"></i><div><b>Show the due date on shared tasks</b><small>acme/web#5917 · fix merged, no test cases</small></div><span class="age hot">3d</span></div>
+      <div class="bl-row"><i data-i="issue" class="c-gr"></i><div><b>Export keeps the selected filters</b><small>acme/web#5904 · needs a retest after Redo</small></div><span class="age hot">3d</span></div>
+      <div class="bl-row"><i data-i="issue" class="c-gr"></i><div><b>Reply-all keeps the original Cc list</b><small>acme/mail#812 · two accounts needed</small></div><span class="age">2d</span></div>
+      <div class="bl-row"><i data-i="issue" class="c-gr"></i><div><b>Guests cannot open private rooms</b><small>acme/chat#2290 · permissions</small></div><span class="age">2d</span></div>
+      <div class="bl-row"><i data-i="issue" class="c-gr"></i><div><b>Recurring events across a time-zone change</b><small>acme/calendar#433</small></div><span class="age">1d</span></div>
+      <div class="bl-row dimmed"><i data-i="issue" class="c-gr"></i><div><b>Form answers export as CSV</b><small>acme/forms#470</small></div><span class="age">20h</span></div>
+      <div class="bl-fade"></div>
+    </div>
+  </div>
+</section>
+
+<div id="features"></div>
+
+<!-- ============ TEST CASES ============ -->
+<section class="feature" id="plan">
+  <div class="wrap">
+    <div class="feature-head reveal">
+      <div class="eyebrow"><span class="eb-dot amber"></span>Test cases</div>
+      <h2 class="h2">It reads the issue first.<br><span class="grad">Then it writes the test plan.</span></h2>
+      <p class="lead">Test cases come from the acceptance criteria, the pull request description, where developers leave test hints, and the comments. They go into the issue description, in a <b>🧪 Test Cases</b> table everyone can read and edit.</p>
+    </div>
+
+    <div class="app frag reveal" data-demo="plan">
+      <div class="frag-grid pl-grid">
+        <div class="pl-src">
+          <div class="term-head"><svg class="qa-av"><use href="#qa"/></svg><b>Reading</b><span class="badge">acme/web#5904</span></div>
+          <div class="pl-body">
+            <div class="src" data-src="ac">
+              <div class="src-h"><i data-i="issue" class="c-gr"></i><b>Acceptance criteria</b><span class="src-k k1"></span></div>
+              <ul><li>The CSV contains only the rows the filters show</li><li>Filters are still applied after a reload</li></ul>
+            </div>
+            <div class="src" data-src="pr">
+              <div class="src-h"><i data-i="merge" class="c-vi"></i><b>Pull request #5926</b><span class="mut">How to test</span><span class="src-k k2"></span></div>
+              <ul><li>Combine two filters and compare the row count with the file</li></ul>
+            </div>
+            <div class="src" data-src="cm">
+              <div class="src-h"><span class="av" style="--c:#0ea5e9">AL</span><b>alex</b><span class="mut">commented</span><span class="src-k k3"></span></div>
+              <ul><li>What happens when no row matches the filters?</li></ul>
+            </div>
+          </div>
+        </div>
+        <div class="pl-out">
+          <div class="pl-ed">
+            <div class="pl-tabs"><span class="on">Write</span><span>Preview</span><span class="mut pl-ed-t">Editing the description</span></div>
+            <div class="md-h">## 🧪 Tests</div>
+            <div class="det">
+              <div class="det-s"><i data-i="down"></i>🧪 Test Cases</div>
+              <table class="tc"><thead><tr><th>Id</th><th>Description</th><th>Status</th><th class="tc-cm">Comments</th></tr></thead><tbody data-pl></tbody></table>
+            </div>
+            <div class="pl-note" data-pl-note><svg class="qa-av"><use href="#qa"/></svg><span><b>OptiQazinho</b> commented: “I added four test cases to the description. TC4 covers the empty result alex asked about.”</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cols3">
+      <div class="col reveal"><h3>Traced to a claim</h3><p>Each case checks something the issue or the pull request says: the happy path, the correctness of the result, and anomalous input with its error message.</p></div>
+      <div class="col reveal"><h3>Asks before rewriting</h3><p>When an issue already has test cases that look weak, it comments first with what it wants to change and why, and edits them only if nobody objects.</p></div>
+      <div class="col reveal"><h3>Asks when unsure</h3><p>Missing information or contradicting details get a question in the issue and the <code>ai:question</code> label. It comes back to the issue for the answer.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BROWSER ============ -->
+<section class="feature" id="browser">
+  <div class="wrap">
+    <div class="feature-head reveal">
+      <div class="eyebrow"><span class="eb-dot orange"></span>Execution on stage</div>
+      <h2 class="h2">It uses the app<br><span class="dim">the way a person would.</span></h2>
+      <p class="lead">The fix is tested where it was deployed, not in a unit test. OptiQazinho opens the app in a real Chrome through Playwright, clicks, types and reads the page, checks each case, and keeps screenshots, browser logs and recordings along the way.</p>
+    </div>
+
+    <div class="app frag reveal" data-demo="browser">
+      <div class="frag-grid br-grid">
+        <div class="br">
+          <div class="br-tabs"><span class="sb-dots"><i></i><i></i><i></i></span><span class="br-tab"><i data-i="file"></i>Reports · Acme</span></div>
+          <div class="br-url"><i data-i="lock"></i><span data-br-url>https://app.stage.example/reports</span><span class="br-rl" data-br-rl><i data-i="reload"></i></span></div>
+          <div class="br-page" data-br-page>
+            <div class="br-side"><span class="br-logo"></span><i></i><i class="on"></i><i></i><i></i></div>
+            <div class="br-main">
+              <div class="br-h"><b>Reports</b><span class="mut" data-br-count>6 rows</span></div>
+              <div class="br-bar">
+                <span class="br-btn" data-br-filters><i data-i="filter"></i>Filters</span>
+                <span class="br-chips" data-br-chips></span>
+                <span class="br-btn pri" data-br-export><i data-i="down"></i>Export CSV</span>
+              </div>
+              <div class="br-menu" data-br-menu>
+                <div class="mut">Status</div>
+                <div data-opt="paid"><span class="st paid">Paid</span></div>
+                <div data-opt="open"><span class="st open">Open</span></div>
+                <div data-opt="void"><span class="st void">Void</span></div>
+              </div>
+              <div class="br-tbl" data-br-tbl>
+                <div class="br-r hd"><span>Invoice</span><span>Customer</span><span>Status</span><span>Total</span></div>
+                <div class="br-r" data-st="paid"><span>INV-1041</span><span>Northwind</span><span><span class="st paid">Paid</span></span><span>$1,240</span></div>
+                <div class="br-r" data-st="open"><span>INV-1042</span><span>Globex</span><span><span class="st open">Open</span></span><span>$310</span></div>
+                <div class="br-r" data-st="paid"><span>INV-1043</span><span>Initech</span><span><span class="st paid">Paid</span></span><span>$875</span></div>
+                <div class="br-r" data-st="open"><span>INV-1044</span><span>Umbrella</span><span><span class="st open">Open</span></span><span>$2,100</span></div>
+                <div class="br-r" data-st="paid"><span>INV-1045</span><span>Hooli</span><span><span class="st paid">Paid</span></span><span>$460</span></div>
+                <div class="br-r" data-st="open"><span>INV-1046</span><span>Stark</span><span><span class="st open">Open</span></span><span>$95</span></div>
+                <div class="br-empty">No reports found</div>
+              </div>
+              <div class="br-toast" data-br-toast></div>
+            </div>
+            <div class="flash" data-flash></div>
+          </div>
+          <div class="cursor" data-cursor><svg viewBox="0 0 24 24"><path d="M5 3l14 8-6.5 1.5L10 19z" fill="#fff" stroke="#000" stroke-width="1.2" stroke-linejoin="round"/></svg></div>
+        </div>
+        <div class="log">
+          <div class="term-head"><svg class="qa-av"><use href="#qa"/></svg><b>Test run</b><span class="badge">acme/web#5904</span><span class="th-r mut" data-log-n>0 / 4</span></div>
+          <div class="log-b" data-log></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cols3">
+      <div class="col reveal"><h3>A real browser</h3><p>Google Chrome is baked into the tester image, with Chromium as a fallback. The page is read from snapshots with element references, so clicks target elements, not pixel positions.</p></div>
+      <div class="col reveal"><h3>User-level checks only</h3><p>It never runs the unit or integration tests, even when the issue asks for them, and never reads CI results. CI owns those. QA owns what a user sees on stage.</p></div>
+      <div class="col reveal"><h3>Evidence as it goes</h3><p>Screenshots, console output and recordings are kept for every case, and above all for failures, so the report can show what happened.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TWO ACCOUNTS ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="split rev">
+      <div class="feature-head left reveal">
+        <div class="eyebrow"><span class="eb-dot red"></span>Permissions</div>
+        <h2 class="h2">Two accounts,<br><span class="dim">two browser sessions.</span></h2>
+        <p class="lead">Authorization, isolation between users and rendering across accounts are always tested with two stage accounts, each in its own browser session. Routes that only take a bearer are called with a token minted per account.</p>
+        <ul class="ticks">
+          <li><b>Try before blocking.</b> A check is marked blocked only after logging in or minting the token failed, and the report says what was tried and which status came back.</li>
+          <li><b>Accounts by role.</b> Test cases and comments name the accounts by what they are, never by their password.</li>
+          <li><b>Credentials stay in.</b> Passwords and tokens never reach an issue, a log or a screenshot; requests are shown with <code>Bearer &lt;redacted&gt;</code>.</li>
+        </ul>
+      </div>
+      <div class="app frag reveal" data-demo="accounts">
+        <div class="acc-grid">
+          <div class="acc" data-acc="a">
+            <div class="acc-h"><span class="dot green"></span><b>Session 1</b><span class="mut">general account</span></div>
+            <div class="acc-url"><i data-i="lock"></i>/reports/42</div>
+            <div class="acc-b" data-acc-b="a"><div class="acc-wait">Not open yet</div></div>
+          </div>
+          <div class="acc" data-acc="b">
+            <div class="acc-h"><span class="dot amber"></span><b>Session 2</b><span class="mut">another tenant user</span></div>
+            <div class="acc-url"><i data-i="lock"></i>/reports/42</div>
+            <div class="acc-b" data-acc-b="b"><div class="acc-wait">Not open yet</div></div>
+          </div>
+        </div>
+        <div class="api">
+          <div class="api-h"><i data-i="code"></i><b>API checks</b><span class="mut">Authorization: Bearer &lt;redacted&gt;</span></div>
+          <div class="api-b" data-api></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REPORT ============ -->
+<section class="feature" id="report">
+  <div class="wrap">
+    <div class="feature-head reveal">
+      <div class="eyebrow"><span class="eb-dot green"></span>Reporting</div>
+      <h2 class="h2">The verdict lands on the issue.<br><span class="dim">With the evidence attached.</span></h2>
+      <p class="lead">The description holds the state of the tests: every case marked passed or failed, every acceptance criterion ticked or not. The comments hold the findings, the steps to reproduce and the screenshots, uploaded and embedded where the sentence needs them.</p>
+    </div>
+
+    <div class="app frag reveal" data-demo="report">
+      <div class="frag-grid rp-grid">
+        <div class="rp-desc">
+          <div class="term-head"><i data-i="file"></i><b>Description</b><span class="th-r mut">state of the tests</span></div>
+          <div class="rp-db">
+            <div class="det">
+              <div class="det-s"><i data-i="down"></i>🧪 Test Cases</div>
+              <table class="tc"><thead><tr><th>Id</th><th>Description</th><th>Status</th></tr></thead><tbody>
+                <tr><td><code>TC1</code></td><td>Filter by Paid, export: the CSV has only the paid rows</td><td data-rs="1"></td></tr>
+                <tr><td><code>TC2</code></td><td>Reload with a filter applied: it is still applied</td><td data-rs="2"></td></tr>
+                <tr><td><code>TC3</code></td><td>Two filters combined: CSV row count matches the table</td><td data-rs="3"></td></tr>
+                <tr><td><code>TC4</code></td><td>No row matches: empty state and no broken export</td><td data-rs="4"></td></tr>
+              </tbody></table>
+            </div>
+            <div class="det">
+              <div class="det-s"><i data-i="down"></i>👍 Acceptance Criteria</div>
+              <ul class="ac"><li data-rac="1"><span class="cb"></span>The CSV contains only the rows the filters show</li><li data-rac="2"><span class="cb"></span>Filters are still applied after a reload</li></ul>
+            </div>
+            <div class="rp-side">
+              <div><span class="mut">Labels</span><span class="labels" data-rlabels><span class="lbl l-test">ai:testing</span></span></div>
+              <div><span class="mut">Status</span><span class="status-chip testing" data-rstatus>Testing</span></div>
+              <div><span class="mut">Assignee</span><span data-rasg><svg class="qa-av"><use href="#qa"/></svg>OptiQazinho</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="rp-tl">
+          <div class="term-head"><i data-i="msg"></i><b>Comments</b><span class="th-r mut">findings and evidence</span></div>
+          <div class="rp-tb" data-rtl></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cols3">
+      <div class="col reveal"><h3>Two verdicts</h3><p>No problem: <code>qa:ok</code> and <code>ai:done</code>. A problem: <code>qa:problem</code>, the issue goes back to <b>Redo</b>. Either way it unassigns itself when the pass ends.</p></div>
+      <div class="col reveal"><h3>Evidence anyone can open</h3><p>Every screenshot or video it cites is uploaded and embedded, with a description written for someone who cannot see it. Never a path on its own disk.</p></div>
+      <div class="col reveal"><h3>Written for the other testers</h3><p>Human testers may be on the same issue. It reads their comments first, builds on them, and leaves a clear picture of what passed, what failed and what is missing.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TALK ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="split">
+      <div class="app frag reveal" data-demo="talk">
+        <div class="frag-grid chat-grid">
+          <div class="ch-side">
+            <div class="ch-h"><i data-i="msg"></i><b>Talk</b></div>
+            <div class="ch-conv on"><svg class="qa-av"><use href="#qa"/></svg><div><b>OptiQazinho</b><small data-prev>Direct message</small></div></div>
+            <div class="ch-conv"><span class="hash">#</span><div><b>qa</b><small>Team channel</small></div></div>
+          </div>
+          <div class="ch-main">
+            <div class="ch-title">OptiQazinho</div>
+            <div class="ch-msgs" data-msgs></div>
+          </div>
+        </div>
+      </div>
+      <div class="feature-head left reveal">
+        <div class="eyebrow"><span class="eb-dot blue"></span>Chat</div>
+        <h2 class="h2">Ask for a test in chat.<br><span class="dim">Hear back there too.</span></h2>
+        <p class="lead">Anyone on the team can message OptiQazinho with an issue link or an app name and a number. The test is queued at once, the reply says when it will run, and the outcome comes back to the chat that asked.</p>
+        <ul class="ticks">
+          <li><b>Status in human terms.</b> “I'll get to #5904 after the mail retest.” Never a job id, a queue position or a machine name.</li>
+          <li><b>Steer or cancel a running test.</b> An extra check or a login hint reaches the test at its next step; a cancel stops it at the next safe point.</li>
+          <li><b>Says what is missing.</b> An issue without the <code>ai:testing</code> label or the Testing status gets told so, instead of a silent no-op.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FLEET ============ -->
+<section class="feature">
+  <div class="wrap">
+    <div class="feature-head reveal">
+      <div class="eyebrow"><span class="eb-dot violet"></span>Under the hood</div>
+      <h2 class="h2">One conversation,<br><span class="grad">sixteen testers.</span></h2>
+      <p class="lead">A single long-running Claude Code conversation talks to the team and coordinates. One isolated tester per repository does the hands-on work with Codex, one pinned job at a time, from a job queue that outlives any container.</p>
+    </div>
+
+    <div class="app frag reveal" data-demo="fleet">
+      <div class="frag-grid fl-grid">
+        <div class="fl-left">
+          <div class="term-head"><i data-i="layers"></i><b>Fleet</b><span class="th-r mut" data-fl-sum>16 testers · 0 running</span></div>
+          <div class="fl-brain"><svg class="qa-av"><use href="#qa"/></svg><div><b>Conversation</b><small class="mut">Claude Code · reads chat, queues tests, relays results</small></div><span class="fl-w" data-fl-w><span class="dot green"></span>waiting for activity</span></div>
+          <div class="fl-testers" data-fl></div>
+        </div>
+        <div class="fl-right">
+          <div class="term-head"><i data-i="list"></i><b>Job queue</b><span class="badge">web</span></div>
+          <div class="jq">
+            <div class="jq-col"><div class="jq-h">pending</div><div class="jq-s" data-jq="pending"></div></div>
+            <div class="jq-col"><div class="jq-h">running</div><div class="jq-s" data-jq="running"></div></div>
+            <div class="jq-col"><div class="jq-h">done</div><div class="jq-s" data-jq="done"></div></div>
+          </div>
+          <div class="jq-log" data-jqlog></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cols3">
+      <div class="col reveal"><h3>Swept and requested</h3><p>Each tester sweeps its repository on a schedule for issues labelled <code>ai:testing</code> in <b>Testing</b>, and runs chat requests without waiting for the next sweep. A new edit or comment makes a tested issue eligible again.</p></div>
+      <div class="col reveal"><h3>Deploys do not lose a test</h3><p>A deploy marks the running job interrupted and the new container runs it again. Every comment carries a hidden marker, so the retry continues where the last attempt stopped instead of posting twice.</p></div>
+      <div class="col reveal"><h3>Stays in its lane</h3><p>A tester only touches issues of its own repository, even when others share the board. A small control file can pause a tester or skip an issue, applied at the next safe step.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DETAILS GRID ============ -->
+<section class="details">
+  <div class="wrap">
+    <div class="feature-head center reveal">
+      <h2 class="h2">A colleague, not a script.</h2>
+      <p class="lead">The details that make an AI tester something a team can work with every day.</p>
+    </div>
+    <div class="grid">
+      <div class="card-d reveal">
+        <div class="card-art voice">
+          <div class="vo bad"><span class="c-rd">✕</span><span>tester-3 claimed job web-2281, attempt 2</span></div>
+          <div class="vo good"><span class="c-gr">✓</span><span>I'm testing #2281 on stage now.</span></div>
+          <div class="vo good"><span class="c-gr">✓</span><span>I couldn't log in to stage, so I'm blocked. Can someone check the QA account?</span></div>
+        </div>
+        <h3>One QA teammate</h3><p>In every channel it speaks in the first person, gives status in human terms and describes limits by their effect. Internals come up only when someone is debugging it.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art ident">
+          <div class="id-row"><svg class="qa-av"><use href="#qa"/></svg><b>OptiQazinho</b><span class="tag-s">user</span><span class="mut">writes</span></div>
+          <div class="id-row"><span class="app-i"><i data-i="gh"></i></span><b>GitHub App</b><span class="tag-s">app</span><span class="mut">reads</span></div>
+          <div class="id-x"><span class="c-rd">✕</span>no fallback: a refused write raises an alert</div>
+        </div>
+        <h3>Its own GitHub account</h3><p>Comments, labels, assignment and board moves are posted as its own user. Reads go through a GitHub App. A write never falls back to another identity.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art flow">
+          <span class="fs">Todo</span><span class="fs">Doing</span><span class="fs">In Review</span><span class="fs">To deploy</span><span class="fs on">Testing</span><span class="fs rd">Redo</span><span class="fs">To production</span><span class="fs">Done</span>
+        </div>
+        <h3>Follows the board</h3><p>It works the issues in <b>Testing</b> and the only move it makes is to <b>Redo</b>. Releases move the rest. Open or closed does not matter; the status does.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art mem">
+          <div class="mem-f"><i data-i="file"></i><b>MEMORY.md</b><span class="mut">durable notes</span></div>
+          <div class="mem-l">- Calendar: invites need the second account</div>
+          <div class="mem-l">- #812 waiting on a reply (ai:question)</div>
+          <div class="mem-f"><i data-i="file"></i><b>journal/</b><span class="mut">one entry per run</span></div>
+        </div>
+        <h3>Memory and journal</h3><p>Each tester keeps a persistent memory for recurring patterns and follow-ups, plus a journal of its runs. Both survive rebuilds and restarts.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art code-art"><pre>{
+  "version": 1,
+  "repository": "acme/web",
+  "paused": false,
+  "skip_issues": [5899],
+  "reason": "waiting for a data fix"
+}</pre></div>
+        <h3>Pause and skip</h3><p>A control file per tester pauses it or skips issues. Invalid JSON or the wrong repository fails closed: no run, no mutation.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art checks">
+          <div><span class="c-gr">✓</span><code>conversation</code><span class="mut">listening</span></div>
+          <div><span class="c-gr">✓</span><code>tester login · mail</code></div>
+          <div class="bad"><span class="c-rd">✕</span><code>evidence upload</code><span class="c-rd">3 failures</span></div>
+          <div class="alert-s"><i data-i="bell"></i>Alert sent to the operators</div>
+        </div>
+        <h3>Watches itself</h3><p>Operators get a chat alert when the conversation stops answering, a tester's login fails, uploads keep failing or GitHub refuses a write. Each alert opens with a plain sentence.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art spend">
+          <div class="sp-row"><code>web#5904</code><span class="sp-bar"><i style="width:64%"></i></span><b>2 runs</b></div>
+          <div class="sp-row"><code>mail#812</code><span class="sp-bar"><i style="width:88%"></i></span><b>1 run</b></div>
+          <div class="sp-tot"><span class="mut">Tokens per test, reported to the team's agent dashboard</span></div>
+        </div>
+        <h3>Usage per test</h3><p>Every attempt reports its token use and state to the dashboard where the team follows its AI agents, so the cost of a test is known per issue.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art deploy">
+          <div class="dp-row"><span class="cli">brain</span><span>new image</span><span class="c-gr">same conversation resumed</span></div>
+          <div class="dp-row"><span class="cli">testers</span><span>16 recreated</span><span class="c-gr">jobs picked up again</span></div>
+          <div class="dp-row"><span class="cli">data</span><span>memory, queue</span><span class="mut">untouched</span></div>
+        </div>
+        <h3>Shipped by CI</h3><p>A push builds and deploys only the component that changed. A conversation update keeps every tester running; a tester update keeps the conversation and its context.</p>
+      </div>
+      <div class="card-d reveal">
+        <div class="card-art lbls">
+          <span class="lbl l-test">ai:testing</span><span class="lbl l-ok">qa:ok 💚</span><span class="lbl l-done">ai:done</span><span class="lbl l-prob">qa:problem ⚠️</span><span class="lbl l-q">ai:question</span>
+        </div>
+        <h3>Labels as the contract</h3><p><code>ai:testing</code> opts an issue in, whoever wrote the code. The verdict labels stay next to it, so the board shows at a glance what AI QA has handled.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSING ============ -->
+<section class="cta">
+  <div class="wrap">
+    <svg class="cta-bot reveal" viewBox="0 0 64 64" role="img" aria-label="The OptiQazinho avatar: a small amber robot head with a check mark for a mouth."><use href="#qa"/></svg>
+    <h2 class="h2 reveal">Move it to Testing.<br><span class="dim">It gets tested.</span></h2>
+    <p class="lead reveal">OptiQazinho runs on Node.js and Docker for the Optidata engineering team, with Codex and Playwright doing the testing and Claude Code holding the conversation. Its siblings: <a class="ln" href="/portfolio/software/optidevinho/">OptiDevinho</a> writes code, <a class="ln" href="/portfolio/software/optibotinho/">OptiBotinho</a> reviews and merges it.</p>
+    <div class="hero-cta reveal"><a class="btn btn-ghost" href="/portfolio/software/">More software <span class="kbd">→</span></a></div>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span>OptiQazinho · built by <a href="https://www.fernandobevilacqua.com/">Fernando Bevilacqua</a> · <a href="/portfolio/software/">Software portfolio</a></span>
+    <span class="mut">Claude Code is a product of Anthropic. Codex is a product of OpenAI. Playwright is a Microsoft project. GitHub is a trademark of GitHub, Inc.</span>
+  </div>
+</footer>
+
+<script src="main.js" defer></script>
+</body>
+</html>

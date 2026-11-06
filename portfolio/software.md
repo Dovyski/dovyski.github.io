@@ -12,6 +12,8 @@ These projects span different stages of my career. Start with [the engineering s
 
 **[Devpilot](/devpilot/)** — Running a dozen AI coding agents at once turned my desktop into a wall of terminals, and the bottleneck became knowing which one needed me. I built a Windows desktop app that groups the terminals, shows every agent's status live, collects their questions in one place and speaks up when one finishes.
 
+**Optidata team tools** — At Optidata I build the tools our engineering team works with every day, and the AI teammates that work alongside it: [o-cli](/portfolio/software/o-cli/), our command line for the work around the code; [OptiBotinho](/portfolio/software/optibotinho/), a GitHub bot that reviews pull requests and runs the merge queue; [OptiDevinho](/portfolio/software/optidevinho/), an AI developer that takes issues to a reviewed pull request; and [OptiQazinho](/portfolio/software/optiqazinho/), an AI tester that checks every issue on stage.
+
 **[cvui](https://github.com/Dovyski/cvui)** — OpenCV experimentation needed simple controls without another graphical backend. I created and maintained a small UI library rendered using OpenCV primitives, with documentation and both C++ and Python implementations.
 
 ## Historical project catalogue
@@ -27,6 +29,62 @@ Devpilot is a terminal workspace for running many AI coding agents (Claude Code,
 </p>
 <p class="more">
     <span class="type extra"><a href="/devpilot/"><img src="/public/img/link.png" title="Website" /> Website</a></span>
+</p>
+</div>
+
+___
+
+<div class="item">
+<h2>o-cli <span class="type go">Go</span></h2>
+<p class="meta">A single Go binary for Windows, macOS and Linux that wraps git, the GitHub CLI, PostgreSQL, Laravel Herd and OpenSSH.</p>
+<a href="/portfolio/software/o-cli/"><img src="/public/img/o-cli.png" title="o-cli" /></a>
+<p class="description">
+o is the internal command line of the Optidata engineering team. One command sets up an isolated workspace for an issue: clone, branch, environment files, test database and local site. Others cut releases and tags, open a shell in a stage container or a production pod, read and write team secrets behind TOTP, format Laravel code to the team style, manage board tasks and upload screenshots for pull requests. A Markdown review loop lets people comment on a plan in the browser and hands the comments back to an AI agent.
+</p>
+<p class="more">
+    <span class="type extra"><a href="/portfolio/software/o-cli/"><img src="/public/img/link.png" title="Website" /> Website</a></span>
+</p>
+</div>
+
+___
+
+<div class="item">
+<h2>OptiBotinho <span class="type php">PHP</span> <span class="type laravel">Laravel</span></h2>
+<p class="meta">A Laravel application that receives GitHub, chat and error-monitoring webhooks, with queue workers and AI reviewers running Claude Code and Codex.</p>
+<a href="/portfolio/software/optibotinho/"><img src="/public/img/optibotinho.png" title="OptiBotinho" /></a>
+<p class="description">
+OptiBotinho is the GitHub bot of the Optidata engineering team. A panel of AI reviewers checks every pull request for security, correctness and tests, and a manager verifies their findings against the head commit before posting. A merge queue sorts pull requests into risk lanes and merges them when reviews and checks allow. The bot also moves issues across the project board, posts chat notifications, triages production errors into issues, and runs commands such as cloning issues or reporting on a milestone.
+</p>
+<p class="more">
+    <span class="type extra"><a href="/portfolio/software/optibotinho/"><img src="/public/img/link.png" title="Website" /> Website</a></span>
+</p>
+</div>
+
+___
+
+<div class="item">
+<h2>OptiDevinho <span class="type node">Node.js</span> <span class="type docker">Docker</span></h2>
+<p class="meta">Node.js services in Docker: a brain that reads GitHub and chat, a resolver that queues the work and a sandboxed worker that runs Claude Code or Codex.</p>
+<a href="/portfolio/software/optidevinho/"><img src="/public/img/optidevinho.png" title="OptiDevinho" /></a>
+<p class="description">
+OptiDevinho is an AI member of the development team. Label an issue and it opens a draft pull request, implements the change, runs the repository tests against local services, attaches screenshots of UI changes and asks for review. It answers review comments until the threads are resolved, and takes follow-ups and status questions in chat. It never merges or deploys to production; it posts as its own GitHub user, works inside a sandbox and stays within token limits.
+</p>
+<p class="more">
+    <span class="type extra"><a href="/portfolio/software/optidevinho/"><img src="/public/img/link.png" title="Website" /> Website</a></span>
+</p>
+</div>
+
+___
+
+<div class="item">
+<h2>OptiQazinho <span class="type node">Node.js</span> <span class="type docker">Docker</span></h2>
+<p class="meta">One persistent Claude conversation coordinates a fleet of Node.js tester services in Docker, one per repository, that drive the app with Playwright.</p>
+<a href="/portfolio/software/optiqazinho/"><img src="/public/img/optiqazinho.png" title="OptiQazinho" /></a>
+<p class="description">
+OptiQazinho is an AI member of the QA team. When an issue reaches testing, it writes test cases from the acceptance criteria and the pull request, then drives the deployed app on stage in a real browser, with two accounts to check permissions. It reports the verdict on the issue with screenshots and repro steps, labels the result and moves the issue on the board. People can ask it about the queue or the outcome in chat.
+</p>
+<p class="more">
+    <span class="type extra"><a href="/portfolio/software/optiqazinho/"><img src="/public/img/link.png" title="Website" /> Website</a></span>
 </p>
 </div>
 
